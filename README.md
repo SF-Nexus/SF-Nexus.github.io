@@ -1,7 +1,12 @@
 # sfnexus
 Test website hub for SF Nexus projects
 
-# Relevant repositories
+## To Dos
+
+Decide on the best framework for the basesite. Probably Hugo
+Develop separate single page apps for now.
+
+## Relevant repositories
 
 Extracted Features API: https://github.com/hawc2/sfdata
 Scripts for extracting features in R: https://github.com/hawc2/Extracted-Features
