@@ -1,8 +1,8 @@
 {
   "title": "SF Nexus",
-  "url": "https://hawc2.github.io/sfnexus/",
+  "url": "https://wwww.sfnexus.io",
   "language": "en",
-  "description": "A website hub for science fiction digitization projects",
+  "description": "A webhub for science fiction digitization projects",
   "feed": {
     "subtitle": "Science Fiction in computational form",
     "filename": "feed.xml",
