@@ -12,6 +12,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
 
+  // Copies static files to output.
+  eleventyConfig.addPassthroughCopy('img');
+
   // https://www.11ty.dev/docs/data-deep-merge/
   eleventyConfig.setDataDeepMerge(true);
 
@@ -65,6 +68,24 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("css");
 
   // Customize Markdown library and settings:
+
+  let markdownIt = require("markdown-it");
+  let options = {
+    // whatever options you have set for the library here
+  };
+  let mdfigcaption = require('markdown-it-image-figures');
+  let figoptions = {
+    figcaption: true
+  };
+
+  const mdLib = markdownIt(options).use(mdfigcaption, figoptions);
+
+//  module.exports = function (config) {
+    //other config here
+
+//    config.setLibrary("md", mdLib);
+//  }
+
   let markdownLibrary = markdownIt({
     html: true,
     breaks: true,
@@ -79,6 +100,8 @@ module.exports = function(eleventyConfig) {
     slugify: eleventyConfig.getFilter("slug")
   });
   eleventyConfig.setLibrary("md", markdownLibrary);
+
+
 
   // Override Browsersync defaults (used only with --serve)
   eleventyConfig.setBrowserSyncConfig({
@@ -108,17 +131,7 @@ module.exports = function(eleventyConfig) {
       "liquid"
     ],
 
-    // -----------------------------------------------------------------
-    // If your site deploys to a subdirectory, change `pathPrefix`.
-    // Don’t worry about leading and trailing slashes, we normalize these.
 
-    // If you don’t have a subdirectory, use "" or "/" (they do the same thing)
-    // This is only used for link URLs (it does not affect your file structure)
-    // Best paired with the `url` filter: https://www.11ty.dev/docs/filters/url/
-
-    // You can also pass this in on the command line using `--pathprefix`
-
-    // Optional (default is shown)
     pathPrefix: "/",
     // -----------------------------------------------------------------
 
