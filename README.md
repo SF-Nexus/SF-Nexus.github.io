@@ -3,7 +3,7 @@ Test website hub for SF Nexus projects
 
 ## To Dos
 
-Decide on the best framework for the basesite. Probably Hugo
+Test with Eleventy, FastAPI, and Netlify
 Develop separate single page apps for now.
 
 ## Relevant repositories
