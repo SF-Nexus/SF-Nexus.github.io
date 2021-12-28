@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # eleventy-base-blog
 
 A starter repository showing how to build a blog with the [Eleventy](https://github.com/11ty/eleventy) static site generator.
@@ -76,3 +77,29 @@ DEBUG=* npx eleventy
   * `_includes/layouts/home.njk`: the home page template (wrapped into `base.njk`)
   * `_includes/layouts/post.njk`: the blog post template (wrapped into `base.njk`)
 * `_includes/postlist.njk` is a Nunjucks include and is a reusable component used to display a list of all the posts. `index.njk` has an example of how to use it.
+=======
+# sfnexus
+Test website hub for SF Nexus projects
+
+## To Dos
+
+Test with Eleventy, FastAPI, and Netlify
+Develop separate single page apps for now.
+
+## Relevant repositories
+
+Extracted Features API: https://github.com/hawc2/sfdata
+Scripts for extracting features in R: https://github.com/hawc2/Extracted-Features
+
+LDA Visualization to 1) import as html and 2) eventually set up API access on single page app: https://github.com/hawc2/sflda
+
+Wevscraping scripts to embed or share as Google colab notebooks: https://github.com/hawc2/Webscraping-Project-Gutenberg
+
+Downloading images from Temple's digital collections: https://github.com/hawc2/contentdm-iiif-api
+
+Text analysis scripts for more visualizations: https://github.com/hawc2/Text-Analysis-with-Python
+
+Wax website for Speculative Facebook project: https://github.com/hawc2/sf
+
+Script for OCRing the texts: https://github.com/hawc2/SciFiCorpusOCR
+>>>>>>> 0c0f6cb45f8b6ad17259affb4501e7b20473b0a9
