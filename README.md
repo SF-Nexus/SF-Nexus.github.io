@@ -13,3 +13,7 @@ single-page apps to be developed separately
 develop sf nexus theme for website
 transfer to an organization - create it soon
 onboard other contributors
+
+# resources
+
+link: https://lcdssgeo.com/omeka-s/s/scifi/page/digitizing-science-fiction
