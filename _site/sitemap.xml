@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://wwww.sfnexus.io/posts/firstpost/</loc>
+    <lastmod>2018-05-01</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wwww.sfnexus.io/posts/secondpost/</loc>
+    <lastmod>2018-07-04</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wwww.sfnexus.io/posts/thirdpost/</loc>
+    <lastmod>2018-08-24</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wwww.sfnexus.io/posts/fourthpost/</loc>
+    <lastmod>2018-09-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wwww.sfnexus.io/about/</loc>
+    <lastmod>2021-12-28</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wwww.sfnexus.io/posts/</loc>
+    <lastmod>2021-12-28</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wwww.sfnexus.io/code/</loc>
+    <lastmod>2021-12-28</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wwww.sfnexus.io/data/</loc>
+    <lastmod>2021-12-28</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wwww.sfnexus.io/</loc>
+    <lastmod>2021-12-28</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wwww.sfnexus.io/page-list/</loc>
+    <lastmod>2021-12-28</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wwww.sfnexus.io/tags/</loc>
+    <lastmod>2021-12-28</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wwww.sfnexus.io/tags/another-tag/</loc>
+    <lastmod>2021-12-28</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wwww.sfnexus.io/tags/second-tag/</loc>
+    <lastmod>2021-12-28</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wwww.sfnexus.io/tags/number-2/</loc>
+    <lastmod>2021-12-28</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wwww.sfnexus.io/tags/posts-with-two-tags/</loc>
+    <lastmod>2021-12-28</lastmod>
+  </url>
+</urlset>
