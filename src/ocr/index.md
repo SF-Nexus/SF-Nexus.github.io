@@ -1,5 +1,5 @@
 ---
-layout: layouts/post.njk
+layout: layouts/default.njk
 title: OCR
 templateClass: tmpl-post
 eleventyNavigation:
