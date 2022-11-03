@@ -1,4 +1,14 @@
-# Guide to OCR in Abbyy
+---
+layout: layouts/post.njk
+title: OCR
+templateClass: tmpl-post
+eleventyNavigation:
+  key: OCR
+  order: 4
+---
+
+# Guide to OCR in ABBYY
+
 ## Introduction
 [ABBYY Fine Reader](https://pdf.abbyy.com/) can take jpgs, tiffs, and pdfs and translate them into computer readable text through a process called Optical Character Recognition (OCR). [Here's a brief introduction to OCR.](https://www.youtube.com/watch?v=jO-1rztr4O0)
 
