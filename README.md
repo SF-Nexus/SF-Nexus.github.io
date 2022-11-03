@@ -10,9 +10,8 @@ single-page apps to be developed separately
 
 # next steps
 
-develop sf nexus theme for website
-transfer to an organization - create it soon
-onboard other contributors
+update appearance
+build out content using org repositories
 
 # resources
 
