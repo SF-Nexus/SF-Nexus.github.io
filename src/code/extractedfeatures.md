@@ -1,3 +1,12 @@
+---
+layout: layouts/post.njk
+title: Extracted Features
+templateClass: tmpl-post
+eleventyNavigation:
+  key: ExtractedFeatures
+  order: 5
+---
+
 # Extracted Features
 
 Updated September 2022
