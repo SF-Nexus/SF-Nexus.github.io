@@ -1,5 +1,5 @@
 ---
-layout: layouts/post.njk
+layout: layouts/blog.njk
 title: Extracted Features
 templateClass: tmpl-post
 eleventyNavigation:
