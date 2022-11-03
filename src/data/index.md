@@ -24,6 +24,8 @@ Below, we outline data available from each of these resouces, and describe futur
 
 ## Digitizing SF Archives
 
-Separately, work is ongoing to digitize old paperbacks and pupl magazines at institutions like Temple University Library. This hub will also help to make those materials available, for example, as derived datasets of extracted features like those available from HathiTrust.
+Separately, work is ongoing to digitize old paperbacks and pulp magazines at institutions like Temple University Library. This hub will also help to make those materials available, for example, as derived datasets of extracted features like those available from HathiTrust.
 
 Further effort will be made to share code for analyzing sf data.
+
+For our companion site containing an exhibit of SF book covers, <a class="link-fancy py-2" href="https://lcdssgeo.com/omeka-s/s/scifi/page/digitizing-science-fiction">visit our Omeka site
