@@ -6,6 +6,11 @@ eleventyNavigation:
   key: Curation
   order: 5
 ---
+# Data Curation
+
+For an overview of our approach to data curation of literary texts, see Alex Wermer-Colan's and James Kopaczewski's article, ("The New Wave of Digital Collections: Speculating on the Future of Library Curation")[https://www.jstor.org/stable/45420508#metadata_info_tab_contents] (2022)
+
+This page focuses on curating copyrighted literature as disaggregated data still useful for cultural analytics processes like topic modeling for natural language processing. 
 
 ## Extracted Features
 
