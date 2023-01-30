@@ -7,16 +7,14 @@ eleventyNavigation:
   order: 4
 ---
 
-# Guide to OCR in ABBYY
-
+# Guide to OCR in Abbyy
 ## Introduction
 [ABBYY Fine Reader](https://pdf.abbyy.com/) can take jpgs, tiffs, and pdfs and translate them into computer readable text through a process called Optical Character Recognition (OCR). [Here's a brief introduction to OCR.](https://www.youtube.com/watch?v=jO-1rztr4O0)
 
-[In this project,](https://lcdssgeo.com/omeka-s/s/scifi/page/digitizing-science-fiction) Abbyy Fine Reader was used to perform OCR on a corpus of science fiction books. The books were  scanned and saved to a server as TIFF files, and the OCR process was tracked through a master worklog: https://docs.google.com/spreadsheets/d/1eVoiX9hWVC9g8IIhjAuAf8DTLzX5NLS3FGC9zk-q6Q8/edit?usp=sharing. 
-
+[In this project,](https://lcdssgeo.com/omeka-s/s/scifi/page/digitizing-science-fiction) Abbyy Fine Reader was used to perform OCR on a corpus of science fiction books. The books were  scanned and saved to a server as TIFF files, and the OCR process was tracked through a master worklog.
 
 ## Open Files in Abbyy OCR Editor
-* Navigate to the server where files are stored (ex. Novel Database server ((\\lib-dss-nas) -> Digitized Books -> Round # -> Batch #)
+* Navigate to the server where files are stored (ex. Novel Database server -> Digitized Books -> Round # -> Batch #)
 * Open the folder corresponding to the file you want to review (ex. SSFCBZ201710000### -> TIFFs to OCR) 
 * Select all TIFF files in folder, right click, and select "Open in OCR Editor Abbyy Fine Reader." Abbyy will now open with selected files ready for cleaning. 
 
@@ -36,7 +34,7 @@ Perform the following steps to review and clean files in Abbyy. Track all progre
     * If the page has **unrecognized text you want to keep,** use the editing panel on the right-hand side of the screen to add text to the page. If the unrecognized text you want to keep is more than a few words or paragraphs (i.e. a page or multiple pages), make a note in the worklog spreadsheet so the corresponding book can be reviewed or re-scanned.
     * If the page **ONLY has unrecognized elements you do not want to keep (e.g. images or icons),** delete the whole page as instructed for blank pages. As you delete them, make a note of any **maps or meaningful illustrations** in the worklog for possible future preservation.
 
-3. **Skim pages to see if any are missing, significantly ripped, blurred, or otherwise cut off.** These pages may be recognized, but OCR may not be accurate. Manually correct and/or make a note in the worklog when physical book is needed for review. 
+3. **Skim pages to see if any are significantly ripped, blurred, or otherwise cut off.** These pages may be recognized, but OCR may not be accurate. Manually correct and/or make a note in the worklog when physical book is needed for review. 
 
 ![close_cuts](https://user-images.githubusercontent.com/64552353/178785392-eaf270f8-bfb3-42b1-b5bc-3ea17574b912.png)
 
@@ -67,7 +65,6 @@ Perform the following steps to review and clean files in Abbyy. Track all progre
 
     *Example of header with title and page number recognized:* ![Picture1](https://user-images.githubusercontent.com/64552353/178782579-23af51fe-eb41-450e-b452-af9bb710945d.png)
 
-
     This way, when you’re ready to export to plain text files, the headers/footers can easily be removed by going to Tools -> Options -> Format Settings -> TXT and uncheck the box next to “Keep Headers and Footers.”
 
 8. **Manually remove unrecognized headers/footers.** Skim pages to catch page numbers and other headers/footers that are included in the body of text instead of being recognized as a header or footer. Manually delete these from the right-hand side text editor. 
@@ -78,4 +75,7 @@ Perform the following steps to review and clean files in Abbyy. Track all progre
 2. Choose the location in which you want to save the project (ex. Novel Database server -> Digitized Books -> Round # -> Batch #) as file path and create new folder named OCR Files.
 3. Save your OCR project in new OCR Files folder with chosen title (ex. SSFCBZ201710000###_[first few chars of author/book title])
 
-
+## Export OCR Project as Text File
+1. With file open in Abbyy, go to File -> Save As -> TXT Document
+2. Choose the location in which you want to save the project (ex. Novel Database server -> Exported Datasets -> Sci Fi Corpus Txt Files -> Round X Clean Txt Files) as file path. 
+3. Save your text file using this format: PublicationDate_AUTHORLASTNAME_TITLE (ex. 1954_POHL_STAR)
