@@ -14,7 +14,7 @@ This page focuses on curating copyrighted literature as disaggregated data still
 
 ## Extracted Features
 
-Updated September 2022
+Updated March 2023
 
 This repository provides methods for retrieving and analyzing extracted features from textual corpora. Its intended use is to analyze a collection of science fiction texts at Temple University which are currently under copyright. 
 
