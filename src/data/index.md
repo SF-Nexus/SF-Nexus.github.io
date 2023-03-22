@@ -29,3 +29,5 @@ Separately, work is ongoing to digitize old paperbacks and pulp magazines at ins
 Further effort will be made to share code for analyzing sf data.
 
 For our companion site containing an exhibit of SF book covers, <a class="link-fancy py-2" href="https://lcdssgeo.com/omeka-s/s/scifi/page/digitizing-science-fiction">visit our Omeka site
+
+Test
