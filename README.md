@@ -1,18 +1,20 @@
-# sfnexus
+# Overview
 
-webhub for SF Nexus, a coalition of science fiction digital collections
+This repository serves as the home for the SF Nexus website, a hub for the curation of science fiction digital collections. The current scope of this website focuses on an ongoing project at Temple University's Scholars Studio to digitize and curate science fiction, with a particular emphasis on mid-century climate fiction.
 
-# how
+# Set Up
 
-11ty framework, deployed on Netlify at sfnexus.io
+This website was built using the 11ty framework, deployed on Netlify at sfnexus.io.
 
-single-page apps to be developed separately
+To build this site, clone the repository. 
 
-# next steps
+Install necessary packages running `npm install` from the website home directory. If you run into problems, we are developing a Docker version to avoid node.js debugging.
 
-update appearance
-build out content using org repositories
+# Next Steps
 
-# resources
+Enhance the design and appearance
+Build out content using org repositories
 
-link: https://lcdssgeo.com/omeka-s/s/scifi/page/digitizing-science-fiction
+# Relevant Sites
+
+The primary site where Temple University's science fiction project has been showcased is our Omeka exhibit of science fiction book covers, available at: https://lcdssgeo.com/omeka-s/s/scifi/page/digitizing-science-fiction
