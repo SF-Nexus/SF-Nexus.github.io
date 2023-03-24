@@ -8,7 +8,15 @@ This website was built using the 11ty framework, deployed on Netlify at sfnexus.
 
 To build this site, clone the repository. 
 
-Install necessary packages running `npm install` from the website home directory. If you run into problems, we are developing a Docker version to avoid node.js debugging.
+Open your Terminal and change to the repo directory "SF-Nexus.github.io"
+
+Install necessary packages by running `npm install` 
+
+Next, input `npm run build`
+
+Finally, to serve the site, type `eleventy --serve`
+
+Visit the local host link with your browser.
 
 # Next Steps
 
