@@ -12,6 +12,8 @@ Open your Terminal and change to the repo directory "SF-Nexus.github.io"
 
 Install necessary packages by running `npm install` 
 
+If you need to install node, try `brew install node@18`
+
 Next, input `npm run build`
 
 Finally, to serve the site, type `eleventy --serve`
