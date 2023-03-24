@@ -14,6 +14,8 @@ Install necessary packages by running `npm install`
 
 If you need to install node, try `brew install node@18`
 
+For more on node installations: https://www.freecodecamp.org/news/how-to-update-node-and-npm-to-the-latest-version/
+
 Next, input `npm run build`
 
 Finally, to serve the site, type `eleventy --serve`
