@@ -6,6 +6,8 @@ This repository serves as the home for the SF Nexus website, a hub for the curat
 
 This website was built using the 11ty framework, deployed on Netlify at sfnexus.io.
 
+Info on the theme is available on the [11ty website page](https://jamstackthemes.dev/theme/11straps/)
+
 To build this site, clone the repository. 
 
 Open your Terminal and change to the repo directory "SF-Nexus.github.io"
