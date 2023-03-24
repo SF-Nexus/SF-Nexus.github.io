@@ -14,7 +14,7 @@ Install necessary packages by running `npm install`
 
 If you need to install node, try `brew install node@18`
 
-For more on node installations: https://www.freecodecamp.org/news/how-to-update-node-and-npm-to-the-latest-version/
+For more on node installations, see this [tutorial](https://www.freecodecamp.org/news/how-to-update-node-and-npm-to-the-latest-version/).
 
 Next, input `npm run build`
 
