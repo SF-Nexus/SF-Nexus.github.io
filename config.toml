@@ -3,3 +3,7 @@ languageCode = 'en-us'
 title = 'Welcome to the SF Nexus'
 theme = "gohugo-theme-ananke"
 canonifyURLS=true
+
+[module]
+[[module.imports]]
+    path = 'github.com/SF-Nexus/gohugo-theme-ananke'
