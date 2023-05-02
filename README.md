@@ -4,30 +4,7 @@ This repository serves as the home for the SF Nexus website, a hub for the curat
 
 # Set Up
 
-This website was built using the 11ty framework, deployed on Netlify at sfnexus.io.
-
-Info on the theme is available on the [11ty website page](https://jamstackthemes.dev/theme/11straps/)
-
-To build this site, clone the repository. 
-
-Open your Terminal and change to the repo directory "SF-Nexus.github.io"
-
-Install necessary packages by running `npm install` 
-
-If you need to install node, try `brew install node@18`
-
-For more on node installations, see this [tutorial](https://www.freecodecamp.org/news/how-to-update-node-and-npm-to-the-latest-version/).
-
-Next, input `npm run build`
-
-Finally, to serve the site, type `eleventy --serve`
-
-Visit the local host link with your browser.
-
-# Next Steps
-
-Enhance the design and appearance
-Build out content using org repositories
+This website was built using the Hugo framework
 
 # Relevant Sites
 
