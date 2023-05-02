@@ -1,7 +1,7 @@
 baseURL = 'https://sf-nexus.github.io/sf-nexus-hugo-site/'
 languageCode = 'en-us'
 title = 'Welcome to the SF Nexus'
-theme = "gohugo-theme-ananke"
+theme = ["github.com/SF-Nexus/gohugo-theme-ananke"]
 canonifyURLS=true
 
 [module]
