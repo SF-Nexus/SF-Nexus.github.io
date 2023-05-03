@@ -4,7 +4,7 @@ description: "A hub for science fiction collections as data."
 cascade:
   featured_image: '/images/books.jpg'
 ---
-SF Nexus is an open access project. Data and resources provided here is free for everyone, including:
+SF Nexus is an open access project. Data and resources provided here are free for everyone, including:
 
 **Extracted Features:** Disaggregated feature sets from copyrighted literature, available for research purposes
 
