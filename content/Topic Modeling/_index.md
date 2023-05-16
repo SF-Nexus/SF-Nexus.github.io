@@ -1,5 +1,5 @@
 ---
-title: "Topic Modeling"
+title: "Models"
 description: "Modeling Science Fiction with Gensim LDA and BERTopic"
 cascade:
   featured_image: '/images/lda_1.png'
