@@ -30,16 +30,16 @@ Loretta C. Duckworth Scholars Studio
 
 ## Student Research Assistants 
 
-### Digitization
+### Digitization (2017-2020)
 * [Jeff Antsen, Ph.D. Political Science](https://liberalarts.temple.edu/academics/faculty/antsen-jeff)
 * Bethany Farrell, Ph.D. Art History
-* * [James Kopaczewski, Ph.D. History](https://jameskopaczewski.com)
+* [James Kopaczewski, Ph.D. History](https://jameskopaczewski.com)
 * [Nicole Lemire-Garlic, Ph.D. Media and Communication Studies](https://klein.temple.edu/student/nicole-lemire-garlic)
 * [Gary Scales, Ph.D. History](http://www.urbandigitalhistory.com)
 * [Crystal Tatis, MBA Marketing](https://sites.temple.edu/tudsc/crystal-tatis-profile-picture/)
 * [Vivien Wise, MFA Fiber Arts](https://www.vivienwise.com)
 
-### Curation
+### Curation (2022-2023)
 * Megan Kane, Ph.D. English
 * Asher Quentin Riley, B.A. Greek and Roman Classics
 * SaraGrace Stefan, Ph.D. English
