@@ -3,3 +3,20 @@ languageCode = 'en-us'
 title = 'The SF Nexus'
 theme = "gohugo-theme-ananke"
 canonifyURLS=true
+menu:
+      main:
+        - name: About
+          url: "/About"
+          weight: "1"
+        - name: People
+          url: "/People"
+          weight: "2"
+        - name: Data
+          url: "/Data"
+          weight: "3"
+        - name: OCR
+          url: "/OCR"
+          weight: "4"
+        - name: Models
+          url: "/Models"
+          weight: "5"
