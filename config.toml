@@ -11,16 +11,16 @@ canonifyURLS=true
 [[menu.main]]
   name = 'People'
   pageRef = '/People'
-  weight = 1
+  weight = 2
 [[menu.main]]
   name = 'Data'
   pageRef = '/Data'
-  weight = 1
+  weight = 3
  [[menu.main]]
   name = 'OCR'
   pageRef = '/OCR'
-  weight = 1
+  weight = 4
 [[menu.main]]
   name = 'Models'
   pageRef = '/Models'
-  weight = 1
+  weight = 5
