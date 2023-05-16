@@ -3,7 +3,11 @@ languageCode = 'en-us'
 title = 'The SF Nexus'
 theme = "gohugo-theme-ananke"
 canonifyURLS=true
-menu:
+languages:
+  en:
+    languageName: English
+    contentDir: content
+    menu:
       main:
         - name: About
           url: "/About"
