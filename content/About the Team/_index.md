@@ -5,7 +5,7 @@ cascade:
   featured_image: '/images/about_1.jpeg'
 menu:
   main:
-    weight: 1
+    weight: 2
 ---
 
 This page contains information about all the team members who are working or have worked on this project across many institutions.
