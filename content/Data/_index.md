@@ -115,17 +115,17 @@ for f in files:
 ```
 The result of the code above is a folder containing several BookNLP-generated files for each text. Three types of files are available to access on our SF Nexus Github page.
 
-**Output 1: [.tokens files for 403 science fiction books](https://github.com/SF-Nexus/extracted-features/tree/main/data)**
+**Output 1: [Tokens files for 403 science fiction books](https://github.com/SF-Nexus/extracted-features/tree/main/data)**
 * Files containing information about each token (word, numeral, punctuation mark) in the text, including the position of each token in a paragraph and sentence, general and granular part of speech tags, dependency relationship, syntactic head (indicates relation of token to other words in sentence) and whether or not token indicates an "event" occurence. Token files also contain each token in the text as well as its corresponding lemma, but these columns have been removed before sharing due to copyright regulations.
 
 ![](/images/booknlp_1.png)
 
-**Output 2: [.entities files for 403 science fiction books](https://github.com/SF-Nexus/extracted-features/tree/main/data)**
+**Output 2: [Entities files for 403 science fiction books](https://github.com/SF-Nexus/extracted-features/tree/main/data)**
 * Files containing information about the "named entities" appearing in the texts: people, organizations, locations, vehicles, among others. As seen in the output, the entity file also denotes the part of speech of each entity and their position in the text. 
 
 ![](/images/booknlp_3.png)
 
-**Output 3: [.supersense files for 403 science fiction books](https://github.com/SF-Nexus/extracted-features/tree/main/data)**
+**Output 3: [Supersense files for 403 science fiction books](https://github.com/SF-Nexus/extracted-features/tree/main/data)**
 * Files containing information about a broader collection of entities appearing in the texts - not only people, places, and locations, but also tokens identified as "emotions," "substances," or "artifacts," among others. As seen in the output, the supersense file also denotes the part of speech of each entity and their position in the text. 
 
 ![](/images/booknlp_2.png)
