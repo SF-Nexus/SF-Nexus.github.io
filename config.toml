@@ -9,6 +9,18 @@ canonifyURLS=true
   pageRef = '/About'
   weight = 1
 [[menu.main]]
+  name = 'People'
+  pageRef = '/People'
+  weight = 1
+[[menu.main]]
   name = 'Data'
   pageRef = '/Data'
+  weight = 1
+ [[menu.main]]
+  name = 'OCR'
+  pageRef = '/OCR'
+  weight = 1
+[[menu.main]]
+  name = 'Models'
+  pageRef = '/Models'
   weight = 1
