@@ -1,5 +1,5 @@
 ---
-title: "Extracted Features"
+title: "Data"
 description: "Curating Extracted Features Datasets with NLTK and BookNLP"
 cascade:
   featured_image: '/images/extracted_header.png'
