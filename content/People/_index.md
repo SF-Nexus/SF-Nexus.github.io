@@ -1,5 +1,5 @@
 ---
-title: "About Team"
+title: "People"
 description: 
 cascade:
   featured_image: '/images/about_1.jpeg'
