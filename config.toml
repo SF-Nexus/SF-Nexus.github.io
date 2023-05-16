@@ -24,3 +24,10 @@ canonifyURLS=true
   name = 'Models'
   pageRef = '/Models'
   weight = 5
+[[menu.main]]
+  name = 'SF-Nexus'
+  pre = '<i class="fa fa-heart"></i>'
+  url = 'https://sfnexus.io/'
+  weight = 30
+  [menu.main.params]
+    rel = 'external'
