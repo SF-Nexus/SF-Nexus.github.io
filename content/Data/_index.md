@@ -127,7 +127,7 @@ The result of the code above is a folder containing several BookNLP-generated fi
 
 **Output 3: [.supersense files for 403 science fiction books](https://github.com/SF-Nexus/extracted-features/tree/main/data)**
 * Files containing information about a broader collection of entities appearing in the texts - not only people, places, and locations, but also tokens identified as "emotions," "substances," or "artifacts," among others. As seen in the output, the supersense file also denotes the part of speech of each entity and their position in the text. 
-*
+
 ![](/images/booknlp_2.png)
 
 For a more comprehensive overview of BookNLP's output, check out [Chapter 3: "The Output Files"](https://booknlp.pythonhumanities.com/03_files.html) in W. J. B. Mattingly's *Introduction to BookNLP*.
