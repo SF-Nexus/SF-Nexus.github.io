@@ -5,7 +5,7 @@ cascade:
   featured_image: '/images/about_1.jpeg'
 menu:
   main:
-  parent: "About the Collection"
+    parent: "About the Collection"
     weight: 2
 ---
 
