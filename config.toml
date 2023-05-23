@@ -5,7 +5,7 @@ theme = "gohugo-theme-ananke"
 canonifyURLS=true
 [menu]
 [[menu.main]]
-  name = 'Home'
+  name = 'About'
   pageRef = '_index.md'
   weight = 1
 [[menu.main]]
