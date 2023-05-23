@@ -10,11 +10,24 @@ menu:
 
 Our core SF corpus is comprised of 403 texts from the [Temple University SCRC Paskow Science Fiction Collection](https://library.temple.edu/collections/paskow-science-fiction-collection-science-fiction-and-fantasy). The corpus primarily contains New Wave SF novels published between 1945 and 1990, along with short story anthologies and magazines. The texts have been scanned, digitized and saved as ```.txt``` files using Abbyy OCR. While all texts have been cleaned, scanned, and run through OCR, thorough OCR cleaning of about 150 texts is still in progress. As such, we have several datasets of varying granularity available at this time; see below for details. Visit [our Github page](https://github.com/SF-Nexus/extracted-features/tree/main/data) to download metadata associated with our full corpus. 
 
-Because the majority of texts in our corpus are under copyright, sharing the original, full-text works is a violation of copyright law. However, it is permissible to share "extracted features" from these works, such as disaggregated texts, word frequency counts, and syntactical and semantic descriptors. Extracted features can be used for a variety of analyses, including topic modeling.  We used several natural language processing (NLP) tools to curate a dataset of extracted features from our corpus of science fiction texts. 
+Because the majority of texts in our corpus are under copyright, sharing the original, full-text works is a violation of copyright law. However, it is permissible to share "extracted features" from these works, such as disaggregated texts, word frequency counts, and syntactical and semantic descriptors. Extracted features can be used for a variety of analyses, including topic modeling. The following extracted features datasets are currently available for public use:
+* **[SF_Full_Texts_Disaggregated](https://github.com/SF-Nexus/extracted-features/blob/main/data/extracted_features_sets/SF_Full_Texts_Disaggregated.csv)**: A dataframe containing disaggregated ("bag of words") versions of all 403 texts
+* **[SF_Extracted_Features_Chapters_and_Chunks](https://github.com/SF-Nexus/extracted-features/blob/main/data/extracted_features_sets/SF_Extracted_Features_Chapters_and_Chunks.csv)**: A dataframe containing disaggregated ("bag of words") versions of all 403 texts, with each text split into chapters and "chunks" of approximately 1000 words
+* **[SF_Extracted_Features_Chapters_Only**(https://github.com/SF-Nexus/extracted-features/blob/main/data/extracted_features_sets/SF_Extracted_Features_Chapters_Only.csv)]: A dataframe containing disaggregated ("bag of words") versions of the 306 texts in our corpus which contain chapters, as split into chapters.
 
-An extended discussion on extracted features can be found on the Scholars' Studio blog: https://sites.temple.edu/tudsc/2019/07/18/curating-copyrighted-corpora-an-r-script-for-extracting-and-structuring-textual-features/
+Each dataframe contains two versions of the text: one that has been "cleaned" through lowercasing and removal of punctuation, extra spaces and numbers, and one that has not been cleaned. The dataframes also contain some basic metadata about the books at hand, including title, author name, publication year, and word count. The metadata curation process is ongoing to include more information about publication, description and genre categorization from the Library of Congress. 
 
-This project made use of multiple Python pipelines to extract features from the science fiction collection. These pipelines are available as both Jupyter Notebooks and Google Colab Notebooks in our Extracted Features Github repository: https://github.com/SF-Nexus/extracted-features/tree/main/notebooks
+If you upload one of the dataframes into Python for analysis, its head should look like this: 
+
+![](/images/EF_Header.png)
+
+Two additional extracted features datasets have been generated using BookNLP:
+* Named Entity Files:* Files containing information about the "named entities" appearing in the 403 texts: people, organizations, locations, vehicles, among others. 
+* Supersense Tags: Files containing information about a broader collection of entities appearing in the 403 texts - not only people, places, and locations, but also tokens identified as "emotions," "substances," or "artifacts," among others.
+
+All of our extracted features sets can be accessed through the [SF Nexus extracted features Github page](https://github.com/SF-Nexus/extracted-features/tree/main). An extended discussion on extracted features can be found on the Scholars' Studio blog: https://sites.temple.edu/tudsc/2019/07/18/curating-copyrighted-corpora-an-r-script-for-extracting-and-structuring-textual-features/
+
+This project made use of multiple Python pipelines to extract features from the science fiction collection. These pipelines are available as both Jupyter Notebooks and Google Colab Notebooks in our Extracted Features Github repository: https://github.com/SF-Nexus/extracted-features/tree/main/notebooks. Below, the process for crafting each extracted features dataset is discussed in more detail.
 
 ## Pipeline 1: Text Sectioning and Disaggregation
 *Full Code Available on SF Nexus Github:*
@@ -113,21 +126,24 @@ for f in files:
     # Run book nlp on each file
     booknlp.process(inputFile, outputDir, idd)
 ```
-The result of the code above is a folder containing several BookNLP-generated files for each text. Three types of files are available to access on our SF Nexus Github page.
+The result of the code above is a folder containing several BookNLP-generated files for each text. Two types of files are available to access on our SF Nexus Github page.
 
-**Output 1: [Tokens files for 403 science fiction books](https://github.com/SF-Nexus/extracted-features/tree/main/data)**
-* Files containing information about each token (word, numeral, punctuation mark) in the text, including the position of each token in a paragraph and sentence, general and granular part of speech tags, dependency relationship, syntactic head (indicates relation of token to other words in sentence) and whether or not token indicates an "event" occurence. Token files also contain each token in the text as well as its corresponding lemma, but these columns have been removed before sharing due to copyright regulations.
-
-![](/images/booknlp_1.png)
-
-**Output 2: [Entities files for 403 science fiction books](https://github.com/SF-Nexus/extracted-features/tree/main/data)**
+**Output 1: [Entities files for 403 science fiction books](https://github.com/SF-Nexus/extracted-features/tree/main/data)**
 * Files containing information about the "named entities" appearing in the texts: people, organizations, locations, vehicles, among others. As seen in the output, the entity file also denotes the part of speech of each entity and their position in the text. 
 
 ![](/images/booknlp_3.png)
 
-**Output 3: [Supersense files for 403 science fiction books](https://github.com/SF-Nexus/extracted-features/tree/main/data)**
+**Output 2: [Supersense files for 403 science fiction books](https://github.com/SF-Nexus/extracted-features/tree/main/data)**
 * Files containing information about a broader collection of entities appearing in the texts - not only people, places, and locations, but also tokens identified as "emotions," "substances," or "artifacts," among others. As seen in the output, the supersense file also denotes the part of speech of each entity and their position in the text. 
 
 ![](/images/booknlp_2.png)
 
 For a more comprehensive overview of BookNLP's output, check out [Chapter 3: "The Output Files"](https://booknlp.pythonhumanities.com/03_files.html) in W. J. B. Mattingly's *Introduction to BookNLP*.
+
+## Take Down Notice
+
+This site only exhibits extracted features for copyrighted fiction; no copyrighted work is being made available for consumption. These digitized files are made accessible for purposes of education and research. Temple University Libraries have given attribution to rights holders when possible. If you hold the rights to materials in our digitized collections that are unattributed, please let us know so that we may maintain accurate information about these materials.
+
+If you are a rights holder and are concerned that you have found material on this website for which you have not granted permission (or is not covered by a copyright exception under US copyright laws), you may request the removal of the material from our site by writing to digitalscholarship@temple.edu.
+
+For more information on non-consumptive research, check out [HathiTrust Research Center's Non-Consumptive Use Research Policy](https://www.hathitrust.org/htrc_ncup).
