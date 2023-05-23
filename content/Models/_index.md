@@ -18,22 +18,17 @@ Using C_V and U_Mass Coherence calculations, we determined that optimal number o
 Unlike LDA, BERTopic automatically chooses the number of topics to generate within the model, though parameters can be set to collapse extremely similar topics. Performing BERTopic modeling on the sci-fi corpus yielded 68 topics, excluding Outliers (access full dataframe [here]
 
 Here are the most frequent words in some topics of interest: 
-Topic 6: Street and Vehicles
+Topic 33: War Command
 
-![image](/images/BERTopic_Street_Car_Driving_WordCloud.png)
+![image](/images/BERTopic_War_Command_WordCloud.png)
 
-Topic 17: Disease Outbreak
+Topic 18: Disease Outbreak
 
-![image](/images/BERTopic_Disease_Outbreak_WordCloud.png)
+![image](/images/BERTopic_Epidemic_WordCloud.png)
 
-Topic 27: Desert Landscape Exploration
+Topic 47: Energy
 
-![image](/images/BERTopic_Desert_Landscape_Exploration_WordCloud.png)
-
-Topic 61: Air Pollution
-
-![image](/images/BERTopic_Air_Pollution_WordCloud.png)
-
+![image](/images/BERTopic_Energy_WordCloud.png)
 
 ### Topic Usage Comparison Between Authors
 
