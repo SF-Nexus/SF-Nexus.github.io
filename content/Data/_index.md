@@ -148,5 +148,5 @@ If you are a rights holder and are concerned that you have found material on thi
 
 For more information on non-consumptive research, check out [HathiTrust Research Center's Non-Consumptive Use Research Policy](https://www.hathitrust.org/htrc_ncup).
 
-# In Progress: Full Text Analysis within the HathiTrust Research Center Data Capsule
+## In Progress: Full Text Analysis within the HathiTrust Research Center Data Capsule
 We are working on a pipeline through which researchers can remotely access the full texts in a controlled manner for full-text access and analysis through the HathiTrust Research Center Data Capsule. Learn more about the HathiTrust Data Capsule [here](https://wiki.htrc.illinois.edu/display/COM/HTRC+Data+Capsule+Environment) and stay tuned for updates.
