@@ -32,7 +32,7 @@ All of our extracted features sets can be accessed through the [SF Nexus extract
 from datasets import load_dataset
 
 # Load the corpus of texts saved to the SF Nexus repository
-dataset = load_dataset("SF-Corpus/extracted_features")
+dataset = load_dataset("SF-Corpus/EF_Chapters_and_Chunks")
 ```
 
 For more information about working with HuggingFace datasets, review their reference guide: https://huggingface.co/docs/datasets/v1.1.1/loading_datasets.html
