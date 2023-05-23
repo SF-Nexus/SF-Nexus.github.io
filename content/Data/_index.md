@@ -22,8 +22,8 @@ If you upload one of the dataframes into Python for analysis, its head should lo
 ![](/images/EF_Header)
 
 Two additional extracted features datasets have been generated using BookNLP:
-* Named Entity Files:* Files containing information about the "named entities" appearing in the 403 texts: people, organizations, locations, vehicles, among others. 
-* Supersense Tags: Files containing information about a broader collection of entities appearing in the 403 texts - not only people, places, and locations, but also tokens identified as "emotions," "substances," or "artifacts," among others.
+* **[Named Entity Files]()**: Files containing information about the "named entities" appearing in the 403 texts: people, organizations, locations, vehicles, among others. 
+* **[Supersense Tags]()**: Files containing information about a broader collection of entities appearing in the 403 texts - not only people, places, and locations, but also tokens identified as "emotions," "substances," or "artifacts," among others.
 
 All of our extracted features sets can be accessed through the [SF Nexus extracted features Github page](https://github.com/SF-Nexus/extracted-features/tree/main). An extended discussion on extracted features can be found on the Scholars' Studio blog: https://sites.temple.edu/tudsc/2019/07/18/curating-copyrighted-corpora-an-r-script-for-extracting-and-structuring-textual-features/
 
