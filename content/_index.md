@@ -1,5 +1,5 @@
 ---
-title: The SF Nexus
+title: Home
 description: "A hub for science fiction collections as data."
 cascade:
   featured_image: '/images/books.jpg'
