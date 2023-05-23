@@ -14,6 +14,7 @@ SF Nexus is an open access project. Data and resources provided here are free fo
 
 **Visualizations:** Output generated from analyses of our dataset, including topic modeling and word embeddings
 
-The full documentation can be found on Github: https://github.com/SF-Nexus
+Visit our SF Nexus Github Repository: https://github.com/SF-Nexus
+Visit our SF Nexus Hugging Face Repository: https://huggingface.co/SF-Corpus
 
 Many thanks to the all grad students, librarians, and faculty who have contributed to this project.
