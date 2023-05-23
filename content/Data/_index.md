@@ -25,7 +25,19 @@ Two additional extracted features datasets have been generated using BookNLP:
 * **[Named Entity Files](https://github.com/SF-Nexus/extracted-features/tree/main/data/booknlp_output)**: Files containing information about the "named entities" appearing in the 403 texts: people, organizations, locations, vehicles, among others. 
 * **[Supersense Tags](https://github.com/SF-Nexus/extracted-features/tree/main/data/booknlp_output)**: Files containing information about a broader collection of entities appearing in the 403 texts - not only people, places, and locations, but also tokens identified as "emotions," "substances," or "artifacts," among others.
 
-All of our extracted features sets can be accessed through the [SF Nexus extracted features Github page](https://github.com/SF-Nexus/extracted-features/tree/main). An extended discussion on extracted features can be found on the Scholars' Studio blog: https://sites.temple.edu/tudsc/2019/07/18/curating-copyrighted-corpora-an-r-script-for-extracting-and-structuring-textual-features/
+All of our extracted features sets can be accessed through the [SF Nexus extracted features Github page](https://github.com/SF-Nexus/extracted-features/tree/main). We have also set up a HuggingFace repository to which we are adding our disaggregated and segmented extracted features dataset. HuggingFace datasets can be downloaded from repositories as in Github; they can also be called directly in Python, where they will be downloaded to your local computer and split into training and testing groups in preparation for analysis. Use this code to download the SF_Extracted_Features_Chapters_and_Chunks dataset:
+
+```
+# Import dataset module
+from datasets import load_dataset
+
+# Load the corpus of texts saved to the SF Nexus repository
+dataset = load_dataset("SF-Corpus/extracted_features")
+```
+
+For more information about working with HuggingFace datasets, review their reference guide: https://huggingface.co/docs/datasets/v1.1.1/loading_datasets.html
+
+An extended discussion on extracted features can be found on the Scholars' Studio blog: https://sites.temple.edu/tudsc/2019/07/18/curating-copyrighted-corpora-an-r-script-for-extracting-and-structuring-textual-features/
 
 This project made use of multiple Python pipelines to extract features from the science fiction collection. These pipelines are available as both Jupyter Notebooks and Google Colab Notebooks in our Extracted Features Github repository: https://github.com/SF-Nexus/extracted-features/tree/main/notebooks. Below, the process for crafting each extracted features dataset is discussed in more detail.
 
