@@ -45,7 +45,7 @@ This project made use of multiple Python pipelines to extract features from the 
 *Full Code Available on SF Nexus Github:*
 * [Text_Sectioning and Disaggregation.ipynb (Google Colab)](https://github.com/SF-Nexus/extracted-features-notebooks/blob/main/notebooks/Extracting_Features/Text_Sectioning_and_Disaggregation%20(Colab).ipynb)
 * [Text_Sectioning and Disaggregation.ipynb (Jupyter Notebook)](https://github.com/SF-Nexus/extracted-features-notebooks/blob/main/notebooks/Extracting_Features/Text%20Sectioning%20%26%20Disaggregation%20(Jupyter%20Notebook).ipynb)
-* [Text_Sectioning and Disaggregation.ipynb (R)](https://github.com/SF-Nexus/extracted-features-notebooks/blob/main/notebooks/Extracting_Features/Text%20Sectioning_and_Disaggregation%20(R).R)
+* [Text_Sectioning and Disaggregation.R (R)](https://github.com/SF-Nexus/extracted-features-notebooks/blob/main/notebooks/Extracting_Features/Text%20Sectioning_and_Disaggregation%20(R).R)
 
 Our first pipeline focuses on sectioning and disaggregating the science fiction texts. Breaking texts into sections (in this case, chapters and n-word chunks) is helpful for researchers working with large texts and corpora. In our case, many of the science fiction texts in the sci-fi collection are 50,000+ words long - quite a lot of words per text to process! Sectioning the data into chapters and "chunks" of 1000 words or less enables faster processing time when analyses like topic modeling and word2vec are performed. It also allows researchers to ask more granular questions about the composition of their texts; for example, what multiple topics or themes emerge across chapters of a book, and what do these indicate about the text's narrative arc?
 
