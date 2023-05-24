@@ -24,3 +24,7 @@ canonifyURLS=true
   name = 'Models'
   pageRef = '/Models'
   weight = 5
+[[menu.main]]
+  name = 'Scholarship'
+  pageRef = '/Scholarship'
+  weight = 6
