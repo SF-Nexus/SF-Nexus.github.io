@@ -39,7 +39,7 @@ For more information about working with HuggingFace datasets, review their refer
 
 An extended discussion on extracted features can be found on the Scholars' Studio blog: https://sites.temple.edu/tudsc/2019/07/18/curating-copyrighted-corpora-an-r-script-for-extracting-and-structuring-textual-features/
 
-This project made use of multiple Python pipelines to extract features from the science fiction collection. These pipelines are available as both Jupyter Notebooks and Google Colab Notebooks in this Github repository: https://github.com/SF-Nexus/extracted-features/tree/main/notebooks. Below, the process for crafting each extracted features dataset is discussed in more detail.
+This project made use of multiple Python and R pipelines to extract features from the science fiction collection. These pipelines are available as both Jupyter Notebooks and Google Colab Notebooks in this Github repository: https://github.com/SF-Nexus/extracted-features/tree/main/notebooks. Below, the process for crafting each extracted features dataset is discussed in more detail.
 
 ## Pipeline 1: Text Sectioning and Disaggregation
 *Full Code Available on SF Nexus Github:*
@@ -53,7 +53,7 @@ Disaggregation is the process of transforming full texts into "bag-of-word" mode
 
 **Input: Machine-readable versions (TXT files) of 403 science fiction books**
 
-To develop an extracted features dataset of the full corpus, we first split each text into segments of 1000 words each. These text "chunks" may be particularly useful for analyses like topic modeling given their uniformity across texts, whereas other ways of segmenting texts (like per chapter, as below) will yield segments of various lengths. 
+To develop an extracted features dataset of the full corpus, we first split each text into segments of 1000 words each. These text "chunks" may be particularly useful for analyses like topic modeling given their uniformity across texts, whereas other ways of segmenting texts (like per chapter, as below) will yield segments of various lengths. Here is how the process works in Python (documentation of the R pipeline available on our [Github repository](https://github.com/SF-Nexus/extracted-features-notebooks/blob/main/notebooks/Extracting_Features/extracting_features_readme.md)).
 
 ```
 # Define chunking function
