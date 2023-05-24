@@ -50,7 +50,7 @@ If you’re looking to see what is possible with data visualizations of literary
 **Alex Wermer-Colan — HathiTrust Digital Library:** https://babel.hathitrust.org/cgi/mb?a=listcs&colltype=all
 - A collection curated by Alex Wermer-Colan from HathiTrust Digital Library’s  entire collection for scholars and students to conduct research. 
 
-# Relevant Projects and Repositories
+## Relevant Projects and Repositories
 **HathiTrust Research Center SF Experiments:** https://github.com/gwijthoff/HTRC_SF_experiments
 
 **Sentiments of Science Fiction:** https://github.com/tyxiang0530/Sentiments-of-Science-Fiction
