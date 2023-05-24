@@ -8,7 +8,7 @@ menu:
     weight: 1
 ---
 
-Our core SF corpus is comprised of 403 texts from the [Temple University SCRC Paskow Science Fiction Collection](https://library.temple.edu/collections/paskow-science-fiction-collection-science-fiction-and-fantasy). The corpus primarily contains New Wave SF novels published between 1945 and 1990, along with short story anthologies and magazines. The texts have been scanned, digitized and saved as ```.txt``` files using Abbyy OCR. While all texts have been cleaned, scanned, and run through OCR, thorough OCR cleaning of about 150 texts is still in progress. As such, we have several datasets of varying granularity available at this time; see below for details. Visit [our Github page](https://github.com/SF-Nexus/extracted-features/tree/main/data) to download metadata associated with our full corpus. 
+Our core SF corpus is comprised of 403 texts from the [Temple University SCRC Paskow Science Fiction Collection](https://library.temple.edu/collections/paskow-science-fiction-collection-science-fiction-and-fantasy). The corpus primarily contains New Wave SF novels published between 1945 and 1990, along with short story anthologies and magazines. The texts have been scanned, digitized and saved as ```.txt``` files using Abbyy OCR. While all texts have been cleaned, scanned, and run through OCR, thorough OCR cleaning of about 150 texts is still in progress. As such, we have several datasets of varying granularity available at this time; see below for details. 
 
 Because the majority of texts in our corpus are under copyright, sharing the original, full-text works is a violation of copyright law. However, it is permissible to share "extracted features" from these works, such as disaggregated texts, word frequency counts, and syntactical and semantic descriptors. Extracted features can be used for a variety of analyses, including topic modeling. The following extracted features datasets are currently available for public use:
 * **[SF_Full_Texts_Disaggregated](https://github.com/SF-Nexus/extracted-features/blob/main/data/extracted_features_sets/SF_Full_Texts_Disaggregated.csv)**: A dataframe containing disaggregated ("bag of words") versions of all 403 texts
@@ -25,7 +25,7 @@ Two additional extracted features datasets have been generated using BookNLP:
 * **[Named Entity Files](https://github.com/SF-Nexus/extracted-features/tree/main/data/booknlp_output)**: Files containing information about the "named entities" appearing in the 403 texts: people, organizations, locations, vehicles, among others. 
 * **[Supersense Tags](https://github.com/SF-Nexus/extracted-features/tree/main/data/booknlp_output)**: Files containing information about a broader collection of entities appearing in the 403 texts - not only people, places, and locations, but also tokens identified as "emotions," "substances," or "artifacts," among others.
 
-All of our extracted features sets can be accessed through the [SF Nexus extracted features Github repository](https://github.com/SF-Nexus/extracted-features/tree/main). We have also set up an [SF Nexus HuggingFace repository](https://huggingface.co/datasets/SF-Corpus/extracted_features) to which we are adding our disaggregated and segmented extracted features dataset. HuggingFace datasets can be downloaded from repositories as in Github; they can also be called directly in Python, where they will be downloaded to your local computer and split into training and testing groups in preparation for analysis. Use this code to download the SF_Extracted_Features_Chapters_and_Chunks dataset:
+All of our extracted features sets can be accessed through our [SF Nexus HuggingFace repository](https://huggingface.co/datasets/SF-Corpus/extracted_features). HuggingFace datasets can be downloaded from repositories as in Github; they can also be called directly in Python, where they will be downloaded to your local computer and split into training and testing groups in preparation for analysis. Use this code to download the SF_Extracted_Features_Chapters_and_Chunks dataset:
 
 ```
 # Import dataset module
@@ -39,7 +39,7 @@ For more information about working with HuggingFace datasets, review their refer
 
 An extended discussion on extracted features can be found on the Scholars' Studio blog: https://sites.temple.edu/tudsc/2019/07/18/curating-copyrighted-corpora-an-r-script-for-extracting-and-structuring-textual-features/
 
-This project made use of multiple Python pipelines to extract features from the science fiction collection. These pipelines are available as both Jupyter Notebooks and Google Colab Notebooks in our Extracted Features Github repository: https://github.com/SF-Nexus/extracted-features/tree/main/notebooks. Below, the process for crafting each extracted features dataset is discussed in more detail.
+This project made use of multiple Python pipelines to extract features from the science fiction collection. These pipelines are available as both Jupyter Notebooks and Google Colab Notebooks in this Github repository: https://github.com/SF-Nexus/extracted-features/tree/main/notebooks. Below, the process for crafting each extracted features dataset is discussed in more detail.
 
 ## Pipeline 1: Text Sectioning and Disaggregation
 *Full Code Available on SF Nexus Github:*
@@ -76,9 +76,9 @@ for content in s:
 
 After running the segmentation function, we sorted  the words in each segment alphabetically in order to transform them from human-readable texts to "bags of words." 
 
-The resulting extracted feature set of disaggregated, chapterized texts is available for download on our [SF Nexus Github page](https://github.com/SF-Nexus/extracted-features/tree/main/data).
+The resulting extracted feature set of disaggregated, chapterized texts is available for download on our [SF Nexus Huggingface repository](https://huggingface.co/datasets/SF-Corpus).
 
-**Output 1: [Disaggregated Versions of 403 Texts, Split into 1000-Word Segments](https://github.com/SF-Nexus/extracted-features/tree/main/data).**
+**Output 1: [Disaggregated Versions of 403 Texts, Split into 1000-Word Segments](https://huggingface.co/datasets/SF-Corpus/EF_Chapters_and_Chunks).**
 
 We also developed another set of extracted features from our corpus: disaggregated texts split by chapter, rather than 1000-word chunk. Chapter segmentation was possible for a large subsection of our corpus (306 texts), given standardized chapter naming conventions employed during the OCR cleaning process. Python code was written to retrieve all text between the "START OF BOOK" and "END OF BOOK" tags in each text, excluding info on title pages, dedications, acknowledgements, etc. From here, we searched for each instance of "CHAPTER" in each text and split the text whenever an occurence was found. 
 
@@ -99,16 +99,15 @@ The resulting DataFrame contained each chapter of each book as a separate text.
 
 After splitting texts by chapters, we again sorted the words in each chapters alphabetically in order to transform them from human-readable texts to "bags of words." 
 
-**Output 2: [Disaggregated Versions of 306 Texts, Split into Chapters](https://github.com/SF-Nexus/extracted-features/tree/main/data).**
+**Output 2: [Disaggregated Versions of 306 Texts, Split into Chapters](https://huggingface.co/datasets/SF-Corpus/EF_Chapters_Only).**
 
 Finally, we disaggregated the full versions of each text files, for use for researchers who are not interested in using smaller chunks (chapters or 1000-word segments) in their analyses.
 
-**Output 3: [Disaggregated Versions of 403 Full Texts](https://github.com/SF-Nexus/extracted-features/tree/main/data).**
+**Output 3: [Disaggregated Versions of 403 Full Texts](https://huggingface.co/datasets/SF-Corpus/EF_Full_Texts).**
 
 ## Pipeline 2: Part-of-Speech Tagging, Named Entity Recognition, and Supersense Tagging
 *Full Code Available on SF Nexus Github:*
-* [Text Enrichment with BookNLP.ipynb (Google Colab)]()
-* [Text Enrichment with BookNLP.ipynb (Jupyter Notebook)]()
+* [Text Enrichment with BookNLP.ipynb (Jupyter Notebook)](https://github.com/SF-Nexus/extracted-features-notebooks/blob/main/notebooks/Extracting_Features/BookNLP%20(Jupyter%20Notebook).ipynb)
 
 Our second pipeline focuses on "enriching" the SF corpus by extracting information like parts of speech, named entities, and "supersense tags" (e.g., "animal", "artifact", "body", "cognition", etc.) from each text. This information (and much more) can be retrieved by running BookNLP in Python. Developed by David Bamman at UC Berkeley, BookNLP is a natural language processing pipeline for large texts. Its functionalities include:
 * tokenization
@@ -140,12 +139,12 @@ for f in files:
 ```
 The result of the code above is a folder containing several BookNLP-generated files for each text. Two types of files are available to access on our SF Nexus Github page.
 
-**Output 1: [Entities files for 403 science fiction books](https://github.com/SF-Nexus/extracted-features/tree/main/data)**
+**Output 1: [Entities files for 403 science fiction books](https://huggingface.co/datasets/SF-Corpus/EF_Named_Entities)**
 * Files containing information about the "named entities" appearing in the texts: people, organizations, locations, vehicles, among others. As seen in the output, the entity file also denotes the part of speech of each entity and their position in the text. 
 
 ![](/images/booknlp_3.png)
 
-**Output 2: [Supersense files for 403 science fiction books](https://github.com/SF-Nexus/extracted-features/tree/main/data)**
+**Output 2: [Supersense files for 403 science fiction books](https://huggingface.co/datasets/SF-Corpus/EF_Supersense_Tags)**
 * Files containing information about a broader collection of entities appearing in the texts - not only people, places, and locations, but also tokens identified as "emotions," "substances," or "artifacts," among others. As seen in the output, the supersense file also denotes the part of speech of each entity and their position in the text. 
 
 ![](/images/booknlp_2.png)
