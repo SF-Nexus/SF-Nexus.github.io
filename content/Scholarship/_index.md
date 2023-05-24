@@ -12,7 +12,7 @@ The resources foregrounded by the SF Nexus explore the genre at scale using data
 If you’re looking to see what is possible with data visualizations of literary history, access facsimile editions of pulp magazines, or to find information about the history of science fiction, these resources are the primary places to go.
 
 ## Digital Exhibits
-**100 Years of Science Fiction:** https://app.openmappr.org/play/100YrsOfSciFi
+**100 Years of Science Fiction:** 
 - 100 Years of Science Fiction includes a network visualization of keywords from every SF novel written since 1900 which have been uploaded to Good Reads. 
 
 **The Stuff of Science Fiction:** http://stuffofsciencefiction.ca/
@@ -38,7 +38,7 @@ If you’re looking to see what is possible with data visualizations of literary
 **The Luminist League:** http://luminist.org/ 
 - The Luminist League offers a large digital collection of novels, short stories, and letters from a range of non-fiction and fiction writers, especially SF novelists. 
 
-**Project Gutenberg:** https://www.gutenberg.org/wiki/Science_Fiction_%28Bookshelf%29 
+**Project Gutenberg:** https://www.gutenberg.org/ebooks/bookshelf/68
 - An online repository of free eBooks including a considerable collection of SF. 
 
 **The Edward T. LeBlanc Memorial Dime Novel Bibliography:** https://dimenovels.org 
