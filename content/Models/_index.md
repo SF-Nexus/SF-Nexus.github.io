@@ -25,9 +25,17 @@ Using C_V and U_Mass Coherence calculations, we determined that optimal number o
 
 **BERTopic Topic Modeling** is a topic modeling tool which creates topic clusters based on word embeddings and a class-based TF-IDF. It generates a set of topics, the top words in each topic, and the likelihood of each text in a corpus belonging to each topic. Because it makes use of word embeddings, it does not work well with disaggregated texts. 
 
-Unlike LDA, BERTopic automatically chooses the number of topics to generate within the model, though parameters can be set to collapse extremely similar topics. Performing BERTopic modeling on the sci-fi corpus yielded 48 topics, excluding Outliers.
+Unlike LDA, BERTopic automatically chooses the number of topics to generate within the model, though parameters can be set to collapse extremely similar topics. Performing BERTopic modeling on the sci-fi corpus yielded 91 topics, excluding Outliers.
 
-Here are the most frequent words in some topics of interest: 
+Here is a 2d representation of the topics in our BERTopic model:
+
+![image](/images/bertopic_plot.png)
+
+To get a closer look at the topics, we can extract and visualize the top words per topic. Here is a bar chart visualization of the top words appearing in the top 8 topics occuring in the corpus:
+
+![image](/images/bertopic_topwords.png)
+
+Here are the most frequent words in some specific topics of interest: 
 
 Topic 33: War Command
 
