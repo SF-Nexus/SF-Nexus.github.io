@@ -11,7 +11,14 @@ menu:
 This page contains information about all the team members who are working or have worked on this project across many institutions.
 
 ## Temple University Libraries SF Digitization Team
-Special Collections
+
+Loretta C. Duckworth Scholars Studio
+* [Alex Wermer-Colan, Interim Academic Director](https://library.temple.edu/people/alex-wermer-colan-ph-d), Director of SF Nexus
+* [Matt Shoemaker, Head of Scholars Studio](https://library.temple.edu/people/jasmine-clark)
+* [Jasmine Clark, Digital Scholarship Librarian](https://library.temple.edu/people/jasmine-clark)
+* [Jordan Hample, Academic Information Technology and Support Technician](https://library.temple.edu/people/jordan-hample)
+
+Special Collections Research Center
 * [Margery Sly, Director of Special Collections](https://library.temple.edu/people/margery-n-sly) 
 
 Metadata and Digitization Services
@@ -22,11 +29,6 @@ Metadata and Digitization Services
 
 Library Technology Development
 * [Gabriel Galson, Technology Projects Librarian](https://library.temple.edu/people/gabe-galson)
-
-Loretta C. Duckworth Scholars Studio
-* [Alex Wermer-Colan, Interim Academic Director](https://library.temple.edu/people/alex-wermer-colan-ph-d), Director of SF Nexus
-* [Jasmine Clark, Digital Scholarship Librarian](https://library.temple.edu/people/jasmine-clark), Metadata Specialist
-* [Jordan Hample, Academic Information Technology and Support Technician](https://library.temple.edu/people/jordan-hample)
 
 ## Student Research Assistants 
 
@@ -49,7 +51,6 @@ Loretta C. Duckworth Scholars Studio
 * [Sarah Potvin, Digital Scholarship Librarian, Texas A&M Libraries](https://library.tamu.edu/directory/people/spotvin)
 * [Jeremy Brett, Special Collections, Texas A&M Libraries](https://cushing.library.tamu.edu/collecting/scifi.html)
 * Rikk Mulligan, Digital Scholarship Librarian, Carnegie Mellon University, Web Designer and SF Specialist
-
 
 ## Institutional Partners
 HathiTrust Digital Library
