@@ -14,9 +14,9 @@ menu:
 
 **LDA (Gensim) Topic Modeling** is based on the assumption that documents are a mixture of topics (# topics is set by the researcher) and that topics are a mixture of words. To determine which words belong to each topic, the LDA model randomly assigns each word in a set of documents to a topic, then iterates through the assignments and makes adjustments until all words are assigned to the topics where they have the highest probability of belonging. LDA topic modeling works well on disaggregated texts (like the dataset generated above). 
 
-Using C_V and U_Mass Coherence calculations, we determined that optimal number of topics for the sci-fi collection was 178. In other words, a model with 178 topics provides the most coherent co-occurences of words and documents in each topic. Prior to this analysis, all stopwords and non-English words were removed. Here are the most frequent words present in the top topics in the model.
+We ran topic modeling on a subset of Temple's science fiction corpus which has been identified as "climate fiction." Using C_V and U_Mass Coherence calculations, we determined that optimal number of topics for the sci-fi collection was 200. In other words, a model with 200 topics provides the most coherent co-occurences of words and documents in each topic. Prior to this analysis, all stopwords and non-English words were removed. Here are the most frequent words present in the top topics in the model.
 
-![image](/images/lda_1.png)
+
 
 ## BERTopic Topic Modeling
 *Full Code Available on SF Nexus Github:*
