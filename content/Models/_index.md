@@ -16,7 +16,7 @@ menu:
 
 We ran topic modeling on a subset of Temple's science fiction corpus which has been identified as "climate fiction." Using C_V and U_Mass Coherence calculations, we determined that optimal number of topics for the sci-fi collection was 200. In other words, a model with 200 topics provides the most coherent co-occurences of words and documents in each topic. Prior to this analysis, all stopwords and non-English words were removed. Here are the most frequent words present in the top topics in the model.
 
-![image](https://sfnexus.io/models/lda_clifi.html.))
+![image](https://sfnexus.io/models/lda_clifi.html))
 
 ## BERTopic Topic Modeling
 *Full Code Available on SF Nexus Github:*
