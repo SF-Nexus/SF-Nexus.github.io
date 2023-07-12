@@ -18,7 +18,7 @@ We ran topic modeling on a subset of Temple's science fiction corpus which has b
 
 [Sample interactive visualization of LDA topic models of climate fiction using LDAviz](https://sf-nexus.github.io/ldaviz/)
 
-[Test](models/lda-clifi1.html)
+[Test](models/lda_clifi_1.html)
 
 
 ## BERTopic Topic Modeling
