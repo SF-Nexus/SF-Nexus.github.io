@@ -44,6 +44,9 @@ If you’re looking to see what is possible with data visualizations of literary
 **The Edward T. LeBlanc Memorial Dime Novel Bibliography:** https://dimenovels.org 
 - The Edward T. LeBlanc Memorial Dime Novel Bibliography consists of a database of dime novels, story papers, reprint libraries and related materials. 
 
+**The Science Fiction and Fantasy Research Database:** https://sffrd.library.tamu.edu/site/
+- This Texas A&M Libraries database provides author and subject access to over 142,000 books, articles, and news notes about science fiction, fantasy, and horror.  Technically, it is an index, providing citations but not full text.
+
 **Temple University Libraries — HathiTrust Digital Library:** https://babel.hathitrust.org/cgi/ls?field1=ocr;q1=%2A;a=srchls;facet=htsource%3A%22Temple%20University%22 
 - A sample of Temple University’s collection of digitized SF novels which have been ingested into HathiTrust Digital Library. 
 
