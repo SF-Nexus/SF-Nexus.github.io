@@ -50,9 +50,6 @@ If you’re looking to see what is possible with data visualizations of literary
 **Temple University Libraries — HathiTrust Digital Library:** https://babel.hathitrust.org/cgi/ls?field1=ocr;q1=%2A;a=srchls;facet=htsource%3A%22Temple%20University%22 
 - A sample of Temple University’s collection of digitized SF novels which have been ingested into HathiTrust Digital Library. 
 
-**Alex Wermer-Colan — HathiTrust Digital Library:** https://babel.hathitrust.org/cgi/mb?a=listcs&colltype=all
-- A collection curated by Alex Wermer-Colan from HathiTrust Digital Library’s  entire collection for scholars and students to conduct research. 
-
 ## Relevant Projects and Repositories
 **HathiTrust Research Center SF Experiments:** https://github.com/gwijthoff/HTRC_SF_experiments
 
