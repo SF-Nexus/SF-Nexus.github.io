@@ -16,27 +16,19 @@ The current phase of this Project has involved a demonstration project of how li
 
 ## Core SF Archive: Paskow Science Fiction Collection
 ### Temple University Special Collections Research Center
-The [Loretta C. Duckworth Scholars Studio](https://library.temple.edu/lcdss) has partnered with [Temple University Libraries’ Special Collections Research Center (SCRC)](https://library.temple.edu/scrc) and [Digital Library Initiatives (DLI)](https://digital.library.temple.edu/) to build a digitized corpus of copyrighted science fiction literature. Besides its voluminous [Urban Archives](https://library.temple.edu/collections/urban-archives), the SCRC also houses a significant collection of science-fiction literature. The [Paskow Science Fiction Collection](https://library.temple.edu/collections/paskow-science-fiction-collection-science-fiction-and-fantasy) was originally established in 1972, when Temple acquired 5,000 science fiction paperbacks from a Temple alumnus, the late David C. Paskow. Subsequent donations, including troves of fanzines and the papers of such sci-fi writers as John Varley and Stanley G. Weinbaum, expanded the collection over the last few decades, both in size and in the range of genres. SCRC staff and undergraduate student workers recently performed the usual comparison of gift titles against cataloged books, removing science fiction items that were exact duplicates of existing holdings. A refocusing of the SCRC’s collection development policy for science fiction de-emphasized fantasy and horror titles, so some titles in those genres were removed as well.
+The [Loretta C. Duckworth Scholars Studio](https://library.temple.edu/lcdss) has partnered with [Temple University Libraries’ Special Collections Research Center (SCRC)](https://library.temple.edu/scrc) and [Digital Library Initiatives (DLI)](https://digital.library.temple.edu/) to build a digitized corpus of copyrighted science fiction literature. Besides its voluminous [Urban Archives](https://library.temple.edu/collections/urban-archives), the SCRC also houses a significant collection of science-fiction literature. The [Paskow Science Fiction Collection](https://library.temple.edu/collections/paskow-science-fiction-collection-science-fiction-and-fantasy) was originally established in 1972, when Temple acquired 5,000 science fiction paperbacks from a Temple alumnus, the late David C. Paskow. 
+
+Subsequent donations, including troves of fanzines and the papers of such sci-fi writers as John Varley and Stanley G. Weinbaum, expanded the collection over the last few decades, both in size and in the range of genres. SCRC staff and undergraduate student workers recently performed the usual comparison of gift titles against cataloged books, removing science fiction items that were exact duplicates of existing holdings. A refocusing of the SCRC’s collection development policy for science fiction de-emphasized fantasy and horror titles, so some titles in those genres were removed as well. From this set of deduplicated science fiction, a subset has been digitized over the last few years.
+
+For more information on the history of this digitization project and to see an exhibit of SF book covers, visit our Omeka site: https://lcdssgeo.com/omeka-s/s/scifi/page/digitizing-science-fiction
 
 For an overview of our approach to data curation of literary texts, see Alex Wermer-Colan's and James Kopaczewski's article, ["The New Wave of Digital Collections: Speculating on the Future of Library Curation"](https://www.jstor.org/stable/45420508#metadata_info_tab_contents)(2022). 
 
-For more information about the webscraping methods we used during this project, visit our [Github repository on webscraping](https://github.com/SF-Nexus/webscraping).
+Ultimately, the SF Nexus seeks to build and share a comprehensive dataset of science fiction literature. Due to limitations imposed on copyright, this project explores speculative approaches to data curation that can make elements of each book available to enable large scale analysis. 
 
-For our companion site containing an exhibit of SF book covers, visit our Omeka site: https://lcdssgeo.com/omeka-s/s/scifi/page/digitizing-science-fiction
-
-Ultimately, the SF Nexus aspires to make a comprehensive dataset of science fiction literature. At this time, the most valuable web resources include:
+At this time, the most valuable web resources include:
 * [**Project Gutenberg**](https://www.gutenberg.org/): A library containing 70,000+ free ebooks for which U.S. copyright has expired.
 * [**Internet Archive**](https://archive.org/): A non-profit library containing millions of free books, movies, and music, as well as billions of archived web pages; books out of copyright are available to download.
 * [**Luminist.org**](http://www.luminist.org/archives/SF/): A variety of cultural documents, including science fiction, fantasy and "weird fiction," available for download and purhcase: 
 
 A future goal is to develop a dataset combining materials from these sources. Separately, work is ongoing to digitize old paperbacks and pulp magazines at institutions like Temple University Library. This hub will also help to make those copyrighted materials available, for example, as derived datasets of extracted features like those available from HathiTrust. 
-
-## Ingesting Our SF Archive into HathiTrust Digital Library
-Temple has ingested over 300 science fiction texts into the HathiTrust Digital Library. Because [HathiTrust requires specific file formats](https://www.hathitrust.org/submission-package-requirements-digitized-content-submitted-to-hathitrust) for upload, Python code was used to packaged all necessary files for the sf collection. Running the Python ingestion code in the command line generated the following files for upload to HathiTrust:
-
-* Image files (TIFF) for each page of each title (duplicated from server)
-* OCR files for each page of each title (generated by Google Tesseract)
-* Metadata file (YML) containing administrative and technical metadata
-* Checksum file listing every file in package and its corresponding md5 hash value
-
-The ingestion code and associated tutorial are available on our [HathiTrust-Ingestion-Scripts Github Repository](https://github.com/SF-Nexus/HathiTrust-Ingestion-Scripts).
