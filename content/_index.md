@@ -10,7 +10,9 @@ SF Nexus is an open access project. Data and resources provided here are free fo
 * **Documentation:** Descriptions of pipelines used to digitize and analyze our dataset, from OCR cleaning to topic modeling and visualization
 * **Visualizations:** Output generated from analyses of our dataset, including topic modeling and word embeddings
 
-The SF Nexus comprises a collaborative network of research and public libraries with collections of SF. While the SF Nexus is based at Temple University’s Charles Library, we are committed to growing our capabilities as a SF-focused collective research community.
+The SF Nexus comprises a collaborative network of research and public libraries with collections of SF, dedicated to making science fiction available online, including as data. While the SF Nexus project is based at Temple University’s Charles Library, we are committed to growing our collaborations with a SF-focused collective research community. 
+
+The current phase of this Project has involved a demonstration project of how libraries can digitize and make available their copyrighted cultural collections.
 
 ## Core SF Archive: Paskow Science Fiction Collection
 ### Temple University Special Collections Research Center
