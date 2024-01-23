@@ -35,11 +35,11 @@ from datasets import load_dataset
 dataset = load_dataset("SF-Corpus/EF_Chapters_and_Chunks")
 ```
 
-For more information about working with HuggingFace datasets, review their reference guide: https://huggingface.co/docs/datasets/v1.1.1/loading_datasets.html
+For more information about working with HuggingFace datasets, review their [reference guide](https://huggingface.co/docs/datasets/v1.1.1/loading_datasets.html)
 
-An extended discussion on extracted features can be found on the Scholars' Studio blog: https://sites.temple.edu/tudsc/2019/07/18/curating-copyrighted-corpora-an-r-script-for-extracting-and-structuring-textual-features/
+An extended discussion on extracted features can be found on the Scholars' Studio blog, in Jeff Antsen's ["Curating Copyrighted Corpora: AN R Script for Extracting and Structuring Textual Features"](https://sites.temple.edu/tudsc/2019/07/18/curating-copyrighted-corpora-an-r-script-for-extracting-and-structuring-textual-features/).
 
-This project made use of multiple Python and R pipelines to extract features from the science fiction collection. These pipelines are available as both Jupyter Notebooks and Google Colab Notebooks in this Github repository: https://github.com/SF-Nexus/extracted-features/tree/main/notebooks. Below, the process for crafting each extracted features dataset is discussed in more detail.
+This project made use of multiple Python and R pipelines to extract features from the science fiction collection. These pipelines are available as both Jupyter Notebooks and Google Colab Notebooks in this [Github repository](https://github.com/SF-Nexus/extracted-features/tree/main/notebooks). Below, the process for crafting each extracted features dataset is discussed in more detail.
 
 ## Pipeline 1: Text Sectioning and Disaggregation
 *Full Code Available on SF Nexus Github:*
