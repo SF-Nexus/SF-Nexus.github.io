@@ -73,5 +73,5 @@ We used Python to map embeddings of a subset of our science fiction corpus - 142
 
 ![image](/images/atlas-output.png)
 
-View an interactive version of this map here: https://atlas.nomic.ai/map/9d412be6-372d-4f15-9fde-ec845e74ce52/6e8c245a-1a17-44cc-9858-4022f9683af5
+View an interactive version of this map on the (Nomic Atlas website)[https://atlas.nomic.ai/map/9d412be6-372d-4f15-9fde-ec845e74ce52/6e8c245a-1a17-44cc-9858-4022f9683af5]
 
