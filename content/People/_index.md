@@ -12,22 +12,23 @@ This page contains information about all the team members who are working or hav
 
 ## Temple University Libraries SF Digitization Team
 
-Loretta C. Duckworth Scholars Studio
+**Loretta C. Duckworth Scholars Studio**
 * [Alex Wermer-Colan, Interim Academic Director](https://library.temple.edu/people/alex-wermer-colan-ph-d), Director of SF Nexus
 * [Matt Shoemaker, Head of Scholars Studio](https://library.temple.edu/people/jasmine-clark)
 * [Jasmine Clark, Digital Scholarship Librarian](https://library.temple.edu/people/jasmine-clark)
 * [Jordan Hample, Academic Information Technology and Support Technician](https://library.temple.edu/people/jordan-hample)
 
-Special Collections Research Center
-* [Margery Sly, Director of Special Collections](https://library.temple.edu/people/margery-n-sly) 
+**Special Collections Research Center**
+* [Margery Sly, Director of Special Collections](https://library.temple.edu/people/margery-n-sly)
+* Kimberly Tully, Curator of Rare Books
 
-Metadata and Digitization Services
+**Metadata and Digitization Services**
 * [Holly Tomren, Head of Metadata and Digitization Services](https://library.temple.edu/people/holly-tomren)
 * [Michael Carroll, Bibliographic Assistant III, Metadata & Digitization Services](https://library.temple.edu/people/michael-carroll)
 * Stefanie Ramsay, former Digital Collections Librarian
 * [Matthew Ducmanas, Special Collections Cataloguer](https://library.temple.edu/people/matthew-ducmanas) 
 
-Library Technology Development
+**Library Technology Development**
 * [Gabriel Galson, Technology Projects Librarian](https://library.temple.edu/people/gabe-galson)
 
 ## Student Research Assistants 
@@ -40,21 +41,21 @@ Library Technology Development
 * [Gary Scales, Ph.D. History](http://www.urbandigitalhistory.com)
 * [Crystal Tatis, MBA Marketing](https://sites.temple.edu/tudsc/crystal-tatis-profile-picture/)
 * [Vivien Wise, MFA Fiber Arts](https://www.vivienwise.com)
-
-### Curation (2022-2023)
-* Megan Kane, Ph.D. English
 * Asher Quentin Riley, B.A. Greek and Roman Classics
+
+### Data Curation and Web Development (2022-2023)
+* Megan Kane, Ph.D. English
 * SaraGrace Stefan, Ph.D. English
 
 ## Advisors
 * [Elspeth Healey, Special Collections, University of Kansas Spencer Library](https://lib.ku.edu/elspeth-healey)
 * [Sarah Potvin, Digital Scholarship Librarian, Texas A&M Libraries](https://library.tamu.edu/directory/people/spotvin)
 * [Jeremy Brett, Special Collections, Texas A&M Libraries](https://cushing.library.tamu.edu/collecting/scifi.html)
-* Rikk Mulligan, Digital Scholarship Librarian, Carnegie Mellon University, Web Designer and SF Specialist
-
+  
 ## Institutional Partners
-HathiTrust Digital Library
+**HathiTrust Digital Library**
 * [Natalie Fulkerson, Collections Specialist](https://www.lib.umich.edu/users/nfulkers)
 [Science Fiction Collecting Libraries Consortium](http://sfspecialcollections.pbworks.com/w/page/75733229/D)
 
+[**Sciece Fiction Collecting Libraries Consortium**](http://sfspecialcollections.pbworks.com/w/page/75814541/About%20the%20SciFi%20Collection%20Libraries%20Consortium%20(SFCLC))
 
