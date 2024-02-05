@@ -11,13 +11,13 @@ The resources foregrounded by the SF Nexus explore the genre at scale using data
 
 If you’re looking to see what is possible with data visualizations of literary history, access facsimile editions of pulp magazines, or to find information about the history of science fiction, these resources are the primary places to go.
 
-## Digital Exhibits
-**100 Years of Science Fiction** 
-- 100 Years of Science Fiction includes a network visualization of keywords from every SF novel written since 1900 which have been uploaded to Good Reads. 
-
+## Digital Exhibits of Science Fiction as Data
 [**The Stuff of Science Fiction**](http://stuffofsciencefiction.ca/)
 - The Stuff of Science Fiction is an interactive visualization prototype derived from a digitized corpus of SF anthologies housed at the University of Calgary.
 
+[**100 Years of Science Fiction: The Science Fiction Concept Corpus** ](https://www.wired.com/story/infoporn-100-years-of-sci-fi-explored/)
+- 100 Years of Science Fiction includes a network visualization of keywords from every SF novel written since 1900 which have been uploaded to Good Reads.
+- 
 [**Digitizing the New Wave**](https://lcdssgeo.com/omeka-s/s/scifi/page/digitizing-science-fiction )
 - Digitizing the New Wave is an Omeka exhibition highlighting book covers and metadata from the digitized SF novels from the Paskow Science Fiction Collection at Temple University.  
 
