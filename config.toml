@@ -6,7 +6,7 @@ canonifyURLS=true
 [menu]
 [[menu.main]]
   name = 'About'
-  pageRef = '_index.md'
+  pageRef = '/About'
   weight = 1
 [[menu.main]]
   name = 'People'
