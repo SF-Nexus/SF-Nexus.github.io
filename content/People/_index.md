@@ -24,6 +24,8 @@ This page contains information about all the team members who are working or hav
 
 **Metadata and Digitization Services**
 * [Holly Tomren, Head of Metadata and Digitization Services](https://library.temple.edu/people/holly-tomren)
+* Casey Shiflet, Digital Collections Specialist
+* Anne Casey, Bibliographic Assistant III
 * [Michael Carroll, Bibliographic Assistant III, Metadata & Digitization Services](https://library.temple.edu/people/michael-carroll)
 * Stefanie Ramsay, former Digital Collections Librarian
 * [Matthew Ducmanas, Special Collections Cataloguer](https://library.temple.edu/people/matthew-ducmanas) 
@@ -32,7 +34,6 @@ This page contains information about all the team members who are working or hav
 * [Gabriel Galson, Technology Projects Librarian](https://library.temple.edu/people/gabe-galson)
 
 ## Student Research Assistants 
-
 ### Digitization (2017-2020)
 * [Jeff Antsen, Ph.D. Political Science](https://liberalarts.temple.edu/academics/faculty/antsen-jeff)
 * Bethany Farrell, Ph.D. Art History
