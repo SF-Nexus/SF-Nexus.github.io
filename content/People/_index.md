@@ -60,3 +60,5 @@ This page contains information about all the team members who are working or hav
 
 [**Sciece Fiction Collecting Libraries Consortium**](http://sfspecialcollections.pbworks.com/w/page/75814541/About%20the%20SciFi%20Collection%20Libraries%20Consortium%20(SFCLC))
 
+## External Researchers
+* [Dez Miller, Emory University ](https://dezmiller.com/)
