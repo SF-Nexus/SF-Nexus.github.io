@@ -21,8 +21,8 @@ The [Loretta C. Duckworth Scholars Studio](https://library.temple.edu/lcdss) has
 
 Subsequent donations, including troves of fanzines and the papers of such sci-fi writers as John Varley and Stanley G. Weinbaum, expanded the collection over the last few decades, both in size and in the range of genres. SCRC staff and undergraduate student workers recently performed the usual comparison of gift titles against cataloged books, removing science fiction items that were exact duplicates of existing holdings. A refocusing of the SCRC’s collection development policy for science fiction de-emphasized fantasy and horror titles, so some titles in those genres were removed as well. From this set of deduplicated science fiction, a subset has been digitized over the last few years.
 
-## The SF Digitization Project
-For more information on the history of this digitization project since it began in 2017, and to see an exhibit of selected SF book covers from the collection with related metadata, visit our [Omeka S site](https://lcdssgeo.com/omeka-s/s/scifi/page/digitizing-science-fiction)
+## Digitizing the New Wave
+To see an exhibit of selected SF book covers from the collection with related metadata, and For more information on the history of this digitization project since it began in 2017, visit our Omeka S site, [Digitizing the New Wave](https://lcdssgeo.com/omeka-s/s/scifi/page/digitizing-science-fiction)
 
 For an overview of our approach to data curation of literary texts, see Alex Wermer-Colan's and James Kopaczewski's article, ["The New Wave of Digital Collections: Speculating on the Future of Library Curation"](https://www.jstor.org/stable/45420508#metadata_info_tab_contents)(2022). 
 
