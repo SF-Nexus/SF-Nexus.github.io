@@ -2,7 +2,7 @@
 title: "Analysis"
 description: 
 cascade:
-  featured_image: '/images/about_1.jpeg'
+  featured_image: '/images/word_similarities.png'
 menu:
   main:
     weight: 6
@@ -46,7 +46,7 @@ Following are two-dimensional graphs of the three-dimensional vector space for t
 
 ![image](/images/Temple_word2vec_chart.png)
 
-![image](/images/word similarities across corpora.png)
+![image](/images/word_similarities.png)
 
 We wanted to know whether the TempleU SF Corpus, given the predominance of proto-cli-fi in it, would represent certain bodies of water as dirtier, more toxic, or more polluted than the comparison corpora. Following is a matrix with cosine similarity values between words representing bodies of water and those toxicity related words. This method is heuristic, given that within each corpus, words might be generally more or less related to one another. Therefore, the most useful comparisons are within each corpus rather than across corpora. 
 
