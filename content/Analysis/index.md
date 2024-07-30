@@ -46,11 +46,11 @@ Following are two-dimensional graphs of the three-dimensional vector space for t
 
 ![image](/images/Temple_word2vec_chart.png)
 
-![image](/images/word_similarities.png)
+![image](/images/SF_word2vec_chart.png)
 
 We wanted to know whether the TempleU SF Corpus, given the predominance of proto-cli-fi in it, would represent certain bodies of water as dirtier, more toxic, or more polluted than the comparison corpora. Following is a matrix with cosine similarity values between words representing bodies of water and those toxicity related words. This method is heuristic, given that within each corpus, words might be generally more or less related to one another. Therefore, the most useful comparisons are within each corpus rather than across corpora. 
 
-![image](/images/SF_word2vec_chart.png)
+![image](/images/word_similarities.png)
 
 In combining this approach with close reading, we came to realize that competing narrative dynamics might be influencing these cosine similarity results. For example, we can see in the following quotes from Ursula K. Le Guin’s The Dispossessed (1974), which is in the TempleU SF Corpus and in the Mimno and Thompson comparison SF corpus, that water is discussed more positively (i.e. more in association with cleanliness or purity) in the context of a metaphor, and less positively (i.e. more in association with dirtiness, toxicity, and sewage) in the context of a world-building description. 
 
