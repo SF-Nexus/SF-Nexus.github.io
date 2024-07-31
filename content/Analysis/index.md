@@ -10,7 +10,9 @@ menu:
 
 # Word2Vec Modeling
 
-Code Available on Dez Miller’s Github: https://github.com/dezmediah/wordembeddings
+By Dez Miller
+
+Code for this article is available on Dez Miller’s Github: https://github.com/dezmediah/wordembeddings
 
 ## Background
 
