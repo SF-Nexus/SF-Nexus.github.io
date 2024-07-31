@@ -8,6 +8,9 @@ menu:
     weight: 1
 ---
 ## LDA Topic Modeling
+
+By Megan Kane
+
 *Full Code Available on SF Nexus Github:*
 - [Topic Modeling with LDA (Jupyter Notebook)](https://github.com/SF-Nexus/extracted-features-notebooks/blob/main/notebooks/Analyzing_Extracted_Features/Topic%20Modeling%20with%20LDA%20(Jupyter%20Notebook).ipynb)
 - [Topic Modeling with LDA (Google Colab)](https://github.com/SF-Nexus/extracted-features-notebooks/blob/main/notebooks/Analyzing_Extracted_Features/Topic_Modeling_with_LDA%20(Colab).ipynb)
