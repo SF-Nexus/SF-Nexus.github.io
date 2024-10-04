@@ -1,6 +1,6 @@
 ---
 title: "Analysis"
-description: 
+description: Word2Vec Modeling
 cascade:
   featured_image: '/images/word_similarities.png'
 menu:
