@@ -22,7 +22,7 @@ The [Loretta C. Duckworth Scholars Studio](https://library.temple.edu/lcdss) has
 Subsequent donations, including troves of fanzines and the papers of such sci-fi writers as John Varley and Stanley G. Weinbaum, expanded the collection over the last few decades, both in size and in the range of genres. SCRC staff and undergraduate student workers recently performed the usual comparison of gift titles against cataloged books, removing science fiction items that were exact duplicates of existing holdings. A refocusing of the SCRC’s collection development policy for science fiction de-emphasized fantasy and horror titles, so some titles in those genres were removed as well. From this set of deduplicated science fiction, a subset has been digitized over the last few years.
 
 ## Digitizing the New Wave
-The digitized SF books have been ingested into HathiTrust and can be viewed at the [Temple University's collection page](https://catalog.hathitrust.org/Search/Home?type%5B%5D=all&lookfor%5B%5D=%2A&filter%5B%5D=htsource%3ATemple%20University&page=1&pagesize=20&ft=). 
+The digitized SF books have been ingested into HathiTrust and can be viewed at the [Temple University's collection page](https://babel.hathitrust.org/cgi/ls?field1=ocr;q1=%2A;a=srchls;facet=htsource%3A%22Temple%20University%22;pn=4). 
 
 To see an exhibit of selected SF book covers from the collection with related metadata, and For more information on the history of this digitization project since it began in 2017, visit our Omeka S site, [Digitizing the New Wave](https://lcdssgeo.com/omeka-s/s/scifi/page/digitizing-science-fiction)
 
