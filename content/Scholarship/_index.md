@@ -11,6 +11,8 @@ The resources foregrounded by the SF Nexus explore the genre at scale using data
 
 If you’re looking to see what is possible with data visualizations of literary history, access facsimile editions of pulp magazines, or to find information about the history of science fiction, these resources are the primary places to go.
 
+Additional resources can be found on Grant Wythoff's running list of speculative fiction data resources: https://wythoff.net/posts/sf-data/
+
 ## Digital Exhibits of Science Fiction as Data
 [**The Stuff of Science Fiction**](http://stuffofsciencefiction.ca/)
 - The Stuff of Science Fiction is an interactive visualization prototype derived from a digitized corpus of SF anthologies housed at the University of Calgary.
