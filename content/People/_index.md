@@ -19,7 +19,7 @@ This page contains information about all the team members who are working or hav
 * [Jordan Hample, Academic Information Technology and Support Technician](https://library.temple.edu/people/jordan-hample)
 
 **Special Collections Research Center**
-* [Margery Sly, Director of Special Collections](https://library.temple.edu/people/margery-n-sly)
+* [Margery Sly, Former Director of Special Collections](https://library.temple.edu/people/margery-n-sly)
 * Kimberly Tully, Curator of Rare Books
 
 **Metadata and Digitization Services**
