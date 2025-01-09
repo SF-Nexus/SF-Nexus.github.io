@@ -62,3 +62,5 @@ This page contains information about all the team members who are working or hav
 
 ## External Researchers
 * [Dez Miller, Emory University ](https://dezmiller.com/)
+* [Brianna Brinkley, "Memory in the Apocalyptic Archive: A Literary and Computer Textual Analysis of A Canticle for Leibowitz" (2019)](https://core.ac.uk/download/288849384.pdf)
+* [Tai Xiang](https://github.com/tyxiang0530/Sentiments-of-Science-Fiction)
