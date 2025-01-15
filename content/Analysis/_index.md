@@ -13,6 +13,8 @@ By Dez Miller
 
 Code for this article is available on Dez Miller’s Github: https://github.com/dezmediah/wordembeddings
 
+ADHO Forum 2023's Clifi Presentation: https://zenodo.org/records/10065276
+
 ## Background
 Word2Vec is a Gensim word embedding algorithm that uses shallow, two-layer neural networks to place each word in a corpus within a vector space model. For digital humanists who use word embedding models, a word’s connotative meaning can be represented by the nearest neighbors to the seed word in vector space. These spatial relationships are determined by the context of a word across a particular corpus as well as by the context of related words. This
 means, effectively, that even if “river” very rarely appears within the direct context of a particular word, for example “forest,” it may still be considered by the Word2Vec algorithm to be highly semantically close to the word “forest” as long as another closely related word, for example, “stream,” appears frequently in the context of “forest.”
