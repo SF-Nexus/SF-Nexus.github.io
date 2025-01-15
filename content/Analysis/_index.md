@@ -22,7 +22,7 @@ The idea that the meaning of a word is represented well by its context has been 
 A common operator with Word2Vec is getting cosine similarity results between two words. These results are, theoretically, both physically closer in vector space and semantically closer in meaning. 
 
 ## Models
-Our project, conceived for DH 2023, was interested in how the Temple Sci-Fi corpus conceptualized various ecological concepts, in particular water, and how those associations compared to other corpora housed within the HathiTrust Digital Library. As a dataset in which proto climate-fiction (or cli-fi) dominated, we wanted to know whether water and water-related words would be more associated with pollution and toxicity than in a broader sci-fi corpus or in a broad literary fiction corpus.
+Our project, conceived for ADHO 2023, involved myself, Alex Wermer-Colan, Megan Kane, and SaraGrace Stefan working on studying how the Temple Sci-Fi corpus conceptualized various ecological concepts, in particular water, and how those associations compared to other corpora housed within the HathiTrust Digital Library. As a dataset in which proto climate-fiction (or cli-fi) dominated, we wanted to know whether water and water-related words would be more associated with pollution and toxicity than in a broader sci-fi corpus or in a broad literary fiction corpus.
 
 Four Word2Vec models were produced, depicting word similarity for the following corpora: 
 A) the Temple SF Corpus, housed within Hathi Trust
