@@ -49,9 +49,9 @@ This page contains information about all the team members who are working or hav
 * SaraGrace Stefan, Ph.D. English
 
 ## Advisors
-* [Elspeth Healey, Special Collections, University of Kansas Spencer Library](https://lib.ku.edu/elspeth-healey)
-* [Sarah Potvin, Digital Scholarship Librarian, Texas A&M Libraries](https://library.tamu.edu/directory/people/spotvin)
-* [Jeremy Brett, Special Collections, Texas A&M Libraries](https://cushing.library.tamu.edu/collecting/scifi.html)
+* [Sarah Potvin](https://artsci.tamu.edu/english/contact/profiles/sarah-potvin.html), Associate Professor of English, Texas A&M University
+* [Jeremy Brett](https://scholars.library.tamu.edu/vivo/display/n11640f2d/Persons/View%20All), Special Collections, Texas A&M Libraries
+* [Elspeth Healey](https://spencer.lib.ku.edu/elspeth-healey), Special Collections Curator, University of Kansas Spencer Library
   
 ## Institutional Partners
 **HathiTrust Digital Library**
@@ -63,4 +63,4 @@ This page contains information about all the team members who are working or hav
 ## External Researchers
 * [Dez Miller, Emory University ](https://dezmiller.com/)
 * [Brianna Brinkley, "Memory in the Apocalyptic Archive: A Literary and Computer Textual Analysis of A Canticle for Leibowitz" (2019)](https://core.ac.uk/download/288849384.pdf)
-* [Tai Xiang](https://github.com/tyxiang0530/Sentiments-of-Science-Fiction)
+* [Tai Xiang, Github repositories](https://github.com/tyxiang0530/Sentiments-of-Science-Fiction)
