@@ -18,8 +18,8 @@ Additional resources can be found on Grant Wythoff's running list of speculative
 - The Stuff of Science Fiction is an interactive visualization prototype derived from a digitized corpus of SF anthologies housed at the University of Calgary.
 
 [**100 Years of Science Fiction: The Science Fiction Concept Corpus** ](https://www.wired.com/story/infoporn-100-years-of-sci-fi-explored/)
-- 100 Years of Science Fiction includes a network visualization of keywords from every SF novel written since 1900 which have been uploaded to Good Reads.
-- 
+- 100 Years of Science Fiction includes a network visualization of keywords from every SF novel written since 1900 which have been uploaded to Goodreads.
+  
 [**Digitizing the New Wave**](https://lcdssgeo.com/omeka-s/s/scifi/page/digitizing-science-fiction )
 - Digitizing the New Wave is an Omeka exhibition highlighting book covers and metadata from the digitized SF novels from the Paskow Science Fiction Collection at Temple University.  
 
@@ -60,10 +60,3 @@ Additional resources can be found on Grant Wythoff's running list of speculative
 [**Data Capsule Appliance**](https://github.com/TempleDSS/data-capsule-appliance)
 
 [**Digital Mapping of Mary Shelley's *Frankenstein***](https://thecorpuselectric.wordpress.com/2017/05/27/digital-frankenstein-dh-mapping-of-mary-shelleys-frankenstein/)
-
-
-
-
-
-
-
