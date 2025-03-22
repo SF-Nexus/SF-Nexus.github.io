@@ -54,13 +54,13 @@ Topic 47: Energy
 
 ### Topic Usage Comparison Between Authors
 
-We can also explore usage of topic per author. Here, for example, is a distribution of the topics Used By Brian Aldiss vs. Ursula Leguin
+We can also explore usage of topic per author. Here, for example, is a distribution of the topics used By Brian Aldiss vs. Ursula Le Guin:
 
 ![image](/images/BERTopic_Topic_Use_Comparison_Between_Aldiss_Leguin.png)
 
 ### Topic Usage Over Time
 
-Frequency with which authors use topics of interest throughout the 20th century. 
+This graph shows the frequency with which authors use topics of interest throughout the 20th century. 
 Note: frequency is calculated each time a "chapter/chunk" from a book uses the topic most frequently, so the most frequently used topics might be frequent because of their prevalence across chapters of a particular book rather than across multiple books. This is something to fine-tune in how we build the visualization.
 
 ![image](/images/BERTopic_Topic_Usage_over_Time.png)
