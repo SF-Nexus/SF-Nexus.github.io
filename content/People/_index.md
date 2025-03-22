@@ -13,20 +13,20 @@ This page contains information about all the team members who are working or hav
 ## Temple University Libraries SF Digitization Team
 
 **Loretta C. Duckworth Scholars Studio**
-* [Alex Wermer-Colan, Interim Academic Director](https://library.temple.edu/people/alex-wermer-colan-ph-d), Director of SF Nexus
+* [Alex Wermer-Colan, Academic and Research Director](https://library.temple.edu/people/alex-wermer-colan-ph-d), Director of SF Nexus
 * [Matt Shoemaker, Head of Scholars Studio](https://library.temple.edu/people/jasmine-clark)
 * [Jasmine Clark, Digital Scholarship Librarian](https://library.temple.edu/people/jasmine-clark)
 * [Jordan Hample, Academic Information Technology and Support Technician](https://library.temple.edu/people/jordan-hample)
 
 **Special Collections Research Center**
-* [Margery Sly, Former Director of Special Collections](https://library.temple.edu/people/margery-n-sly)
+* Margery Sly, Former Director of Special Collections
 * Kimberly Tully, Curator of Rare Books
 
 **Metadata and Digitization Services**
 * [Holly Tomren, Head of Metadata and Digitization Services](https://library.temple.edu/people/holly-tomren)
 * Casey Shiflet, Digital Collections Specialist
 * Anne Casey, Bibliographic Assistant III
-* [Michael Carroll, Bibliographic Assistant III, Metadata & Digitization Services](https://library.temple.edu/people/michael-carroll)
+  Michael Carroll, former Digital Collections Librarian
 * Stefanie Ramsay, former Digital Collections Librarian
 * [Matthew Ducmanas, Special Collections Cataloguer](https://library.temple.edu/people/matthew-ducmanas) 
 
