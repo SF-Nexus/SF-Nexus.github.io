@@ -75,9 +75,7 @@ for content in s:
   chunked_ch.append(chunks)
 ```
 
-After running the segmentation function, we sorted  the words in each segment alphabetically in order to transform them from human-readable texts to "bags of words." 
-
-The resulting extracted feature set of disaggregated, chapterized texts is available for download on our [SF Nexus Hugging Face repository](https://huggingface.co/SF-Corpus).
+After running the segmentation function, we sorted  the words in each segment alphabetically in order to transform them from human-readable texts to "bags of words." The resulting extracted feature set of disaggregated, chapterized texts is available for download on our [SF Nexus Hugging Face repository](https://huggingface.co/SF-Corpus).
 
 **Output 1: [Disaggregated Versions of 403 Texts, Split into 1000-Word Segments](https://huggingface.co/datasets/SF-Corpus/EF_Chapters_and_Chunks).**
 
@@ -153,12 +151,9 @@ The result of the code above is a folder containing several BookNLP-generated fi
 For a more comprehensive overview of BookNLP's output, check out [Chapter 3: "The Output Files"](https://booknlp.pythonhumanities.com/03_files.html) in W. J. B. Mattingly's *Introduction to BookNLP*.
 
 ## Take Down Notice
-
 This site only exhibits extracted features for copyrighted fiction; no copyrighted work is being made available for consumption. These digitized files are made accessible for purposes of education and research. Temple University Libraries have given attribution to rights holders when possible. If you hold the rights to materials in our digitized collections that are unattributed, please let us know so that we may maintain accurate information about these materials.
 
-If you are a rights holder and are concerned that you have found material on this website for which you have not granted permission (or is not covered by a copyright exception under US copyright laws), you may request the removal of the material from our site by writing to digitalscholarship@temple.edu.
-
-For more information on non-consumptive research, check out [HathiTrust Research Center's Non-Consumptive Use Research Policy](https://www.hathitrust.org/htrc_ncup).
+If you are a rights holder and are concerned that you have found material on this website for which you have not granted permission (or is not covered by a copyright exception under US copyright laws), you may request the removal of the material from our site by writing to digitalscholarship@temple.edu. For more information on non-consumptive research, check out [HathiTrust Research Center's Non-Consumptive Use Research Policy](https://www.hathitrust.org/htrc_ncup).
 
 ## In Progress: Full Text Analysis within the HathiTrust Research Center Data Capsule
 We are working on a pipeline through which researchers can remotely access the full texts in a controlled manner for full-text access and analysis through the HathiTrust Research Center Data Capsule. Learn more about the HathiTrust Data Capsule [here](https://wiki.htrc.illinois.edu/display/COM/HTRC+Data+Capsule+Environment) and visit [this Github repository](https://github.com/TempleDSS/data-capsule-appliance) to set up and run a data capsule appliance. Stay tuned for updates!
