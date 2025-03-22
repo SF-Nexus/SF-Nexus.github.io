@@ -8,7 +8,6 @@ menu:
     weight: 1
 ---
 ## LDA Topic Modeling
-
 By Megan Kane
 
 *Full Code Available on SF Nexus Github:*
@@ -53,13 +52,11 @@ Topic 47: Energy
 ![image](/images/BERTopic_Energy_WordCloud.png)
 
 ### Topic Usage Comparison Between Authors
-
 We can also explore usage of topic per author. Here, for example, is a distribution of the topics used By Brian Aldiss vs. Ursula Le Guin:
 
 ![image](/images/BERTopic_Topic_Use_Comparison_Between_Aldiss_Leguin.png)
 
 ### Topic Usage Over Time
-
 This graph shows the frequency with which authors use topics of interest throughout the 20th century. 
 Note: frequency is calculated each time a "chapter/chunk" from a book uses the topic most frequently, so the most frequently used topics might be frequent because of their prevalence across chapters of a particular book rather than across multiple books. This is something to fine-tune in how we build the visualization.
 
@@ -68,7 +65,6 @@ Note: frequency is calculated each time a "chapter/chunk" from a book uses the t
 ## Mapping Semantic Similarity with Atlas
 *Full Code Available on SF Nexus Github:*
 - [Mapping Semantic Similarity with Atlas (Jupyter Notebook)](https://github.com/SF-Nexus/extracted-features-notebooks/blob/main/notebooks/Analyzing_Extracted_Features/Mapping%20Semantic%20Similarity%20with%20Atlas%20(Jupyter%20Notebook).ipynb)
-
 
 **Atlas** is a web platform for exploring large datasets. Researchers can use Atlas to cluster texts based on semantic similarity and project them onto a map, as below. From here, similarities between data points can be investigated, datasets can be refined, and new maps can be build based on relevant subset of data. Maps served on the Atlas browser, Nomic, can be set for public sharing and interaction. 
 
