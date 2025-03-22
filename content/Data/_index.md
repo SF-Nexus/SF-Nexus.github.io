@@ -77,7 +77,7 @@ for content in s:
 
 After running the segmentation function, we sorted  the words in each segment alphabetically in order to transform them from human-readable texts to "bags of words." 
 
-The resulting extracted feature set of disaggregated, chapterized texts is available for download on our [SF Nexus Huggingface repository](https://huggingface.co/datasets/SF-Corpus).
+The resulting extracted feature set of disaggregated, chapterized texts is available for download on our [SF Nexus Hugging Face repository](https://huggingface.co/SF-Corpus).
 
 **Output 1: [Disaggregated Versions of 403 Texts, Split into 1000-Word Segments](https://huggingface.co/datasets/SF-Corpus/EF_Chapters_and_Chunks).**
 
