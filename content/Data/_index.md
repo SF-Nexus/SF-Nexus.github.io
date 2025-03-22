@@ -8,7 +8,7 @@ menu:
     weight: 1
 ---
 
-Our core SF corpus is comprised of 403 texts from the [Temple University SCRC Paskow Science Fiction Collection](https://library.temple.edu/collections/paskow-science-fiction-collection-science-fiction-and-fantasy). The corpus primarily contains New Wave SF novels published between 1945 and 1990, along with short story anthologies and magazines. The texts have been scanned, digitized and saved as ```.txt``` files using Abbyy OCR. While all texts have been cleaned, scanned, and run through OCR, thorough OCR cleaning of about 150 texts is still in progress. As such, we have several datasets of varying granularity available at this time; see below for details. 
+Our core SF corpus is comprised of 403 texts from the [Temple University SCRC Paskow Science Fiction Collection](https://library.temple.edu/collections/paskow-science-fiction-collection-science-fiction-and-fantasy). The corpus primarily contains New Wave SF novels published between 1945 and 1990, along with short story anthologies and magazines. The texts have been scanned, digitized and saved as ```.txt``` files using ABBYY Finereader for Optical Character Recognition (OCR). After making the texts machine readable and post-processing and cleaning the OCR'ed text, we have curated several datasets of varying granularity available at this time.
 
 Because the majority of texts in our corpus are under copyright, sharing the original, full-text works is a violation of copyright law. However, it is permissible to share "extracted features" from these works, such as disaggregated texts, word frequency counts, and syntactical and semantic descriptors. Extracted features can be used for a variety of analyses, including topic modeling. The following extracted features datasets are currently available for public use:
 * **[EF_Full_Texts](https://huggingface.co/datasets/SF-Corpus/EF_Full_Texts)**: A dataframe containing disaggregated ("bag of words") versions of all 403 texts
@@ -37,7 +37,7 @@ dataset = load_dataset("SF-Corpus/EF_Chapters_and_Chunks")
 
 For more information about working with HuggingFace datasets, review their [reference guide](https://huggingface.co/docs/datasets/v1.1.1/loading_datasets.html)
 
-An extended discussion on extracted features can be found on the Scholars' Studio blog, in Jeff Antsen's ["Curating Copyrighted Corpora: AN R Script for Extracting and Structuring Textual Features"](https://sites.temple.edu/tudsc/2019/07/18/curating-copyrighted-corpora-an-r-script-for-extracting-and-structuring-textual-features/).
+An extended discussion on extracted features can be found on the Scholars' Studio blog, in Jeff Antsen's ["Curating Copyrighted Corpora: AN R Script for Extracting and Structuring Textual Features"](https://web.archive.org/web/20201030014610/https://sites.temple.edu/tudsc/2019/07/18/curating-copyrighted-corpora-an-r-script-for-extracting-and-structuring-textual-features/).
 
 This project made use of multiple Python and R pipelines to extract features from the science fiction collection. These pipelines are available as both Jupyter Notebooks and Google Colab Notebooks in this [Github repository](https://github.com/SF-Nexus/extracted-features/tree/main/notebooks). Below, the process for crafting each extracted features dataset is discussed in more detail.
 
