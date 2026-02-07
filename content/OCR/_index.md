@@ -39,7 +39,7 @@ Completing the above-mentioned tasks has yielded a collection of minimally clean
 
 ### Output: TXT Files (Machine-readable versions of science fiction books)
 
-Because the science fiction collection is under copyright, the exported text files can only be accessed through a visit to the Temple University Loretta C. Duckworth Scholars Studio, where researchers must sign an agreement to only use these materials at the Scholars Studio for non-consumptive research. A dataset of **[extracted features](https://github.com/SF-Nexus/extracted-features)** from these texts is freely availble on this website. 
+Because the science fiction collection is under copyright, the exported text files can only be accessed through a visit to the Temple University Loretta C. Duckworth Scholars Studio, where researchers must sign an agreement to only use these materials at the Scholars Studio for non-consumptive research. A dataset of **[extracted features](https://github.com/SF-Nexus/extracted-features)** from these texts is freely available on this website. 
 
 See our full workflow for performing OCR on the science fiction corpus on our [ABBYY guidelines](https://github.com/SF-Nexus/extracted-features-notebooks/blob/main/notebooks/Extracting_Features/ABBYY_OCR_Guidelines.md).
 

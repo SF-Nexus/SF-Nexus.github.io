@@ -39,7 +39,7 @@ For more information about working with HuggingFace datasets, review their [refe
 
 An extended discussion on extracted features can be found on the Scholars' Studio blog, in Jeff Antsen's ["Curating Copyrighted Corpora: AN R Script for Extracting and Structuring Textual Features"](https://web.archive.org/web/20201030014610/https://sites.temple.edu/tudsc/2019/07/18/curating-copyrighted-corpora-an-r-script-for-extracting-and-structuring-textual-features/).
 
-This project made use of multiple Python and R pipelines to extract features from the science fiction collection. These pipelines are available as both Jupyter Notebooks and Google Colab Notebooks in this [Github repository](https://github.com/SF-Nexus/extracted-features/tree/main/notebooks). Below, the process for crafting each extracted features dataset is discussed in more detail.
+This project made use of multiple Python and R pipelines to extract features from the science fiction collection. These pipelines are available as both Jupyter Notebooks and Google Colab Notebooks in this [Github repository](https://github.com/SF-Nexus/extracted-features-notebooks/tree/main/notebooks). Below, the process for crafting each extracted features dataset is discussed in more detail.
 
 ## Pipeline 1: Text Sectioning and Disaggregation
 *Full Code Available on SF Nexus Github:*
@@ -155,5 +155,5 @@ This site only exhibits extracted features for copyrighted fiction; no copyright
 
 If you are a rights holder and are concerned that you have found material on this website for which you have not granted permission (or is not covered by a copyright exception under US copyright laws), you may request the removal of the material from our site by writing to digitalscholarship@temple.edu. For more information on non-consumptive research, check out [HathiTrust Research Center's Non-Consumptive Use Research Policy](https://www.hathitrust.org/htrc_ncup).
 
-##Full Text Analysis within the HathiTrust Research Center Data Capsule
+## Full Text Analysis within the HathiTrust Research Center Data Capsule
 Researchers can remotely access the full texts in a controlled manner for full-text access and analysis through the HathiTrust Research Center Data Capsule. Learn more about the HathiTrust Data Capsule [here](https://wiki.htrc.illinois.edu/display/COM/HTRC+Data+Capsule+Environment) and visit [this Github repository](https://github.com/TempleDSS/data-capsule-appliance) to set up and run a data capsule appliance.

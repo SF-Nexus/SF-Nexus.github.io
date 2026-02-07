@@ -14,7 +14,7 @@ This page contains information about all the team members who are working or hav
 
 **Loretta C. Duckworth Scholars Studio**
 * [Alex Wermer-Colan, Academic and Research Director](https://library.temple.edu/people/alex-wermer-colan-ph-d), Director of SF Nexus
-* [Matt Shoemaker, Head of Scholars Studio](https://library.temple.edu/people/jasmine-clark)
+* [Matt Shoemaker, Head of Scholars Studio](https://library.temple.edu/people/matt-shoemaker)
 * [Jasmine Clark, Digital Scholarship Librarian](https://library.temple.edu/people/jasmine-clark)
 * [Jordan Hample, Academic Information Technology and Support Technician](https://library.temple.edu/people/jordan-hample)
 
@@ -56,9 +56,7 @@ This page contains information about all the team members who are working or hav
 ## Institutional Partners
 **HathiTrust Digital Library**
 * [Natalie Fulkerson, Collections Specialist](https://www.lib.umich.edu/users/nfulkers)
-[Science Fiction Collecting Libraries Consortium](http://sfspecialcollections.pbworks.com/w/page/75733229/D)
-
-[**Sciece Fiction Collecting Libraries Consortium**](http://sfspecialcollections.pbworks.com/w/page/75814541/About%20the%20SciFi%20Collection%20Libraries%20Consortium%20(SFCLC))
+[**Science Fiction Collecting Libraries Consortium**](http://sfspecialcollections.pbworks.com/w/page/75814541/About%20the%20SciFi%20Collection%20Libraries%20Consortium%20(SFCLC))
 
 ## External Researchers
 * [Dez Miller, Emory University ](https://dezmiller.com/)

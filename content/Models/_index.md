@@ -33,7 +33,7 @@ Here is a 2d representation of the topics in our BERTopic model:
 
 ![image](/images/bertopic_plot.png)
 
-To get a closer look at the topics, we can extract and visualize the top words per topic. Here is a bar chart visualization of the top words appearing in the top 8 topics occuring in the corpus:
+To get a closer look at the topics, we can extract and visualize the top words per topic. Here is a bar chart visualization of the top words appearing in the top 8 topics occurring in the corpus:
 
 ![image](/images/bertopic_topwords.png)
 
