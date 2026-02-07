@@ -41,7 +41,7 @@ Completing the above-mentioned tasks has yielded a collection of minimally clean
 
 Because the science fiction collection is under copyright, the exported text files can only be accessed through a visit to the Temple University Loretta C. Duckworth Scholars Studio, where researchers must sign an agreement to only use these materials at the Scholars Studio for non-consumptive research. A dataset of **[extracted features](https://github.com/SF-Nexus/extracted-features)** from these texts is freely availble on this website. 
 
-See our full workflow for performing  OCR on the science fiction corpus on our [ABBYY guidelines](https://github.com/SF-Nexus/OCR/blob/main/abbyy.md  ).
+See our full workflow for performing OCR on the science fiction corpus on our [ABBYY guidelines](https://github.com/SF-Nexus/extracted-features-notebooks/blob/main/notebooks/Extracting_Features/ABBYY_OCR_Guidelines.md).
 
 # Related Resources
 
@@ -57,4 +57,4 @@ The ingestion code and associated tutorial are available on our [HathiTrust-Inge
 
 # Webscraping
 
-For more information about the webscraping methods we used during this project, visit our [Github repository on webscraping](https://github.com/SF-Nexus/webscraping).
+For more information about the webscraping methods we used during this project, visit our [Github repository on webscraping](https://github.com/SF-Nexus/webscraping-SF).
