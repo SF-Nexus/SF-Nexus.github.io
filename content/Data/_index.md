@@ -19,7 +19,7 @@ Each dataframe contains two versions of the text: one that has been "cleaned" th
 
 If you upload one of the dataframes into Python for analysis, its head should look like this: 
 
-![](/images/EF_Header)
+![](/images/EF_Header.png)
 
 Two additional extracted features datasets have been generated using BookNLP:
 * **[EF_Named_Entities](https://huggingface.co/datasets/SF-Corpus/EF_Named_Entities)**: CSV files containing information about the "named entities" appearing in the 403 texts: people, organizations, locations, vehicles, among others. 
