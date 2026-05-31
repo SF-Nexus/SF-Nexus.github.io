@@ -1,6 +1,6 @@
 ---
 title: "Scholarship"
-description: 
+description: "Related projects, datasets, and digital archives for studying science fiction as data."
 cascade:
   featured_image: '/images/about_1.jpeg'
 menu:
@@ -14,7 +14,7 @@ If you’re looking to see what is possible with data visualizations of literary
 Additional resources can be found on Grant Wythoff's running list of speculative fiction data resources: https://wythoff.net/posts/sf-data/
 
 ## Digital Exhibits of Science Fiction as Data
-[**The Stuff of Science Fiction**](http://stuffofsciencefiction.ca/)
+[**The Stuff of Science Fiction**](https://web.archive.org/web/20260305204257/http://stuffofsciencefiction.ca/)
 - The Stuff of Science Fiction is an interactive visualization prototype derived from a digitized corpus of SF anthologies housed at the University of Calgary.
 
 [**100 Years of Science Fiction: The Science Fiction Concept Corpus** ](https://www.wired.com/story/infoporn-100-years-of-sci-fi-explored/)

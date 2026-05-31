@@ -1,0 +1,12 @@
+# Force all non-canonical domains to redirect to sfnexus.org
+[[redirects]]
+  from = "https://sfnexus.io/*"
+  to = "https://sfnexus.org/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://sfnexus.net/*"
+  to = "https://sfnexus.org/:splat"
+  status = 301
+  force = true

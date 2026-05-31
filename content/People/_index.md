@@ -1,6 +1,6 @@
 ---
 title: "People"
-description: 
+description: "The librarians, students, scholars, and institutional partners behind the SF Nexus."
 cascade:
   featured_image: '/images/about_1.jpeg'
 menu:
@@ -26,7 +26,7 @@ This page contains information about all the team members who are working or hav
 * [Holly Tomren, Head of Metadata and Digitization Services](https://library.temple.edu/people/holly-tomren)
 * Casey Shiflet, Digital Collections Specialist
 * Anne Casey, Bibliographic Assistant III
-  Michael Carroll, former Digital Collections Librarian
+* Michael Carroll, former Digital Collections Librarian
 * Stefanie Ramsay, former Digital Collections Librarian
 * [Matthew Ducmanas, Special Collections Cataloguer](https://library.temple.edu/people/matthew-ducmanas) 
 
