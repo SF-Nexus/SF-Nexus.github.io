@@ -1,3 +1,11 @@
+# Pin Hugo so a Netlify default bump can't silently break the build.
+# The vendored ananke theme predates a cascade of Hugo removals (resources.ToCSS @0.156,
+# .Site.DisqusShortname @0.132, site.Social/LanguageDirection @0.158-0.160). 0.131.0 is the
+# newest release that still builds this theme cleanly. To move to modern Hugo, bump the
+# vendored theme to a current ananke release first, then re-pin.
+[build.environment]
+  HUGO_VERSION = "0.131.0"
+
 # Force all non-canonical domains to redirect to sfnexus.org
 [[redirects]]
   from = "https://sfnexus.io/*"
