@@ -3,10 +3,9 @@ title: "OCR"
 description: "Optical Character Recognition with ABBYY"
 cascade:
   featured_image: '/images/ocr.png'
-menu:
-  main:
-    weight: 1
 ---
+
+> **Data lifecycle · Stage 1 of 4 — Source.** Digitizing the collection. Next: [Curate the dataset →](/data/)
 
 We used Optical Character Recognition (OCR) software to convert scans of our print sci-fi books into computer-readable text files. OCR expands the potential uses of our corpus, allowing researchers to not only review scanned image files, but also to search, clean, and analyze digital texts using computational tools.
 

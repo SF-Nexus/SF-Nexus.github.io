@@ -3,9 +3,6 @@ title: "About"
 description: "The history of the SF Nexus, the Paskow Science Fiction Collection, and how Temple digitized and shared its science fiction corpus as data."
 cascade:
   featured_image: '/images/about_1.jpeg'
-menu:
-  main:
-    weight: 1
 ---
 SF Nexus is an open access project. Data and resources provided here are free for everyone, including:
 * **Extracted Features:** Disaggregated feature sets from copyrighted literature, available for research purposes

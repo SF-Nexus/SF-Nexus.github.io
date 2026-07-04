@@ -3,10 +3,10 @@ title: "Analysis"
 description: Word2Vec Modeling
 cascade:
   featured_image: '/images/word_similarities.png'
-menu:
-  main:
-    weight: 6
 ---
+
+> **Data lifecycle · Stage 3 of 4 — Analyze.** Reading the corpus at scale through word embeddings. [← Curate](/data/) · See also [Models: topic modeling](/models/) · Next: [Publish →](/scholarship/)
+
 ## Word2Vec Modeling
 
 By Dez Miller

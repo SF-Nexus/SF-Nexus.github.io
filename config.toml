@@ -3,28 +3,33 @@ languageCode = 'en-us'
 title = 'The SF Nexus'
 theme = "gohugo-theme-ananke"
 canonifyURLS=true
+# Nav ordered to read as the data lifecycle: About → Source(OCR) → Curate(Data) → Analyze(Models/Analysis) → Publish(Scholarship) → People
 [menu]
 [[menu.main]]
   name = 'About'
   pageRef = '/About'
-  weight = 1
+  weight = 5
 [[menu.main]]
-  name = 'People'
-  pageRef = '/People'
-  weight = 2
+  name = 'OCR'
+  pageRef = '/OCR'
+  weight = 10
 [[menu.main]]
   name = 'Data'
   pageRef = '/Data'
-  weight = 3
- [[menu.main]]
-  name = 'OCR'
-  pageRef = '/OCR'
-  weight = 4
+  weight = 20
 [[menu.main]]
   name = 'Models'
   pageRef = '/Models'
-  weight = 5
+  weight = 30
+[[menu.main]]
+  name = 'Analysis'
+  pageRef = '/Analysis'
+  weight = 40
 [[menu.main]]
   name = 'Scholarship'
   pageRef = '/Scholarship'
-  weight = 6
+  weight = 50
+[[menu.main]]
+  name = 'People'
+  pageRef = '/People'
+  weight = 60
