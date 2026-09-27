@@ -3,6 +3,8 @@ languageCode = 'en-us'
 title = 'The SF Nexus'
 theme = "gohugo-theme-ananke"
 canonifyURLS=true
+# robots.txt comes from the theme: Allow + sitemap when HUGO_ENV=production, Disallow otherwise.
+enableRobotsTXT = true
 # No content uses tags or categories; the taxonomy scaffolding only produced empty
 # /tags/ and /categories/ pages.
 disableKinds = ['taxonomy', 'term']
