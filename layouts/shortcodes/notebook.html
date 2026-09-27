@@ -1,0 +1,22 @@
+{{- /*
+  {{< notebook path="notebooks/OCR/ABBYY_OCR_Guidelines.md" title="ABBYY OCR guidelines" >}}
+
+  Links a file in the extracted-features-notebooks repo (site param notebooks_repo).
+  Jupyter notebooks (.ipynb) also get a one-click "Open in Colab" link.
+*/ -}}
+{{ $path := .Get "path" }}
+{{ $repo := site.Params.notebooks_repo }}
+{{ $enc := replace $path " " "%20" }}
+{{ $gh := printf "https://github.com/%s/blob/main/%s" $repo $enc }}
+{{ $ext := path.Ext $path }}
+{{ $kind := cond (eq $ext ".ipynb") "Notebook" (cond (eq $ext ".R") "R script" "Guide") }}
+<div class="notebook">
+  <span class="notebook__kind">{{ $kind }}</span>
+  <span class="notebook__title">{{ .Get "title" }}</span>
+  <span class="notebook__links">
+    <a href="{{ $gh }}" target="_blank" rel="noopener">GitHub<span class="visually-hidden"> (opens in a new tab)</span></a>
+    {{ if eq $ext ".ipynb" }}
+    <a href="https://colab.research.google.com/github/{{ $repo }}/blob/main/{{ $enc }}" target="_blank" rel="noopener">Open in Colab<span class="visually-hidden"> (opens in a new tab)</span></a>
+    {{ end }}
+  </span>
+</div>

@@ -1,64 +1,60 @@
 ---
 title: "People"
 description: "The librarians, students, scholars, and institutional partners behind the SF Nexus."
-cascade:
-  featured_image: '/images/about_1.jpeg'
-menu:
-  main:
-    weight: 1
+featured_image: '/images/about_1.jpeg'
+prose_class: roster
 ---
+The SF Nexus is the work of many people across many institutions. This page lists team members past and present.
 
-This page contains information about all the team members who are working or have worked on this project across many institutions.
+## Temple University Libraries
 
-## Temple University Libraries SF Digitization Team
+### Loretta C. Duckworth Scholars Studio
+* [Alex Wermer-Colan](https://library.temple.edu/people/alex-wermer-colan-ph-d), Academic and Research Director; Director of SF Nexus
+* [Matt Shoemaker](https://library.temple.edu/people/matt-shoemaker), Head of Scholars Studio
+* [Jasmine Clark](https://library.temple.edu/people/jasmine-clark), Digital Scholarship Librarian
+* [Jordan Hample](https://library.temple.edu/people/jordan-hample), Academic Information Technology and Support Technician
 
-**Loretta C. Duckworth Scholars Studio**
-* [Alex Wermer-Colan, Academic and Research Director](https://library.temple.edu/people/alex-wermer-colan-ph-d), Director of SF Nexus
-* [Matt Shoemaker, Head of Scholars Studio](https://library.temple.edu/people/matt-shoemaker)
-* [Jasmine Clark, Digital Scholarship Librarian](https://library.temple.edu/people/jasmine-clark)
-* [Jordan Hample, Academic Information Technology and Support Technician](https://library.temple.edu/people/jordan-hample)
-
-**Special Collections Research Center**
-* Margery Sly, Former Director of Special Collections
+### Special Collections Research Center
+* Margery Sly, former Director of Special Collections
 * Kimberly Tully, Curator of Rare Books
 
-**Metadata and Digitization Services**
-* [Holly Tomren, Head of Metadata and Digitization Services](https://library.temple.edu/people/holly-tomren)
+### Metadata and Digitization Services
+* [Holly Tomren](https://library.temple.edu/people/holly-tomren), Head of Metadata and Digitization Services
 * Casey Shiflet, Digital Collections Specialist
 * Anne Casey, Bibliographic Assistant III
 * Michael Carroll, former Digital Collections Librarian
 * Stefanie Ramsay, former Digital Collections Librarian
-* [Matthew Ducmanas, Special Collections Cataloguer](https://library.temple.edu/people/matthew-ducmanas) 
+* [Matthew Ducmanas](https://library.temple.edu/people/matthew-ducmanas), Special Collections Cataloguer
 
-**Library Technology Development**
-* [Gabriel Galson, Technology Projects Librarian](https://library.temple.edu/people/gabe-galson)
+### Library Technology Development
+* [Gabriel Galson](https://library.temple.edu/people/gabe-galson), Technology Projects Librarian
 
-## Student Research Assistants 
-### Digitization (2017-2020)
-* [Jeff Antsen, Ph.D. Political Science](https://liberalarts.temple.edu/academics/faculty/antsen-jeff)
+## Student research assistants
+
+### Digitization (2017–2020)
+* [Jeff Antsen](https://liberalarts.temple.edu/academics/faculty/antsen-jeff), Ph.D. Political Science
 * Bethany Farrell, Ph.D. Art History
-* [James Kopaczewski, Ph.D. History](https://jameskopaczewski.com)
-* [Nicole Lemire-Garlic, Ph.D. Media and Communication Studies](https://klein.temple.edu/student/nicole-lemire-garlic)
-* [Gary Scales, Ph.D. History](http://www.urbandigitalhistory.com)
-* [Crystal Tatis, MBA Marketing](https://sites.temple.edu/tudsc/crystal-tatis-profile-picture/)
-* [Vivien Wise, MFA Fiber Arts](https://www.vivienwise.com)
+* [James Kopaczewski](https://jameskopaczewski.com), Ph.D. History
+* [Nicole Lemire-Garlic](https://klein.temple.edu/student/nicole-lemire-garlic), Ph.D. Media and Communication Studies
+* [Gary Scales](http://www.urbandigitalhistory.com), Ph.D. History
+* Crystal Tatis, MBA Marketing
+* [Vivien Wise](https://www.vivienwise.com), MFA Fiber Arts
 * Asher Quentin Riley, B.A. Greek and Roman Classics
 
-### Data Curation and Web Development (2022-2023)
+### Data curation and web development (2022–2023)
 * Megan Kane, Ph.D. English
 * SaraGrace Stefan, Ph.D. English
 
 ## Advisors
 * [Sarah Potvin](https://artsci.tamu.edu/english/contact/profiles/sarah-potvin.html), Associate Professor of English, Texas A&M University
-* [Jeremy Brett](https://scholars.library.tamu.edu/vivo/display/n11640f2d/Persons/View%20All), Special Collections, Texas A&M Libraries
-* [Elspeth Healey](https://spencer.lib.ku.edu/elspeth-healey), Special Collections Curator, University of Kansas Spencer Library
-  
-## Institutional Partners
-**HathiTrust Digital Library**
-* [Natalie Fulkerson, Collections Specialist](https://www.lib.umich.edu/users/nfulkers)
-[**Science Fiction Collecting Libraries Consortium**](http://sfspecialcollections.pbworks.com/w/page/75814541/About%20the%20SciFi%20Collection%20Libraries%20Consortium%20(SFCLC))
+* [Jeremy Brett](https://scholars.library.tamu.edu/vivo/display/n11640f2d/Persons/View%20All), Special Collections, Texas A&M University Libraries
+* [Elspeth Healey](https://spencer.lib.ku.edu/elspeth-healey), Special Collections Curator, Kenneth Spencer Research Library, University of Kansas
 
-## External Researchers
-* [Dez Miller, Emory University ](https://dezmiller.com/)
-* [Brianna Brinkley, "Memory in the Apocalyptic Archive: A Literary and Computer Textual Analysis of A Canticle for Leibowitz" (2019)](https://core.ac.uk/download/288849384.pdf)
-* [Tai Xiang, Github repositories](https://github.com/tyxiang0530/Sentiments-of-Science-Fiction)
+## Institutional partners
+* **HathiTrust Digital Library:** [Natalie Fulkerson](https://www.lib.umich.edu/users/nfulkers), Collections Specialist
+* [**Science Fiction Collecting Libraries Consortium**](http://sfspecialcollections.pbworks.com/w/page/75814541/About%20the%20SciFi%20Collection%20Libraries%20Consortium%20(SFCLC))
+
+## External researchers
+* [Dez Miller](https://dezmiller.com/), Emory University: [Word2Vec study of climate fiction](/analysis/)
+* Brianna Brinkley, ["Memory in the Apocalyptic Archive: A Literary and Computer Textual Analysis of *A Canticle for Leibowitz*"](https://core.ac.uk/download/288849384.pdf) (2019)
+* Tai Xiang, [Sentiments of Science Fiction](https://github.com/tyxiang0530/Sentiments-of-Science-Fiction) (GitHub)

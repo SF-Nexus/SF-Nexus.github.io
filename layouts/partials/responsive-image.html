@@ -1,0 +1,51 @@
+{{- /*
+  responsive-image.html: run an image through Hugo Pipes and emit a responsive,
+  lazy-loaded <img> with a webp srcset. Ported from the Philly Community Wireless theme.
+
+  Originals stay in static/images (mounted into assets/images in config.toml), so
+  resources.Get can process them in place and every /images/... link keeps working.
+
+  Params (dict):
+    src     (string, required) e.g. "/images/foo.jpg", or "foo.jpg" for an image in the page bundle
+    page    (page)    the page, so page-relative images resolve from its bundle
+    alt     (string)
+    class   (string)
+    sizes   (string)  <img sizes>; default "100vw"
+    loading (string)  "lazy" (default) or "eager" for above-the-fold imagery
+
+  SVG, GIF, external, and missing images pass through untouched.
+*/ -}}
+{{- $src := .src -}}
+{{- $alt := .alt | default "" -}}
+{{- $class := .class | default "" -}}
+{{- $sizes := .sizes | default "100vw" -}}
+{{- $loading := .loading | default "lazy" -}}
+
+{{- $u := urls.Parse $src -}}
+{{- $path := strings.TrimPrefix "/" $u.Path -}}
+{{- $ext := strings.ToLower (path.Ext $path) -}}
+{{- $processable := and (not $u.IsAbs) (in (slice ".jpg" ".jpeg" ".png") $ext) -}}
+
+{{- $res := false -}}
+{{- $rooted := strings.HasPrefix $src "/" -}}
+{{- if $processable -}}
+  {{- with .page -}}{{- if not $rooted -}}{{- $res = .Resources.Get $u.Path -}}{{- end -}}{{- end -}}
+  {{- if not $res -}}{{- $res = resources.Get $path -}}{{- end -}}
+{{- end -}}
+
+{{- if $res -}}
+  {{- $w := $res.Width -}}
+  {{- $srcset := slice -}}
+  {{- range (slice 480 800 1200 1600 2400) -}}
+    {{- if lt . $w -}}
+      {{- $r := $res.Resize (printf "%dx webp q82" .) -}}
+      {{- $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink .) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $capW := cond (gt $w 2400) 2400 $w -}}
+  {{- $full := $res.Resize (printf "%dx webp q82" $capW) -}}
+  {{- $srcset = $srcset | append (printf "%s %dw" $full.RelPermalink $capW) -}}
+  <img src="{{ $full.RelPermalink }}" srcset="{{ delimit $srcset ", " }}" sizes="{{ $sizes }}" width="{{ $full.Width }}" height="{{ $full.Height }}" alt="{{ $alt }}" loading="{{ $loading }}" decoding="async"{{ if eq $loading "eager" }} fetchpriority="high"{{ end }}{{ with $class }} class="{{ . }}"{{ end }}>
+{{- else -}}
+  <img src="{{ cond $rooted ($src | relURL) $src }}" alt="{{ $alt }}" loading="{{ $loading }}" decoding="async"{{ with $class }} class="{{ . }}"{{ end }}>
+{{- end -}}

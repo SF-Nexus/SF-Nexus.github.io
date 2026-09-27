@@ -1,0 +1,34 @@
+# Extracted-features datasets published on Hugging Face under the SF-Corpus organization.
+#
+# Drives the dataset cards ({{< datasets >}} shortcode on /data/ and the homepage) and the
+# schema.org Dataset markup that lets Google Dataset Search index them.
+
+- id: EF_Full_Texts
+  title: Full texts
+  unit: 403 texts
+  tool: Python / NLTK
+  description: Disaggregated ("bag of words") versions of all 403 texts in the corpus, with cleaned and uncleaned variants and basic metadata (title, author, year, word count).
+
+- id: EF_Chapters_and_Chunks
+  title: Chapters and chunks
+  unit: 403 texts
+  tool: Python / NLTK
+  description: All 403 texts split into segments of up to 1,000 words, each disaggregated into a bag of words. Uniform segments suit topic modeling.
+
+- id: EF_Chapters_Only
+  title: Chapters only
+  unit: 306 texts
+  tool: Python / NLTK
+  description: The 306 texts whose chapters could be detected from OCR tags, split by chapter and disaggregated into bags of words.
+
+- id: EF_Named_Entities
+  title: Named entities
+  unit: 403 texts
+  tool: BookNLP
+  description: BookNLP entity files listing the people, organizations, locations, vehicles, and other named entities in each text, with part of speech and position.
+
+- id: EF_Supersense_Tags
+  title: Supersense tags
+  unit: 403 texts
+  tool: BookNLP
+  description: BookNLP supersense files tagging a broader range of tokens, including emotions, substances, artifacts, animals, and cognition, with part of speech and position.

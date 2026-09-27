@@ -1,0 +1,49 @@
+# The SF Nexus data lifecycle: one corpus followed from the library shelf to a reusable dataset.
+#
+# Drives the stage rail at the top of each lifecycle page and the previous / next pager
+# at the bottom. (`title`, `summary`, `image`, and `color` are reserved for the homepage
+# stage cards and stage colors of the phase-4 redesign; nothing reads them yet.)
+#
+# `pages` are listed in reading order. A page joins a stage with `stage: <key>` in its
+# front matter.
+
+- key: source
+  num: "01"
+  name: Source
+  title: Digitize the collection
+  color: rocket
+  summary: Scanning Temple's Paskow paperbacks and turning page images into clean, chapter-tagged text with OCR.
+  image: /images/ocr.png
+  pages:
+    - /ocr
+
+- key: curate
+  num: "02"
+  name: Curate
+  title: Build shareable data
+  color: atomic
+  summary: Transforming copyrighted novels into "extracted features" (bags of words, chapters and chunks, BookNLP entities) that can be shared openly.
+  image: /images/extracted_header.png
+  pages:
+    - /data
+
+- key: analyze
+  num: "03"
+  name: Analyze
+  title: Read at scale
+  color: ray
+  summary: Topic models, semantic maps, and word embeddings that trace climate, disease, war, and water through post-war SF.
+  image: /images/hero_genre_atlas.png
+  pages:
+    - /models
+    - /analysis
+
+- key: publish
+  num: "04"
+  name: Publish
+  title: Share and connect
+  color: nebula
+  summary: Depositing the corpus in HathiTrust and situating it among the archives, databases, and projects that study SF as data.
+  image: /images/books.jpg
+  pages:
+    - /scholarship

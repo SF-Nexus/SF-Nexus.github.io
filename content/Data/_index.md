@@ -1,65 +1,71 @@
 ---
 title: "Data"
-description: "Curating Extracted Features Datasets with NLTK and BookNLP"
-cascade:
-  featured_image: '/images/extracted_header.png'
-menu:
-  main:
-    weight: 1
+description: "Extracted-features datasets built from 403 copyrighted science fiction texts, curated with Python, R, and BookNLP."
+featured_image: '/images/extracted_header.png'
+stage: curate
 ---
+Our core corpus is 403 texts from the [Temple University SCRC Paskow Science Fiction Collection](https://library.temple.edu/collections/paskow-science-fiction-collection-science-fiction-and-fantasy). It is mostly New Wave SF novels published between 1945 and 1990, along with short story anthologies and magazines. The texts were scanned and [converted to `.txt` files with ABBYY FineReader](/ocr/). After post-processing and cleaning the OCR output, we curated several datasets at different levels of granularity.
 
-Our core SF corpus is comprised of 403 texts from the [Temple University SCRC Paskow Science Fiction Collection](https://library.temple.edu/collections/paskow-science-fiction-collection-science-fiction-and-fantasy). The corpus primarily contains New Wave SF novels published between 1945 and 1990, along with short story anthologies and magazines. The texts have been scanned, digitized and saved as ```.txt``` files using ABBYY Finereader for Optical Character Recognition (OCR). After making the texts machine readable and post-processing and cleaning the OCR'ed text, we have curated several datasets of varying granularity available at this time.
+## Extracted features
 
-Because the majority of texts in our corpus are under copyright, sharing the original, full-text works is a violation of copyright law. However, it is permissible to share "extracted features" from these works, such as disaggregated texts, word frequency counts, and syntactical and semantic descriptors. Extracted features can be used for a variety of analyses, including topic modeling. The following extracted features datasets are currently available for public use:
-* **[EF_Full_Texts](https://huggingface.co/datasets/SF-Corpus/EF_Full_Texts)**: A dataframe containing disaggregated ("bag of words") versions of all 403 texts
-* **[EF_Chapters_and_Chunks](https://huggingface.co/datasets/SF-Corpus/EF_Chapters_and_Chunks)**: A dataframe containing disaggregated ("bag of words") versions of all 403 texts, with each text split into chapters and "chunks" of approximately 1000 words
-* **[EF_Chapters_Only](https://huggingface.co/datasets/SF-Corpus/EF_Chapters_Only)**: A dataframe containing disaggregated ("bag of words") versions of the 306 texts in our corpus which contain chapters, as split into chapters.
+Most texts in the corpus are still in copyright, so we cannot share the full works. We can share **extracted features**: disaggregated texts, word frequency counts, and syntactic and semantic descriptors. HathiTrust pioneered this approach with its [Extracted Features dataset](https://doi.org/10.13012/R2TE-C227) for millions of volumes. Extracted features still support many kinds of analysis, including topic modeling. These datasets are free for public use:
 
-Each dataframe contains two versions of the text: one that has been "cleaned" through lowercasing and removal of punctuation, extra spaces and numbers, and one that has not been cleaned. The dataframes also contain some basic metadata about the books at hand, including title, author name, publication year, and word count. The metadata curation process is ongoing to include more information about publication, description and genre categorization from the Library of Congress. 
+{{< datasets >}}
 
-If you upload one of the dataframes into Python for analysis, its head should look like this: 
+The three bag-of-words datasets each contain two versions of every text. One is "cleaned" (lowercased, with punctuation, extra spaces, and numbers removed) and one is not. They also include basic metadata about each book: title, author, publication year, and word count. Metadata curation is ongoing, and we plan to add publication details, descriptions, and Library of Congress genre categories.
 
-![](/images/EF_Header.png)
+Loaded into Python, the head of a dataframe looks like this:
 
-Two additional extracted features datasets have been generated using BookNLP:
-* **[EF_Named_Entities](https://huggingface.co/datasets/SF-Corpus/EF_Named_Entities)**: CSV files containing information about the "named entities" appearing in the 403 texts: people, organizations, locations, vehicles, among others. 
-* **[EF_Supersense_Tags](https://huggingface.co/datasets/SF-Corpus/EF_Supersense_Tags)**: CSV files containing information about a broader collection of entities appearing in the 403 texts - not only people, places, and locations, but also tokens identified as "emotions," "substances," or "artifacts," among others.
+![The first five rows of an extracted-features dataframe, with columns for Title, Author, Pub Year, Text, Clean_Text, and Word Count](/images/EF_Header.png)
 
-All of our extracted features sets can be accessed through our [SF Nexus HuggingFace repository](https://huggingface.co/datasets/SF-Corpus/extracted_features). HuggingFace datasets can be downloaded from repositories as in Github; they can also be called directly in Python, where they will be downloaded to your local computer and split into training and testing groups in preparation for analysis. Use this code to download the SF_Extracted_Features_Chapters_and_Chunks dataset:
+## Loading the data
 
-```
-# Import dataset module
+All of our extracted-features sets are in the [SF-Corpus organization on Hugging Face](https://huggingface.co/SF-Corpus). You can download them from the website, like files on GitHub, or load them straight into Python with the `datasets` library. The library downloads and caches them locally:
+
+```python
+# pip install datasets
 from datasets import load_dataset
 
-# Load the corpus of texts saved to the SF Nexus repository
+# Load the chapters-and-chunks version of the SF Nexus corpus
 dataset = load_dataset("SF-Corpus/EF_Chapters_and_Chunks")
+
+# Work with it as a pandas DataFrame
+df = dataset["train"].to_pandas()
 ```
 
-For more information about working with HuggingFace datasets, review their [reference guide](https://huggingface.co/docs/datasets/v1.1.1/loading_datasets.html)
+For more on working with Hugging Face datasets, see the [loading guide](https://huggingface.co/docs/datasets/loading).
 
-An extended discussion on extracted features can be found on the Scholars' Studio blog, in Jeff Antsen's ["Curating Copyrighted Corpora: AN R Script for Extracting and Structuring Textual Features"](https://web.archive.org/web/20201030014610/https://sites.temple.edu/tudsc/2019/07/18/curating-copyrighted-corpora-an-r-script-for-extracting-and-structuring-textual-features/).
+### How to cite
 
-This project made use of multiple Python and R pipelines to extract features from the science fiction collection. These pipelines are available as both Jupyter Notebooks and Google Colab Notebooks in this [Github repository](https://github.com/SF-Nexus/extracted-features-notebooks/tree/main/notebooks). Below, the process for crafting each extracted features dataset is discussed in more detail.
+If you use these datasets, please cite the SF Nexus and the specific dataset, for example:
 
-## Pipeline 1: Text Sectioning and Disaggregation
-*Full Code Available on SF Nexus Github:*
-* [Text_Sectioning and Disaggregation.ipynb (Google Colab)](https://github.com/SF-Nexus/extracted-features-notebooks/blob/main/notebooks/Extracting_Features/Text_Sectioning_and_Disaggregation%20(Colab).ipynb)
-* [Text_Sectioning and Disaggregation.ipynb (Jupyter Notebook)](https://github.com/SF-Nexus/extracted-features-notebooks/blob/main/notebooks/Extracting_Features/Text%20Sectioning%20%26%20Disaggregation%20(Jupyter%20Notebook).ipynb)
-* [Text_Sectioning and Disaggregation.R (R)](https://github.com/SF-Nexus/extracted-features-notebooks/blob/main/notebooks/R_scripts/Text%20Sectioning_and_Disaggregation%20(R).R)
+> SF Nexus, Temple University Libraries. *EF_Chapters_and_Chunks* [dataset]. Hugging Face. https://huggingface.co/datasets/SF-Corpus/EF_Chapters_and_Chunks.
 
-Our first pipeline focuses on sectioning and disaggregating the science fiction texts. Breaking texts into sections (in this case, chapters and n-word chunks) is helpful for researchers working with large texts and corpora. In our case, many of the science fiction texts in the sci-fi collection are 50,000+ words long - quite a lot of words per text to process! Sectioning the data into chapters and "chunks" of 1000 words or less enables faster processing time when analyses like topic modeling and word2vec are performed. It also allows researchers to ask more granular questions about the composition of their texts; for example, what multiple topics or themes emerge across chapters of a book, and what do these indicate about the text's narrative arc?
+For the project's approach, cite Wermer-Colan and Kopaczewski, ["The New Wave of Digital Collections"](https://www.jstor.org/stable/45420508), *Transactions of the American Philosophical Society* 110, no. 3 (2022).
 
-Disaggregation is the process of transforming full texts into "bag-of-word" models that are not human-readable. These bag-of-word models can be shared where copyrighted full texts cannot, and they're still usable in processes like LDA topic modeling which rely primarily on word *frequencies* rather than word order. 
+## How the datasets were made
 
-**Input: Machine-readable versions (TXT files) of 403 science fiction books**
+We extracted features from the collection with several Python and R pipelines. They are available as Jupyter and Google Colab notebooks in our [extracted-features-notebooks repository](https://github.com/SF-Nexus/extracted-features-notebooks/tree/main/notebooks). Jeff Antsen discusses the method at length on the Scholars Studio blog in ["Curating Copyrighted Corpora: An R Script for Extracting and Structuring Textual Features"](https://web.archive.org/web/20201030014610/https://sites.temple.edu/tudsc/2019/07/18/curating-copyrighted-corpora-an-r-script-for-extracting-and-structuring-textual-features/) (2019).
 
-To develop an extracted features dataset of the full corpus, we first split each text into segments of 1000 words each. These text "chunks" may be particularly useful for analyses like topic modeling given their uniformity across texts, whereas other ways of segmenting texts (like per chapter, as below) will yield segments of various lengths. Here is how the process works in Python (documentation of the R pipeline available on our [Github repository](https://github.com/SF-Nexus/extracted-features-notebooks/blob/main/notebooks/Extracting_Features/extracting_features_readme.md)).
+### Pipeline 1: Text sectioning and disaggregation
 
-```
+{{< notebook path="notebooks/Extracting_Features/Text_Sectioning_and_Disaggregation (Colab).ipynb" title="Text sectioning and disaggregation (Python)" >}}
+
+{{< notebook path="notebooks/R_scripts/Text Sectioning_and_Disaggregation (R).R" title="Text sectioning and disaggregation (R)" >}}
+
+Our first pipeline sections and disaggregates the science fiction texts. Breaking long texts into sections (here, chapters and n-word chunks) helps researchers working with large texts and corpora. Many books in the collection run to 50,000 words or more. Splitting them into chapters and chunks of 1,000 words or fewer speeds up analyses like topic modeling and Word2Vec. It also lets researchers ask more granular questions: for example, which topics or themes emerge across a book's chapters, and what they suggest about its narrative arc.
+
+Disaggregation turns full texts into "bag-of-words" models that humans cannot read. These can be shared where copyrighted full texts cannot, and they still work for methods like LDA topic modeling that depend mainly on word *frequencies* rather than word order.
+
+**Input:** machine-readable text files of 403 science fiction books.
+
+To build an extracted-features set of the full corpus, we first split each text into 1,000-word segments. These uniform chunks suit analyses like topic modeling, whereas chapters (below) vary in length. Here is the approach in Python (the R pipeline is documented in the [repository README](https://github.com/SF-Nexus/extracted-features-notebooks/blob/main/notebooks/Extracting_Features/extracting_features_readme.md)):
+
+```python
 # Define chunking function
 def split(list_a, chunk_size):
-  for i in range(0, len(list_a), chunk_size):
-    yield list_a[i:i + chunk_size]
+    for i in range(0, len(list_a), chunk_size):
+        yield list_a[i:i + chunk_size]
 
 # Set desired size of chunks
 chunk_size = 1000
@@ -70,90 +76,98 @@ chunked_ch = []
 # Perform chunking function on each row of tokens
 s = new_chapters_df['Tokens']
 for content in s:
-  chunks = list(split(content, chunk_size))
-  # Add to new list
-  chunked_ch.append(chunks)
+    chunks = list(split(content, chunk_size))
+    # Add to new list
+    chunked_ch.append(chunks)
 ```
 
-After running the segmentation function, we sorted  the words in each segment alphabetically in order to transform them from human-readable texts to "bags of words." The resulting extracted feature set of disaggregated, chapterized texts is available for download on our [SF Nexus Hugging Face repository](https://huggingface.co/SF-Corpus).
+After segmenting, we sorted the words in each segment alphabetically. This turns human-readable text into bags of words.
 
-**Output 1: [Disaggregated Versions of 403 Texts, Split into 1000-Word Segments](https://huggingface.co/datasets/SF-Corpus/EF_Chapters_and_Chunks).**
+**Output 1:** [disaggregated versions of 403 texts, split into 1,000-word segments](https://huggingface.co/datasets/SF-Corpus/EF_Chapters_and_Chunks).
 
-We also developed another set of extracted features from our corpus: disaggregated texts split by chapter, rather than 1000-word chunk. Chapter segmentation was possible for a large subsection of our corpus (306 texts), given standardized chapter naming conventions employed during the OCR cleaning process. Python code was written to retrieve all text between the "START OF BOOK" and "END OF BOOK" tags in each text, excluding info on title pages, dedications, acknowledgements, etc. From here, we searched for each instance of "CHAPTER" in each text and split the text whenever an occurence was found. 
+We also split texts by chapter rather than by 1,000-word chunk. This was possible for a large part of the corpus (306 texts) because chapters were tagged consistently during [OCR cleanup](/ocr/). Python code retrieves all text between each book's `START OF BOOK` and `END OF BOOK` tags, leaving out title pages, dedications, acknowledgements, and so on. It then splits the text at every occurrence of `CHAPTER`:
 
-```
+```python
 # Count number of chapters in each text
 chapter_counts = books_cleaned['Text'].str.count('CHAPTER')
 
 # Append chapter counts to dataframe
 books_cleaned["Chapters"] = chapter_counts
 
-# Make new cell each time new chapter starts 
+# Make new cell each time new chapter starts
 new = books_cleaned["Text"].str.split("CHAPTER", expand = True).set_index(books_cleaned['Title'])
 ```
 
-The resulting DataFrame contained each chapter of each book as a separate text.
+The resulting DataFrame holds each chapter of each book as a separate text:
 
- ![](/images/Sectioning_Output_1.png)
+![A dataframe with one row per chapter, labeled by year, author, title, and chapter number (for example 1973_PESEK_THEEARTHISNEAR.txt_Chapter_1), beside the chapter's text](/images/Sectioning_Output_1.png)
 
-After splitting texts by chapters, we again sorted the words in each chapters alphabetically in order to transform them from human-readable texts to "bags of words." 
+As with the chunks, we then sorted the words in each chapter alphabetically to turn them into bags of words.
 
-**Output 2: [Disaggregated Versions of 306 Texts, Split into Chapters](https://huggingface.co/datasets/SF-Corpus/EF_Chapters_Only).**
+**Output 2:** [disaggregated versions of 306 texts, split into chapters](https://huggingface.co/datasets/SF-Corpus/EF_Chapters_Only).
 
-Finally, we disaggregated the full versions of each text files, for use for researchers who are not interested in using smaller chunks (chapters or 1000-word segments) in their analyses.
+Finally, we disaggregated each full text for researchers who don't need smaller units.
 
-**Output 3: [Disaggregated Versions of 403 Full Texts](https://huggingface.co/datasets/SF-Corpus/EF_Full_Texts).**
+**Output 3:** [disaggregated versions of 403 full texts](https://huggingface.co/datasets/SF-Corpus/EF_Full_Texts).
 
-## Pipeline 2: Part-of-Speech Tagging, Named Entity Recognition, and Supersense Tagging
-*Full Code Available on SF Nexus Github:*
-* [Text Enrichment with BookNLP.ipynb (Jupyter Notebook)](https://github.com/SF-Nexus/extracted-features-notebooks/blob/main/notebooks/Extracting_Features/BookNLP%20(Jupyter%20Notebook).ipynb)
+### Pipeline 2: Part-of-speech tagging, named entities, and supersenses
 
-Our second pipeline focuses on "enriching" the SF corpus by extracting information like parts of speech, named entities, and "supersense tags" (e.g., "animal", "artifact", "body", "cognition", etc.) from each text. This information (and much more) can be retrieved by running BookNLP in Python. Developed by David Bamman at UC Berkeley, BookNLP is a natural language processing pipeline for large texts. Its functionalities include:
+{{< notebook path="notebooks/Extracting_Features/BookNLP (Jupyter Notebook).ipynb" title="Text enrichment with BookNLP" >}}
+
+Our second pipeline "enriches" the corpus by extracting parts of speech, named entities, and supersense tags (such as "animal," "artifact," "body," and "cognition") from each text. BookNLP retrieves all of this and more. It is a natural language processing pipeline for book-length texts, developed by David Bamman at UC Berkeley. Its functions include:
+
 * tokenization
-* sentence boundary identification
-* part of speech tagging
+* sentence boundary detection
+* part-of-speech tagging
 * dependency parsing
 * entity recognition
 * entity mapping (aligning aliases to a single character ID)
 * gender prediction
-Digital humanists have used BookNLP in a variety of capacities, including analyses of [character](https://txtlab.org/2019/01/how-can-we-understand-characters-using-data/) and [gender bias in children's literature](https://etd.library.emory.edu/concern/etds/bk128c14w?locale=en). For a more comprehensive introduction to BookNLP, check out [*Introduction to BookNLP* by W.J.B. Mattingly](https://booknlp.pythonhumanities.com/01_intro.html).
 
-**Input: Machine-readable versions (TXT files) of 403 science fiction books**
+Digital humanists have used BookNLP to study [character](https://txtlab.org/2019/01/how-can-we-understand-characters-using-data/) and [gender bias in children's literature](https://etd.library.emory.edu/concern/etds/bk128c14w?locale=en). For a fuller introduction, see [*Introduction to BookNLP* by W. J. B. Mattingly](https://booknlp.pythonhumanities.com/01_intro.html).
 
-We ran the aggregated full texts in our SF collection through BookNLP in Python. Only a few lines of code are needed to run BookNLP in Python:
-```
+**Input:** machine-readable text files of 403 science fiction books.
+
+We ran the full (aggregated) texts through BookNLP in Python. It takes only a few lines:
+
+```python
 # Define folder where files are stored to run BookNLP on
 files = [f for f in os.listdir(path) if os.path.isfile(f)]
 
-# Loop to run book NLP on each file
-for f in files: 
+# Loop to run BookNLP on each file
+for f in files:
     # Define filename as each file in folder
     inputFile = f
-    # Set folder for booknlp results
+    # Set folder for BookNLP results
     outputDir = "BookNLP_Results/"
     # Set ID as name of each file
     idd = f
-    # Run book nlp on each file
+    # Run BookNLP on each file
     booknlp.process(inputFile, outputDir, idd)
 ```
-The result of the code above is a folder containing several BookNLP-generated files for each text. Two types of files are available to access on our SF Nexus Github page.
 
-**Output 1: [Entities files for 403 science fiction books](https://huggingface.co/datasets/SF-Corpus/EF_Named_Entities)**
-* Files containing information about the "named entities" appearing in the texts: people, organizations, locations, vehicles, among others. As seen in the output, the entity file also denotes the part of speech of each entity and their position in the text. 
+This produces a folder of BookNLP files for each text. Two kinds of files are published on our Hugging Face page.
 
-![](/images/booknlp_3.png)
+**Output 1:** [entity files for 403 science fiction books](https://huggingface.co/datasets/SF-Corpus/EF_Named_Entities). These list the named entities in each text (people, organizations, locations, vehicles, and more), with each entity's part of speech and position in the text.
 
-**Output 2: [Supersense files for 403 science fiction books](https://huggingface.co/datasets/SF-Corpus/EF_Supersense_Tags)**
-* Files containing information about a broader collection of entities appearing in the texts - not only people, places, and locations, but also tokens identified as "emotions," "substances," or "artifacts," among others. As seen in the output, the supersense file also denotes the part of speech of each entity and their position in the text. 
+![BookNLP entity output for William Hope Hodgson's The House on the Borderland, with columns for coreference ID, start and end token, mention type, category (PER, LOC, FAC), and entity text](/images/booknlp_3.png)
 
-![](/images/booknlp_2.png)
+**Output 2:** [supersense files for 403 science fiction books](https://huggingface.co/datasets/SF-Corpus/EF_Supersense_Tags). These tag a broader range of tokens beyond people, places, and locations, including tokens identified as "emotions," "substances," or "artifacts." Each tag also records part of speech and position in the text.
 
-For a more comprehensive overview of BookNLP's output, check out [Chapter 3: "The Output Files"](https://booknlp.pythonhumanities.com/03_files.html) in W. J. B. Mattingly's *Introduction to BookNLP*.
+![BookNLP supersense output listing start and end tokens, supersense categories such as noun.location, noun.substance, and verb.emotion, and the tagged text](/images/booknlp_2.png)
 
-## Take Down Notice
-This site only exhibits extracted features for copyrighted fiction; no copyrighted work is being made available for consumption. These digitized files are made accessible for purposes of education and research. Temple University Libraries have given attribution to rights holders when possible. If you hold the rights to materials in our digitized collections that are unattributed, please let us know so that we may maintain accurate information about these materials.
+For a fuller overview of BookNLP's output, see [Chapter 3, "The Output Files"](https://booknlp.pythonhumanities.com/03_files.html) of Mattingly's *Introduction to BookNLP*.
 
-If you are a rights holder and are concerned that you have found material on this website for which you have not granted permission (or is not covered by a copyright exception under US copyright laws), you may request the removal of the material from our site by writing to digitalscholarship@temple.edu. For more information on non-consumptive research, check out [HathiTrust Research Center's Non-Consumptive Use Research Policy](https://www.hathitrust.org/htrc_ncup).
+## Full-text analysis
 
-## Full Text Analysis within the HathiTrust Research Center Data Capsule
-Researchers can remotely access the full texts in a controlled manner for full-text access and analysis through the HathiTrust Research Center Data Capsule. Learn more about the HathiTrust Data Capsule [here](https://wiki.htrc.illinois.edu/display/COM/HTRC+Data+Capsule+Environment) and visit [this Github repository](https://github.com/TempleDSS/data-capsule-appliance) to set up and run a data capsule appliance.
+Researchers can analyze the full texts, without reading them, in two ways. On site at Temple, the Scholars Studio provides supervised access for non-consumptive research (see [OCR](/ocr/#output-txt-files)). Remotely, researchers have been able to analyze HathiTrust volumes, including in-copyright works, in the HathiTrust Research Center (HTRC) Data Capsule, a secure computing environment. Temple's [data capsule appliance](https://github.com/TempleDSS/data-capsule-appliance) is a way to set up and run that kind of environment locally.
+
+{{< notice title="HathiTrust Research Center transition" type="warning" >}}
+HathiTrust is ending its funding of the HathiTrust Research Center at the end of 2026. **HTRC Data Capsules, and the data in them, will no longer be accessible after September 30, 2026.** Derived datasets such as HTRC Extracted Features will remain available from HathiTrust and the University of Illinois. See the [HTRC transition FAQ](https://www.hathitrust.org/about/research-center/htrc-transition-faq/) for details.
+{{< /notice >}}
+
+## Take-down notice
+
+This site shares only extracted features of copyrighted fiction. No copyrighted work is made available to read. These derived files are provided for education and research. Temple University Libraries has credited rights holders where possible. If you hold rights to materials in our digitized collections that are not credited, please let us know so we can keep our information accurate.
+
+If you are a rights holder and believe this site includes material you have not permitted (or that is not covered by an exception under U.S. copyright law), you can request its removal by writing to [digitalscholarship@temple.edu](mailto:digitalscholarship@temple.edu). For more on non-consumptive research, see HathiTrust's [Non-Consumptive Use Research Policy](https://www.hathitrust.org/the-collection/terms-conditions/non-consumptive-use-policy/).

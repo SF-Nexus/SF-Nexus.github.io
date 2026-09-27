@@ -1,0 +1,5 @@
+{{- /* External links open in a new tab (as on the PCW site), are marked with a small ↗,
+       and tell screen-reader users about the new tab. */ -}}
+{{- $external := strings.HasPrefix .Destination "http" -}}
+<a href="{{ .Destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if $external }} class="ext" target="_blank" rel="noopener"{{ end }}>{{ .Text | safeHTML }}{{ if $external }}<span class="ext-mark" aria-hidden="true">&#x2197;</span><span class="visually-hidden"> (opens in a new tab)</span>{{ end }}</a>
+{{- /* trim */ -}}
