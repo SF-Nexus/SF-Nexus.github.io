@@ -12,6 +12,13 @@ The 2026 review of sfnexus.org is split into five stacked branches. Each branch 
 
 To merge a phase: open a PR from `phase-N-…` into `main`, check the Netlify deploy preview, and merge. After phase N is merged, the phase N+1 PR shows only that phase's changes.
 
+## Status (September 2026)
+
+- **Phases 1–3** were reviewed together and merged in [PR #28](https://github.com/SF-Nexus/SF-Nexus.github.io/pull/28). Before merging they were checked with an axe accessibility audit (0 violations), overflow checks from 320 to 1280px, and an independent code review.
+- **Phases 4–5 are parked.** `phase-4-redesign` and `phase-5-polish` already include every phase 1–3 fix, so they stay stacked on what is in `main`. To pick them up, open a PR from `phase-4-redesign` into `main`, check the deploy preview, merge, then do the same for `phase-5-polish`. If `main` has changed in the meantime, merge `main` into `phase-4-redesign` first, then `phase-4-redesign` into `phase-5-polish`.
+- **Follow-up after merging:** see "Things only you can do" in `TODO.md`. The most important item is requesting indexing in Google Search Console.
+- **Branches no longer needed once PR #28 is merged:** `phase-1-invisible`, `phase-2-basics`, `phase-3-features`, `redesign`, and `data-lifecycle`, which will all be in `main`. Also `full-redesign` and `claude/affectionate-turing-ru5cgm`, which are superseded by `phase-5-polish`.
+
 ---
 
 ## Phase 1: Invisible fixes (`phase-1-invisible`)
