@@ -1,6 +1,6 @@
 # SF-Nexus Website: TODO and handoff
 
-Operator-facing checklist of outstanding work for sfnexus.org (Hugo, this repo). See PHASES.md for the staged rollout (phases 1–3 go live when this branch merges; phases 4–5, the visual redesign, are parked on their branches).
+Operator-facing checklist of outstanding work for sfnexus.org (Hugo, this repo). Agents: see AGENTS.md. See PHASES.md for the staged rollout (phases 1–3 are merged, PR #28; phases 4–5, the visual redesign, are parked on their branches).
 
 ## Things only you can do
 
