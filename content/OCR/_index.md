@@ -2,9 +2,8 @@
 title: "OCR"
 description: "Turning page scans of science fiction paperbacks into clean, machine-readable text with ABBYY FineReader."
 featured_image: '/images/ocr.png'
+stage: source
 ---
-> **Data lifecycle · Stage 1 of 4 — Source.** Digitizing the collection. Next: [Curate the dataset →](/data/)
-
 We used Optical Character Recognition (OCR) software to turn scans of our print science fiction books into machine-readable text files. OCR makes the corpus far more useful: researchers can search, clean, and analyze the texts with computational tools instead of only paging through scanned images.
 
 ## Input: TIFF page scans
@@ -39,8 +38,8 @@ Because most of the collection is in copyright, the exported text files can only
 
 The full OCR workflow and a programmatic alternative are in our notebooks repository:
 
-* [ABBYY FineReader OCR guidelines](https://github.com/SF-Nexus/extracted-features-notebooks/blob/main/notebooks/OCR/ABBYY_OCR_Guidelines.md)
-* [OCR with Pytesseract (Python)](https://github.com/SF-Nexus/extracted-features-notebooks/blob/main/notebooks/OCR/OCR%20with%20Pytesseract%20(Jupyter%20Notebook).ipynb) · [Open in Colab](https://colab.research.google.com/github/SF-Nexus/extracted-features-notebooks/blob/main/notebooks/OCR/OCR%20with%20Pytesseract%20(Jupyter%20Notebook).ipynb)
+{{< notebook path="notebooks/OCR/ABBYY_OCR_Guidelines.md" title="ABBYY FineReader OCR guidelines" >}}
+{{< notebook path="notebooks/OCR/OCR with Pytesseract (Jupyter Notebook).ipynb" title="OCR with Pytesseract (Python)" >}}
 
 ## Depositing the corpus in HathiTrust
 

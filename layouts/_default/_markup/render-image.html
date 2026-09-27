@@ -1,0 +1,15 @@
+{{- /*
+  Every markdown image is served as responsive webp. Charts and screenshots link to the
+  full-size original so dense figures stay legible. Give an image a markdown title to
+  turn it into a captioned figure:  ![Alt text](/images/foo.png "Caption text")
+*/ -}}
+{{- $img := partial "responsive-image.html" (dict "src" .Destination "alt" (.Text | plainify | htmlUnescape) "sizes" "(min-width: 64em) 46rem, 94vw") -}}
+{{- $link := printf `<a class="img-link" href="%s" title="Open full-size image">%s</a>` (.Destination | relURL) $img -}}
+{{- if .IsBlock -}}
+<figure class="figure">
+  {{ $link | safeHTML }}
+  {{- with .Title }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+</figure>
+{{- else -}}
+{{ $link | safeHTML }}
+{{- end -}}

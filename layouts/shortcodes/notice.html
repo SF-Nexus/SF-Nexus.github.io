@@ -1,0 +1,10 @@
+{{- /*
+  {{< notice title="Heads up" type="warning" >}} Markdown text {{< /notice >}}
+  type: note (default) | warning
+  A transmission-style callout box, adapted from the PCW theme's notice shortcode.
+*/ -}}
+{{ $type := .Get "type" | default "note" }}
+<aside class="notice notice--{{ $type }}"{{ with .Get "title" }} aria-label="{{ . }}"{{ end }}>
+  {{ with .Get "title" }}<p class="notice__title">{{ . }}</p>{{ end }}
+  <div class="notice__body">{{ .Inner | .Page.RenderString (dict "display" "block") }}</div>
+</aside>

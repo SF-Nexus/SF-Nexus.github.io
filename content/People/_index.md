@@ -2,6 +2,7 @@
 title: "People"
 description: "The librarians, students, scholars, and institutional partners behind the SF Nexus."
 featured_image: '/images/about_1.jpeg'
+prose_class: roster
 ---
 The SF Nexus is the work of many people across many institutions. This page lists team members past and present.
 

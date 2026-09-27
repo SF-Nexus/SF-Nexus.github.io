@@ -1,0 +1,9 @@
+{{- /* Returns the lifecycle stage (from data/lifecycle.yaml) named by the page's `stage` param, or nothing. */ -}}
+{{- $found := false -}}
+{{- with .Params.stage -}}
+  {{- $key := . -}}
+  {{- range site.Data.lifecycle -}}
+    {{- if eq .key $key -}}{{- $found = . -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $found -}}

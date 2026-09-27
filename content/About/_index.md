@@ -1,8 +1,7 @@
 ---
 title: "About"
 description: "The history of the SF Nexus, the Paskow Science Fiction Collection, and how Temple digitized and shared its science fiction corpus as data."
-cascade:
-  featured_image: '/images/about_1.jpeg'
+featured_image: '/images/about_1.jpeg'
 ---
 The SF Nexus is a collaborative effort by research and public libraries with science fiction collections to make SF available online, including as data. The project is based at Temple University's Charles Library, and we want to keep growing a research community around SF collections. The current site is a prototype of what a large-scale collaborative digitization could look like across the dozens of science fiction collections in the UK and North America, including but not limited to the members of the [Science Fiction Collecting Libraries Consortium](http://sfspecialcollections.pbworks.com/w/page/75814541/About%20the%20SciFi%20Collection%20Libraries%20Consortium%20(SFCLC)).
 
@@ -14,6 +13,11 @@ The [Loretta C. Duckworth Scholars Studio](https://library.temple.edu/lcdss) has
 
 Later donations expanded the collection in size and in range of genres, including troves of fanzines and the papers of writers such as John Varley and Stanley G. Weinbaum. SCRC staff and undergraduate student workers compared gift titles against catalogued books and removed exact duplicates of existing holdings. A refocused collection development policy for science fiction also de-emphasized fantasy and horror, so some titles in those genres were removed as well. Over the past several years, a subset of these deduplicated science fiction titles has been digitized. That subset is the SF Nexus corpus.
 
+Related archival collections at the SCRC can be explored in Temple's ArchivesSpace:
+
+* [Science Fiction Fanzine Collection](https://scrcarchivesspace.temple.edu/repositories/4/resources/1056) (SCRC 439)
+* [Science Fiction Collection Vertical File](https://scrcarchivesspace.temple.edu/repositories/4/resources/613) (SCRC 383)
+* [Eshbach Papers and Fantasy Press Archives](https://scrcarchivesspace.temple.edu/repositories/4/resources/521)
 
 ## The digitization project
 
@@ -21,10 +25,15 @@ Digitization began in 2017. The original plan is described in the Scholars Studi
 
 Temple has deposited 348 of the scanned volumes in the HathiTrust Digital Library, where they are [searchable in full text](https://babel.hathitrust.org/cgi/ls?field1=ocr;q1=%2A;a=srchls;facet=htsource%3A%22Temple%20University%22). The packaging and ingest workflow is documented on the [OCR page](/ocr/#depositing-the-corpus-in-hathitrust).
 
+## Project timeline
 
-## Our approach
+{{< timeline >}}
 
-For an overview of our approach to curating literary texts as data, see Alex Wermer-Colan and James Kopaczewski, ["The New Wave of Digital Collections: Speculating on the Future of Library Curation,"](https://www.jstor.org/stable/45420508) *Transactions of the American Philosophical Society* 110, no. 3 (2022): 211–241. Because of copyright restrictions, the SF Nexus explores speculative approaches to data curation. The goal is to share enough of each book (its [extracted features](/data/)) to support analysis at scale.
+## Our approach: collections as data
+
+The SF Nexus is part of the wider [collections as data](https://collectionsasdata.github.io/statement/) movement. This movement asks libraries, archives, and museums to make their holdings available for computational research, not only for reading and viewing. Copyrighted twentieth-century literature is one of the hardest cases. The books that shaped modern genre fiction are often still in copyright, so the full texts cannot be shared. U.S. courts have held that building a searchable, analyzable index of copyrighted books can be fair use (*Authors Guild v. HathiTrust*, 2014; *Authors Guild v. Google*, 2015). That legal footing makes *non-consumptive* research possible: computational analysis that doesn't let anyone read the works.
+
+For an overview of our approach to curating literary texts as data, see Alex Wermer-Colan and James Kopaczewski, ["The New Wave of Digital Collections: Speculating on the Future of Library Curation,"](https://www.jstor.org/stable/45420508) *Transactions of the American Philosophical Society* 110, no. 3 (2022): 211–241. Because of copyright restrictions, the SF Nexus explores speculative approaches to data curation. The goal is to share enough of each book (its [extracted features](/data/)) to support analysis at scale. The [Scholarship](/scholarship/) page gathers the frameworks, legal guidance, and related projects this work builds on.
 
 In the future we hope to build a combined dataset that draws on open sources of public-domain SF, such as [Project Gutenberg](https://www.gutenberg.org/ebooks/bookshelf/68), the [Internet Archive](https://archive.org/details/pulpmagazinearchive), and [Luminist.org](http://www.luminist.org/archives/SF/). We also hope to add in-copyright paperbacks and pulp magazines digitized at libraries like Temple's, shared as derived datasets like those available from HathiTrust.
 
@@ -34,4 +43,4 @@ This work was supported by Temple University Arts and Humanities grant funding f
 
 "The Stories We Tell Ourselves" brought together undergraduate and graduate students, led by Megan Kane and SaraGrace Stefan, to curate our SF dataset with a focus on climate fiction. That work produced this website and its related materials. The curation work also led to a collaboration with Dez Miller, PhD in Comparative Literature at Emory University. This multi-institutional team compared climate fiction in Temple's SF corpus with the SF available in HathiTrust. It then mined HathiTrust's data capsule to study climate fiction with [topic modeling](/models/) and [word embeddings](/analysis/). The team presented the results at the 2023 conference of the Alliance of Digital Humanities Organizations (DH2023, Graz) as "Modeling Eco-Poetics and Eco-Politics in 20th Century Anglophone Climate Fiction: Toxic Water." The slides are on [Zenodo](https://zenodo.org/records/8107505).
 
-The project has since grown into an Institute of Museum and Library Services National Leadership Grant for Libraries to Temple University, in collaboration with Texas A&M University, for a national forum on legal best practices for curating copyrighted literature. The forum convened in 2025. Learn more on the [Data Speculations website](https://dataspeculations.org).
+The project has since grown into ***Data Speculations: A National Forum on Library Digital Stewardship for Copyrighted Contemporary Culture***. The forum is funded by an Institute of Museum and Library Services National Leadership Grant for Libraries (LG-254864-OLS-23) to Temple University in collaboration with Texas A&M University. Alex Wermer-Colan is principal investigator and Sarah Potvin is co-PI. The forum's legal team is Brandon Butler, Peter Jaszi, and Rachael Samberg. It convened in January 2025 to develop legal best practices for curating copyrighted literature. Learn more on the [Data Speculations website](https://dataspeculations.org).

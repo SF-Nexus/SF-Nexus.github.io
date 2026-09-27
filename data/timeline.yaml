@@ -1,0 +1,75 @@
+# Project history, oldest first. Rendered on the About page by the {{< timeline >}} shortcode.
+# group: collection | digitization | research | outreach  (sets the marker color)
+# Add new entries at the end.
+
+- date: "1972-01-01"
+  display_date: "1972"
+  headline: The Paskow Science Fiction Collection is founded
+  group: collection
+  text: >-
+    Temple acquires 5,000 science fiction paperbacks from alumnus David C. Paskow. Later gifts of fanzines and author papers (John Varley, Stanley G. Weinbaum) expand the collection over the following decades.
+
+- date: "2017-12-20"
+  display_date: "2017"
+  headline: Digitization begins
+  group: digitization
+  text: >-
+    The Scholars Studio, the Special Collections Research Center, and Digital Library Initiatives start scanning deaccessioned duplicates from the Paskow Collection, working with a team of graduate research assistants. The plan is laid out in ["Building a New Wave Science Fiction Corpus"](https://sites.temple.edu/tudsc/2017/12/20/building-new-wave-science-fiction-corpus/).
+
+- date: "2019-07-18"
+  headline: Extracting features in R
+  group: research
+  text: >-
+    Jeff Antsen publishes an R script for extracting and structuring textual features from copyrighted corpora, the first version of the method behind the site's datasets.
+
+- date: "2020-02-01"
+  headline: The SF Nexus at Stanford
+  group: outreach
+  text: >-
+    Alex Wermer-Colan presents "The SF Nexus: Digitizing, Curating, and Modeling Mass-Market Speculative Fiction" at Stanford's [CESTA seminar](https://cesta.stanford.edu/events/cesta-seminar-wermer-colan-sf-nexus-digitizing-curating-and-modeling-mass-market).
+
+- date: "2020-06-15"
+  headline: '"Byte-size books"'
+  group: outreach
+  text: >-
+    Temple Now covers the project in ["Byte-size books: Digitizing Temple University Libraries' science fiction collection"](https://news.temple.edu/news/2020-06-15/byte-size-books-digitizing-temple-university-libraries-science-fiction-collection).
+
+- date: "2022-01-01"
+  display_date: "2022"
+  headline: The New Wave of Digital Collections
+  group: research
+  text: >-
+    Wermer-Colan and James Kopaczewski set out the project's approach to curating copyrighted literature as data in the *Transactions of the American Philosophical Society* (vol. 110, no. 3). The team also presents "Digitizing and Exhibiting Copyrighted Science Fiction" at HathiTrust Community Week.
+
+- date: "2022-09-01"
+  display_date: "2022–2023"
+  headline: The Stories We Tell Ourselves
+  group: research
+  text: >-
+    With Temple Arts and Humanities funding, Megan Kane and SaraGrace Stefan lead students in curating the corpus with a focus on climate fiction, producing the notebooks, datasets, and first version of this website.
+
+- date: "2023-05-01"
+  headline: Datasets and notebooks released
+  group: digitization
+  text: >-
+    Five extracted-features datasets go live on [Hugging Face](https://huggingface.co/SF-Corpus), alongside Python and R notebooks for sectioning, disaggregation, BookNLP, topic modeling, and Word2Vec.
+
+- date: "2023-07-01"
+  headline: Toxic Water at DH2023
+  group: research
+  text: >-
+    Dez Miller, Alex Wermer-Colan, Megan Kane, and SaraGrace Stefan present "Modeling Eco-Poetics and Eco-Politics in 20th Century Anglophone Climate Fiction: Toxic Water" at the ADHO conference in Graz ([abstract](https://doi.org/10.5281/zenodo.10065276)).
+
+- date: "2025-01-13"
+  display_date: "January 2025"
+  headline: Data Speculations convenes
+  group: outreach
+  text: >-
+    An IMLS National Leadership Grant (LG-254864-OLS-23) to Temple and Texas A&M brings librarians, scholars, and copyright experts together for [Data Speculations](https://dataspeculations.org), a national forum on library stewardship of copyrighted contemporary culture. Ted Underwood gives the opening keynote, "Copyrighted Cultural Analytics."
+
+- date: "2026-05-30"
+  display_date: "2026"
+  headline: sfnexus.org
+  group: digitization
+  text: >-
+    The project moves to its own domain and reorganizes the site around the data lifecycle, from source to publication.

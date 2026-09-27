@@ -1,0 +1,39 @@
+{{- /*
+  Structured data. The homepage describes the site; the Data page lists each
+  extracted-features set as a schema.org Dataset so Google Dataset Search and other
+  harvesters can find them. Dataset details live in data/datasets.yaml.
+*/ -}}
+{{- $org := dict
+  "@type" "Organization"
+  "name" "SF Nexus, Temple University Libraries"
+  "url" site.BaseURL
+-}}
+{{- if .IsHome -}}
+{{- $site := dict
+  "@context" "https://schema.org"
+  "@type" "WebSite"
+  "name" site.Title
+  "url" site.BaseURL
+  "description" site.Params.description
+  "publisher" $org
+-}}
+<script type="application/ld+json">{{ $site | jsonify | safeJS }}</script>
+{{- end -}}
+{{- if eq .Params.stage "curate" -}}
+{{- range site.Data.datasets -}}
+{{- $url := printf "https://huggingface.co/datasets/SF-Corpus/%s" .id -}}
+{{- $ds := dict
+  "@context" "https://schema.org"
+  "@type" "Dataset"
+  "name" (printf "SF Nexus %s (%s)" .title .id)
+  "description" (printf "%s Derived from the SF Nexus corpus of post-war science fiction digitized from the Paskow Science Fiction Collection, Temple University Libraries." .description)
+  "url" $url
+  "sameAs" $url
+  "isAccessibleForFree" true
+  "creator" $org
+  "keywords" (slice "science fiction" "extracted features" "non-consumptive research" "text mining" "climate fiction" "collections as data")
+  "includedInDataCatalog" (dict "@type" "DataCatalog" "name" "Hugging Face" "url" "https://huggingface.co/datasets")
+-}}
+<script type="application/ld+json">{{ $ds | jsonify | safeJS }}</script>
+{{- end -}}
+{{- end -}}

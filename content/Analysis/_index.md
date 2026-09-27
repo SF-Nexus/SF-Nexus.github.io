@@ -2,16 +2,15 @@
 title: "Word Embeddings"
 description: "Word2Vec models of water, pollution, and toxicity in climate fiction, compared across four corpora."
 featured_image: '/images/word_similarities.png'
+stage: analyze
 ---
-> **Data lifecycle · Stage 3 of 4 — Analyze.** Reading the corpus at scale through word embeddings. [← Curate](/data/) · See also [Topic Models](/models/) · Next: [Publish →](/scholarship/)
-
 *By Dez Miller*
 
 Code for this study is on [Dez Miller's GitHub](https://github.com/dezmediah/wordembeddings). It was presented at DH2023, the conference of the Alliance of Digital Humanities Organizations, in Graz ([abstract](https://doi.org/10.5281/zenodo.10065276); [slides](https://zenodo.org/records/8107505)). Notebooks for running Word2Vec on the SF Nexus data are in our repository:
 
-* [Word2Vec with Gensim](https://github.com/SF-Nexus/extracted-features-notebooks/blob/main/notebooks/Analyzing_Extracted_Features/Gensim%20Word2Vec%20(Jupyter%20Notebook).ipynb) · [Open in Colab](https://colab.research.google.com/github/SF-Nexus/extracted-features-notebooks/blob/main/notebooks/Analyzing_Extracted_Features/Gensim%20Word2Vec%20(Jupyter%20Notebook).ipynb)
-* [Advanced Word2Vec](https://github.com/SF-Nexus/extracted-features-notebooks/blob/main/notebooks/Analyzing_Extracted_Features/Advanced%20Word2Vec%20(Jupyter%20Notebook).ipynb) · [Open in Colab](https://colab.research.google.com/github/SF-Nexus/extracted-features-notebooks/blob/main/notebooks/Analyzing_Extracted_Features/Advanced%20Word2Vec%20(Jupyter%20Notebook).ipynb)
-* [Word2Vec in R](https://github.com/SF-Nexus/extracted-features-notebooks/blob/main/notebooks/R_scripts/Word2Vec%20(R).R)
+{{< notebook path="notebooks/Analyzing_Extracted_Features/Gensim Word2Vec (Jupyter Notebook).ipynb" title="Word2Vec with Gensim" >}}
+{{< notebook path="notebooks/Analyzing_Extracted_Features/Advanced Word2Vec (Jupyter Notebook).ipynb" title="Advanced Word2Vec" >}}
+{{< notebook path="notebooks/R_scripts/Word2Vec (R).R" title="Word2Vec in R" >}}
 
 ## Background
 
@@ -36,23 +35,15 @@ To see how water concepts related to toxicity concepts across the four corpora, 
 
 The graphs below project the three-dimensional vector space into two dimensions. Each shows the seed words and their five most similar words for Corpora C, A, and D. Water and water-related words are blue, pollution and pollution-related words are red, toxic and toxicity-related words are yellow, and river and river-related words are gray.
 
-![Word2Vec plot for the NovelTM gender-balanced corpus showing the seed words and their nearest neighbors, color-coded by seed word](/images/NovelGB_chart.png)
+![Word2Vec plot for the NovelTM gender-balanced corpus showing the seed words and their nearest neighbors, color-coded by seed word](/images/NovelGB_chart.png "Corpus C: the NovelTM gender-balanced workset.")
 
-*Corpus C: the NovelTM gender-balanced workset.*
+![Word2Vec plot for the Temple SF corpus showing the seed words and their nearest neighbors, color-coded by seed word](/images/Temple_word2vec_chart.png "Corpus A: the Temple SF corpus.")
 
-![Word2Vec plot for the Temple SF corpus showing the seed words and their nearest neighbors, color-coded by seed word](/images/Temple_word2vec_chart.png)
-
-*Corpus A: the Temple SF corpus.*
-
-![Word2Vec plot for the Thompson and Mimno SF workset showing the seed words and their nearest neighbors, color-coded by seed word](/images/SF_word2vec_chart.png)
-
-*Corpus D: the Thompson and Mimno SF workset.*
+![Word2Vec plot for the Thompson and Mimno SF workset showing the seed words and their nearest neighbors, color-coded by seed word](/images/SF_word2vec_chart.png "Corpus D: the Thompson and Mimno SF workset.")
 
 We asked whether the Temple SF corpus, dominated by proto-cli-fi, would present certain bodies of water as dirtier, more toxic, or more polluted than the comparison corpora. Below is a matrix of cosine similarities between words for bodies of water and toxicity-related words. The method is heuristic: within each corpus, words may be generally more or less related to one another. So the most useful comparisons are within each corpus, not across corpora.
 
-![A matrix of cosine similarity values between body-of-water words and toxicity-related words for each of the four corpora](/images/word_similarities.png)
-
-*Cosine similarities between bodies of water and toxicity-related words, by corpus.*
+![A matrix of cosine similarity values between body-of-water words and toxicity-related words for each of the four corpora](/images/word_similarities.png "Cosine similarities between bodies of water and toxicity-related words, by corpus.")
 
 Combining this approach with close reading, we realized that competing narrative dynamics might be shaping the cosine similarity results. Ursula K. Le Guin's *The Dispossessed* (1974) is in both the Temple SF corpus and the Thompson and Mimno SF corpus. In the passages below, water is described more positively (associated with cleanliness or purity) in a metaphor. It is described less positively (associated with dirt, toxicity, and sewage) in world-building description.
 

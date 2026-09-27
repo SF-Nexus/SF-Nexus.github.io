@@ -1,0 +1,17 @@
+{{- /* Mission-progress strip across the top of lifecycle pages: 01 Source → 04 Publish. */ -}}
+{{ $stage := partial "stage.html" . }}
+{{ with $stage }}
+<nav class="stage-rail" aria-label="Data lifecycle">
+  <ol class="stage-rail__list wrap">
+    {{ range site.Data.lifecycle }}
+    {{ $first := site.GetPage (index .pages 0) }}
+    <li class="stage-rail__item tone-{{ .color }}{{ if eq .key $stage.key }} is-current{{ end }}">
+      <a href="{{ $first.RelPermalink }}"{{ if eq .key $stage.key }} aria-current="step"{{ end }}>
+        <span class="stage-rail__num">{{ .num }}</span>
+        <span class="stage-rail__name">{{ .name }}</span>
+      </a>
+    </li>
+    {{ end }}
+  </ol>
+</nav>
+{{ end }}

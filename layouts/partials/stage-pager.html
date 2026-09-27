@@ -1,0 +1,37 @@
+{{- /* Previous / next links through the lifecycle pages, in data/lifecycle.yaml order. */ -}}
+{{ $stage := partial "stage.html" . }}
+{{ with $stage }}
+{{ $seq := slice }}
+{{ range site.Data.lifecycle }}
+  {{ $s := . }}
+  {{ range .pages }}{{ with site.GetPage . }}{{ $seq = $seq | append (dict "page" . "stage" $s) }}{{ end }}{{ end }}
+{{ end }}
+{{ $i := -1 }}
+{{ range $n, $e := $seq }}{{ if eq $e.page.RelPermalink $.RelPermalink }}{{ $i = $n }}{{ end }}{{ end }}
+<nav class="pager wrap" aria-label="Previous and next in the lifecycle">
+  {{ if gt $i 0 }}
+  {{ $prev := index $seq (sub $i 1) }}
+  <a class="pager__link pager__link--prev tone-{{ $prev.stage.color }}" href="{{ $prev.page.RelPermalink }}" rel="prev">
+    <span class="pager__label">← Stage {{ $prev.stage.num }} · {{ $prev.stage.name }}</span>
+    <span class="pager__title">{{ $prev.page.LinkTitle }}</span>
+  </a>
+  {{ else }}
+  <a class="pager__link pager__link--prev" href="{{ site.Home.RelPermalink }}">
+    <span class="pager__label">← Start</span>
+    <span class="pager__title">The SF Nexus</span>
+  </a>
+  {{ end }}
+  {{ if and (ge $i 0) (lt $i (sub (len $seq) 1)) }}
+  {{ $next := index $seq (add $i 1) }}
+  <a class="pager__link pager__link--next tone-{{ $next.stage.color }}" href="{{ $next.page.RelPermalink }}" rel="next">
+    <span class="pager__label">Stage {{ $next.stage.num }} · {{ $next.stage.name }} →</span>
+    <span class="pager__title">{{ $next.page.LinkTitle }}</span>
+  </a>
+  {{ else }}
+  <a class="pager__link pager__link--next" href="{{ "people/" | relURL }}">
+    <span class="pager__label">Credits →</span>
+    <span class="pager__title">The people behind the SF Nexus</span>
+  </a>
+  {{ end }}
+</nav>
+{{ end }}

@@ -1,0 +1,27 @@
+{{- /*
+  {{< timeline >}} renders the project history in data/timeline.yaml as a vertical
+  timeline. Adapted from the Philly Community Wireless "Our Story" timeline segment.
+
+  Each entry: date (ISO), display_date (optional override), headline, text (markdown),
+  group: collection | digitization | research | outreach (colors the marker).
+*/ -}}
+{{ $entries := site.Data.timeline }}
+<ol class="timeline">
+  {{ $prevYear := "" }}
+  {{ range $entries }}
+  {{ $t := time .date }}
+  {{ $year := $t.Format "2006" }}
+  <li class="timeline__entry timeline__entry--{{ .group | default "research" }}">
+    <span class="timeline__marker" aria-hidden="true"></span>
+    {{ $label := .display_date | default ($t.Format "January 2006") }}
+    <p class="timeline__date">
+      {{ if ne $year $prevYear }}<span class="timeline__year">{{ $year }}</span>{{ end }}
+      {{/* A bare year that was just printed large would only repeat itself. */}}
+      {{ if or (ne $label $year) (eq $year $prevYear) }}<time datetime="{{ .date }}">{{ $label }}</time>{{ end }}
+    </p>
+    <h3 class="timeline__headline">{{ .headline | markdownify }}</h3>
+    <div class="timeline__text">{{ .text | markdownify }}</div>
+  </li>
+  {{ $prevYear = $year }}
+  {{ end }}
+</ol>
