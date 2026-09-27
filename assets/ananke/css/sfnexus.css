@@ -21,31 +21,31 @@ article a { overflow-wrap: break-word; }
 /* A readable line length for long pages */
 .sfn-prose { max-width: 46rem; }
 
-article blockquote {
+.sfn-prose blockquote {
   margin: 1.5rem 0;
   padding: .75rem 1rem;
   border-left: 4px solid #ccc;
   background: #fff;
 }
-article blockquote p { margin: 0; }
+.sfn-prose blockquote p { margin: 0; }
 
 /* Headings, anchors, external links */
 .sfn-prose h2 { margin-top: 2.5rem; }
 .anchor { margin-left: .35em; color: #767676; font-weight: normal; text-decoration: none; opacity: 0; }
 .sfn-prose h2:hover .anchor, .sfn-prose h3:hover .anchor { opacity: 1; }
-a.ext:after { content: "\2197"; font-size: .75em; margin-left: .1em; }
+.ext-mark { font-size: .75em; margin-left: .1em; }
 
 /* Figures from the image render hook */
 .figure { margin: 2rem 0; }
 .img-link { display: block; }
-.figure img, .img-link img { display: block; margin: 0 auto; border: 1px solid #ddd; background: #fff; padding: .35rem; }
+.figure img, .img-link img { display: block; box-sizing: border-box; margin: 0 auto; border: 1px solid #ddd; background: #fff; padding: .35rem; }
 .figure figcaption { margin-top: .5rem; color: #595959; font-size: .85em; line-height: 1.45; }
 
 /* "On this page" */
 .toc { margin: 0 0 2rem; padding: .75rem 1rem; border: 1px solid #ddd; background: #fff; font-size: .8em; }
 .toc__summary { cursor: pointer; font-weight: bold; letter-spacing: .08em; text-transform: uppercase; font-size: .85em; color: #555; }
 .toc ul { margin: .4rem 0 0; padding-left: 1.1rem; line-height: 1.3; }
-.toc li { margin: .15rem 0; line-height: 1.3; }
+.toc #TableOfContents li { margin: .15rem 0; line-height: 1.3; }
 .toc a { text-decoration: none; }
 
 /* Lifecycle stage rail (top of lifecycle pages) */

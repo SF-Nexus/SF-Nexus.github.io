@@ -46,7 +46,6 @@ disableKinds = ['taxonomy', 'term']
   # Extra stylesheet in assets/ananke/css/, bundled into the theme's main CSS.
   custom_css = ['sfnexus.css']
   email = "digitalscholarship@temple.edu"
-  github = "https://github.com/SF-Nexus"
   huggingface = "https://huggingface.co/SF-Corpus"
   hathitrust = "https://babel.hathitrust.org/cgi/ls?field1=ocr;q1=%2A;a=srchls;facet=htsource%3A%22Temple%20University%22"
   # Used by the {{< notebook >}} shortcode to build GitHub and Colab links.

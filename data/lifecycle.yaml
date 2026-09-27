@@ -1,12 +1,11 @@
 # The SF Nexus data lifecycle: one corpus followed from the library shelf to a reusable dataset.
 #
-# Drives three things:
-#   - the four stage cards on the homepage
-#   - the stage rail at the top of each lifecycle page
-#   - the previous / next pager at the bottom of each lifecycle page
+# Drives the stage rail at the top of each lifecycle page and the previous / next pager
+# at the bottom. (`title`, `summary`, `image`, and `color` are reserved for the homepage
+# stage cards and stage colors of the phase-4 redesign; nothing reads them yet.)
 #
 # `pages` are listed in reading order. A page joins a stage with `stage: <key>` in its
-# front matter. `color` picks the stage's accent from the palette in assets/css/sfnexus.css.
+# front matter.
 
 - key: source
   num: "01"

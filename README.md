@@ -39,4 +39,5 @@ Writing tips:
   * `{{< notice title="…" type="note|warning" >}}…{{< /notice >}}` adds a callout box
   * `{{< datasets >}}` adds the dataset cards
   * `{{< timeline >}}` adds the project timeline
+  * Put each shortcode on its own line with a blank line before and after, including between two `notebook` lines in a row. Otherwise Markdown wraps them in a paragraph and the HTML is invalid.
 * Use `##` for section headings. `##` and `###` headings feed the "On this page" box.

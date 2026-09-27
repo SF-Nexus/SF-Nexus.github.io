@@ -39,6 +39,7 @@ Because most of the collection is in copyright, the exported text files can only
 The full OCR workflow and a programmatic alternative are in our notebooks repository:
 
 {{< notebook path="notebooks/OCR/ABBYY_OCR_Guidelines.md" title="ABBYY FineReader OCR guidelines" >}}
+
 {{< notebook path="notebooks/OCR/OCR with Pytesseract (Jupyter Notebook).ipynb" title="OCR with Pytesseract (Python)" >}}
 
 ## Depositing the corpus in HathiTrust

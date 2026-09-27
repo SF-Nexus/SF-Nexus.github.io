@@ -1,13 +1,13 @@
 # SF-Nexus Website: TODO and handoff
 
-Operator-facing checklist of outstanding work for sfnexus.org (Hugo, this repo). See PHASES.md for the staged rollout (phases 1–3 are live; phases 4–5, the visual redesign, are parked on their branches).
+Operator-facing checklist of outstanding work for sfnexus.org (Hugo, this repo). See PHASES.md for the staged rollout (phases 1–3 go live when this branch merges; phases 4–5, the visual redesign, are parked on their branches).
 
 ## Things only you can do
 
 - [ ] **Update the link in future videos** to the new owned domain, https://sfnexus.org/. You own sfnexus.org now.
 - [ ] **Finalize the HathiTrust tracking metadata sheet**, which records what is in HathiTrust and what is not.
 - [ ] **After this deploy, request indexing** of https://sfnexus.org/ in Google Search Console. The site shipped `noindex` until phase 1. Confirm that the live page source now shows `<meta name="robots" content="index, follow">` and that https://sfnexus.org/robots.txt says `Allow: /`.
-- [ ] **Check that the Netlify UI build settings don't override netlify.toml:** the build command `hugo --gc --minify`, publish directory `public`, and `HUGO_ENV=production` in the production context.
+- [ ] **Check that Netlify is reading netlify.toml.** Settings in the file take precedence over the Netlify UI, but only if Netlify finds it (base directory = repo root). The first deploy log should show the build command `hugo --gc --minify` and Hugo 0.131.0.
 - [ ] **HTRC Data Capsules shut down on 2026-09-30.** The Data page now says so. Decide whether Temple's local data capsule appliance should become the recommended route for remote full-text work.
 - [ ] **Verify external links from a normal network.** The build sandbox could not reach most external hosts; GitHub links were verified. Newly added links to click-test:
   - Scholarship: the collections-as-data DOIs (Zenodo 3152935, 10161976, 8342171), the copyright.gov case summaries, the HathiTrust non-consumptive use policy URL, the Building LLTDM DOI, copyright.gov/1201/2024/, the Underwood DOIs, the *Distant Horizons* page, the Milner & Burgmann and *Convergence* DOIs, the Eaton, Merril, Liverpool SF Hub, and KU Gunn Center pages, and the DHQ article on The Stuff of Science Fiction
