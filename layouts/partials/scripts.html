@@ -1,0 +1,35 @@
+{{/* Mobile menu toggle, adapted from the Philly Community Wireless nav: the menu is always
+     visible without JavaScript, and collapses behind the button only once JS is running. */}}
+<script>
+(function () {
+  var root = document.documentElement;
+  root.classList.add('js');
+  var toggle = document.querySelector('.nav-toggle');
+  var menu = document.getElementById('site-menu');
+  if (!toggle || !menu) return;
+  var desktop = window.matchMedia('(min-width: 64em)');
+
+  function setOpen(open) {
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    root.classList.toggle('menu-open', open);
+  }
+  toggle.addEventListener('click', function () {
+    setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+      var inside = menu.contains(document.activeElement);
+      setOpen(false);
+      if (inside) toggle.focus();
+    }
+  });
+  document.addEventListener('click', function (e) {
+    if (!desktop.matches && !e.target.closest('.site-nav')) setOpen(false);
+  });
+  desktop.addEventListener('change', function () { setOpen(false); });
+
+  // The "On this page" contents start collapsed on small screens.
+  var toc = document.querySelector('details.toc');
+  if (toc && !desktop.matches) toc.removeAttribute('open');
+})();
+</script>

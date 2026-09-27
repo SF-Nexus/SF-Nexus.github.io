@@ -3,24 +3,21 @@
   publish = "public"
 
 # Pin Hugo so a Netlify default bump can't silently break the build.
-# The vendored ananke theme predates a cascade of Hugo removals (resources.ToCSS @0.156,
-# .Site.DisqusShortname @0.132, site.Social/LanguageDirection @0.158-0.160). 0.131.0 is the
-# newest release that still builds this theme cleanly. To move to modern Hugo, bump the
-# vendored theme to a current ananke release first, then re-pin.
+# Every template the site renders now lives in layouts/ (the vendored ananke theme is only a
+# fallback), so the old blockers (resources.ToCSS, .Site.DisqusShortname, .Site.Social) no
+# longer apply. Before moving to a newer Hugo, run `hugo` locally with that version and check
+# for warnings; then re-pin here.
 [build.environment]
   HUGO_VERSION = "0.131.0"
 
-# The ananke theme only lets search engines index the site (robots meta + robots.txt) when
-# HUGO_ENV is "production". It was never set, so every page shipped as "noindex, nofollow".
-# Set it for the production deploy only; deploy previews and branch deploys stay noindex.
-[context.production.environment]
-  HUGO_ENV = "production"
-
+# Deploy previews and branch deploys build as a non-production environment, so their pages
+# carry `noindex` and their robots.txt disallows crawling. Only the production deploy of
+# sfnexus.org is indexable (see layouts/partials/head.html and layouts/robots.txt).
 [context.deploy-preview]
-  command = "hugo --gc --minify --baseURL $DEPLOY_PRIME_URL"
+  command = "hugo --gc --minify --environment preview --baseURL $DEPLOY_PRIME_URL"
 
 [context.branch-deploy]
-  command = "hugo --gc --minify --baseURL $DEPLOY_PRIME_URL"
+  command = "hugo --gc --minify --environment preview --baseURL $DEPLOY_PRIME_URL"
 
 [[headers]]
   for = "/*"
@@ -41,7 +38,7 @@
   status = 301
   force = true
 
-# The LDAvis model used to be published as a content page; it now lives at /ldaviz/.
+# The LDAvis model used to be published as a content page.
 [[redirects]]
   from = "/models/lda_clifi_1/*"
   to = "/ldaviz/"

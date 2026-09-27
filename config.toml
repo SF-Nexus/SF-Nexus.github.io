@@ -1,16 +1,17 @@
 baseURL = 'https://sfnexus.org/'
 languageCode = 'en-us'
 title = 'The SF Nexus'
+# The vendored ananke theme is kept only as a fallback: every template the site actually
+# renders is overridden in layouts/, and the stylesheet lives in assets/css/sfnexus.css.
 theme = "gohugo-theme-ananke"
-canonifyURLS=true
-# robots.txt comes from the theme: Allow + sitemap when HUGO_ENV=production, Disallow otherwise.
 enableRobotsTXT = true
 # No content uses tags or categories; the taxonomy scaffolding only produced empty
-# /tags/ and /categories/ pages.
+# /tags/ and /categories/ pages in the sitemap.
 disableKinds = ['taxonomy', 'term']
-# The main menu is defined only here, not in page front matter.
-# Nav ordered to read as the data lifecycle: About → Source(OCR) → Curate(Data) → Analyze(Models/Analysis) → Publish(Scholarship) → People
-# Stage membership and reading order live in data/lifecycle.yaml.
+
+# Nav ordered to read as the data lifecycle:
+# About → Source (OCR) → Curate (Data) → Analyze (Models, Analysis) → Publish (Scholarship) → People
+# Stage membership and order live in data/lifecycle.yaml.
 [menu]
 [[menu.main]]
   name = 'About'
@@ -43,8 +44,9 @@ disableKinds = ['taxonomy', 'term']
 
 [params]
   description = "SF Nexus is a Temple University Libraries project that digitizes mid-century science fiction and shares it as open, research-ready data."
-  # Extra stylesheet in assets/ananke/css/, bundled into the theme's main CSS.
-  custom_css = ['sfnexus.css']
+  tagline = "Science fiction collections as data"
+  # Default social-share image when a page has no featured_image.
+  og_image = "/images/about_1.jpeg"
   email = "digitalscholarship@temple.edu"
   github = "https://github.com/SF-Nexus"
   huggingface = "https://huggingface.co/SF-Corpus"
@@ -60,6 +62,9 @@ disableKinds = ['taxonomy', 'term']
       # Lets the image render hook emit a <figure> for images that stand alone
       # on a line, instead of a <figure> nested illegally inside a <p>.
       wrapStandAloneImageWithinParagraph = false
+  [markup.highlight]
+    # Token colors come from the retro palette in assets/css/sfnexus.css.
+    noClasses = false
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 3

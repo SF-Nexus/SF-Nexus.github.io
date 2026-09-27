@@ -1,0 +1,14 @@
+{{ define "main" }}
+<header class="page-hero">
+  <div class="page-hero__inner wrap">
+    <p class="kicker">Error 404</p>
+    <h1 class="page-hero__title">Page not found</h1>
+    <p class="page-hero__lede">The page you followed doesn't exist. It may have moved when the site was reorganized around the data lifecycle.</p>
+  </div>
+</header>
+<div class="page-body wrap">
+  <div class="prose">
+    <p><a href="{{ site.Home.RelPermalink }}">Return to the homepage</a> or <a href="{{ "data/" | relURL }}">get the data</a>.</p>
+  </div>
+</div>
+{{ end }}

@@ -1,0 +1,49 @@
+<footer class="site-footer">
+  <div class="wrap site-footer__grid">
+    <div class="site-footer__about">
+      <a class="brand brand--footer" href="{{ site.Home.RelPermalink }}">
+        {{ partial "logo-mark.html" . }}
+        <span class="brand__word">SF Nexus</span>
+      </a>
+      <p>{{ site.Params.tagline }}. An open-access project of the <a href="https://library.temple.edu/lcdss">Loretta C. Duckworth Scholars Studio</a> at Temple University Libraries, Philadelphia.</p>
+    </div>
+
+    <nav class="site-footer__col" aria-label="Data lifecycle">
+      <h2 class="site-footer__heading">The lifecycle</h2>
+      <ol class="site-footer__list site-footer__list--stages">
+        {{ range site.Data.lifecycle }}
+        {{ $stage := . }}
+        {{ range .pages }}
+        {{ with site.GetPage . }}
+        <li><span class="site-footer__num">{{ $stage.num }}</span> <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+        {{ end }}
+        {{ end }}
+        {{ end }}
+      </ol>
+    </nav>
+
+    <div class="site-footer__col">
+      <h2 class="site-footer__heading">Elsewhere</h2>
+      <ul class="site-footer__list">
+        <li><a href="{{ site.Params.huggingface }}">Datasets on Hugging Face</a></li>
+        <li><a href="{{ site.Params.github }}">Code on GitHub</a></li>
+        <li><a href="{{ site.Params.hathitrust }}">The corpus in HathiTrust</a></li>
+        <li><a href="https://lcdssgeo.com/omeka-s/s/scifi/page/digitizing-science-fiction">Book-cover exhibit (Omeka)</a></li>
+        <li><a href="https://dataspeculations.org">Data Speculations forum</a></li>
+      </ul>
+    </div>
+
+    <div class="site-footer__col">
+      <h2 class="site-footer__heading">Contact</h2>
+      <ul class="site-footer__list">
+        <li><a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a></li>
+        <li><a href="{{ "data/#take-down-notice" | relURL }}">Rights holders &amp; take-down requests</a></li>
+        <li><a href="{{ "people/" | relURL }}">Who we are</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap site-footer__base">
+    <p>&copy; {{ now.Format "2006" }} SF Nexus · Temple University Libraries</p>
+    <p class="site-footer__stars" aria-hidden="true">✦ ✧ ✦</p>
+  </div>
+</footer>

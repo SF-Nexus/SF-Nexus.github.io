@@ -1,0 +1,17 @@
+{{ $stage := partial "stage.html" . }}
+<header class="page-hero{{ with $stage }} tone-{{ .color }}{{ end }}">
+  {{ with .Params.featured_image }}
+  <div class="page-hero__media" aria-hidden="true">
+    {{ partial "responsive-image.html" (dict "src" . "alt" "" "class" "page-hero__img" "loading" "eager" "sizes" "100vw") }}
+  </div>
+  {{ end }}
+  <div class="page-hero__inner wrap">
+    {{ with $stage }}
+    <p class="kicker"><span class="stage-chip">Stage {{ .num }}</span> {{ .name }} · {{ .title }}</p>
+    {{ else }}
+    <p class="kicker">The SF Nexus</p>
+    {{ end }}
+    <h1 class="page-hero__title">{{ .Title }}</h1>
+    {{ with .Description }}<p class="page-hero__lede">{{ . }}</p>{{ end }}
+  </div>
+</header>

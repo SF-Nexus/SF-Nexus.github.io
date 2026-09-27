@@ -1,0 +1,92 @@
+{{ define "main" }}
+{{ with .Params.hero }}
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero__media">
+    {{ partial "responsive-image.html" (dict "src" .image "alt" .alt "class" "hero__img" "loading" "eager" "sizes" "100vw") }}
+  </div>
+  <div class="hero__inner wrap">
+    {{ with .kicker }}<p class="kicker">{{ . }}</p>{{ end }}
+    <h1 class="hero__title" id="hero-title"><span class="hero__the">The</span> <span class="hero__sf">SF</span> Nexus</h1>
+    {{ with .tagline }}<p class="hero__lede">{{ . | markdownify }}</p>{{ end }}
+    <ul class="hero__actions">
+      {{ range .buttons }}
+      <li><a class="btn {{ .class | default "btn--primary" }}" href="{{ .url }}">{{ .text }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+{{ end }}
+
+{{ with .Params.stats }}
+<section class="stats" aria-label="The project by the numbers">
+  <dl class="stats__list wrap">
+    {{ range . }}
+    <div class="stats__item">
+      <dt class="stats__label">{{ .label }}</dt>
+      <dd class="stats__value">{{ .value }}</dd>
+    </div>
+    {{ end }}
+  </dl>
+</section>
+{{ end }}
+
+<section class="home-intro wrap">
+  <div class="prose prose--intro">
+    {{ .Content }}
+  </div>
+</section>
+
+<section class="lifecycle" aria-labelledby="lifecycle-title">
+  <div class="wrap">
+    <p class="kicker kicker--dark">Four stages · one corpus</p>
+    <h2 class="section-title" id="lifecycle-title">Explore the project as a data lifecycle</h2>
+    <p class="section-lede">Follow a single collection of science fiction from the library shelf to a reusable dataset. Each section documents one stage of the pipeline: its methods and concepts as well as its outputs.</p>
+    <ol class="stage-cards">
+      {{ range site.Data.lifecycle }}
+      <li class="stage-card tone-{{ .color }}">
+        <div class="stage-card__band">
+          <span class="stage-card__num">{{ .num }}</span>
+          <span class="stage-card__name">{{ .name }}</span>
+        </div>
+        <div class="stage-card__art duotone" aria-hidden="true">
+          {{ partial "responsive-image.html" (dict "src" .image "alt" "" "sizes" "(min-width: 64em) 22vw, (min-width: 40em) 45vw, 90vw") }}
+        </div>
+        <div class="stage-card__body">
+          <h3 class="stage-card__title">{{ .title }}</h3>
+          <p>{{ .summary }}</p>
+          <ul class="stage-card__links">
+            {{ range .pages }}{{ with site.GetPage . }}
+            <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }} <span aria-hidden="true">→</span></a></li>
+            {{ end }}{{ end }}
+          </ul>
+        </div>
+      </li>
+      {{ end }}
+    </ol>
+  </div>
+</section>
+
+<section class="home-datasets" aria-labelledby="datasets-title">
+  <div class="wrap">
+    <p class="kicker kicker--dark">Open data · free for research</p>
+    <h2 class="section-title" id="datasets-title">Extracted-features datasets</h2>
+    <p class="section-lede">Most of the corpus is still in copyright, so the full texts can't be shared. What we can share are <a href="{{ "data/" | relURL }}">extracted features</a>: word counts, chapter and chunk bags of words, and BookNLP annotations, loaded with one line of Python.</p>
+    {{ partial "datasets.html" (dict "compact" true) }}
+  </div>
+</section>
+
+{{ with .Params.features }}
+<section class="features" aria-label="Further reading">
+  <div class="wrap features__grid">
+    {{ range . }}
+    <article class="feature tone-{{ .color | default "ray" }}">
+      <p class="kicker kicker--dark">{{ .kicker }}</p>
+      <h2 class="feature__title">{{ .title }}</h2>
+      <div class="feature__text">{{ .text | markdownify }}</div>
+      {{ with .link }}<p><a class="btn btn--small" href="{{ .url }}">{{ .text }}</a></p>{{ end }}
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+{{ end }}
