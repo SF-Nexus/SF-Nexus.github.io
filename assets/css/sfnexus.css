@@ -850,8 +850,8 @@ main:focus { outline: none; }
 .prose :is(a, code) { overflow-wrap: anywhere; }
 .prose a:hover { text-decoration-thickness: .14em; }
 /* Inline (not inline-block) so trailing punctuation can't wrap away from the link. */
-.prose a.ext::after {
-  content: "↗";
+/* The ↗ is an aria-hidden span from render-link.html, so screen readers skip it. */
+.prose .ext-mark {
   margin-left: .12em;
   font-family: var(--font-head);
   font-size: .72em;

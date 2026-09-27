@@ -15,7 +15,7 @@ Operator-facing checklist of outstanding work for sfnexus.org (Hugo, this repo).
 - [ ] **Update the link in future videos** to the owned domain: https://sfnexus.org/
 - [ ] **Finalize the HathiTrust tracking metadata sheet**, which records what is in HathiTrust and what is not.
 - [ ] **After the next deploy, request indexing** of https://sfnexus.org/ in Google Search Console. Confirm that the live page source shows `<meta name="robots" content="index, follow">`.
-- [ ] **Check that the Netlify UI build settings don't override netlify.toml.** netlify.toml now sets `command = "hugo --gc --minify"` and `publish = "public"`.
+- [ ] **Check that Netlify is reading netlify.toml.** Settings in the file take precedence over the Netlify UI, but only if Netlify finds it (base directory = repo root). The first deploy log should show the build command `hugo --gc --minify` and Hugo 0.131.0.
 - [ ] **HTRC Data Capsules shut down on 2026-09-30.** The Data page now says so. Decide whether Temple's local data capsule appliance should become the recommended route for remote full-text work.
 - [ ] **Verify external links from a normal network.** The build sandbox could not reach most external hosts. GitHub links were verified; the rest were checked only against search results. Newly added links to verify:
   - Scholarship: the collections-as-data DOIs (Zenodo 3152935, 10161976, 8342171), the copyright.gov case summaries, the HathiTrust non-consumptive use policy URL, the Building LLTDM DOI, copyright.gov/1201/2024/, the Underwood DOIs, the *Distant Horizons* page, the Milner & Burgmann and *Convergence* DOIs, the Eaton, Merril, Liverpool SF Hub, and KU Gunn Center pages, and the DHQ article on The Stuff of Science Fiction
@@ -33,6 +33,6 @@ Operator-facing checklist of outstanding work for sfnexus.org (Hugo, this repo).
 - Unused figures still in `static/images/` for future use: BERTopic word clouds for Desert Landscape, Disease Outbreak, and Street Car Driving; `booknlp_1.png`; `extracted_1–4.png`; `hathi_1.png`; `ocr_input.png`; and `ocr_output.png`.
 - Fix the Data Speculations Events page (separate repo), which dates "Toxic Water" to ADHO 2024. It was DH2023 in Graz.
 
-## Research / collections
+## Ideas for next iterations
 
 - [ ] Survey what other SF Collecting Libraries Consortium members hold that could join a multi-institution corpus.

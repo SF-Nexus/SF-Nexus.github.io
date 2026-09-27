@@ -13,7 +13,7 @@
   title: Chapters and chunks
   unit: 403 texts
   tool: Python / NLTK
-  description: All 403 texts split into chapters and then into chunks of roughly 1,000 words, each disaggregated into a bag of words. Uniform segments suit topic modeling.
+  description: All 403 texts split into segments of up to 1,000 words, each disaggregated into a bag of words. Uniform segments suit topic modeling.
 
 - id: EF_Chapters_Only
   title: Chapters only

@@ -50,6 +50,7 @@ We extracted features from the collection with several Python and R pipelines. T
 ### Pipeline 1: Text sectioning and disaggregation
 
 {{< notebook path="notebooks/Extracting_Features/Text_Sectioning_and_Disaggregation (Colab).ipynb" title="Text sectioning and disaggregation (Python)" >}}
+
 {{< notebook path="notebooks/R_scripts/Text Sectioning_and_Disaggregation (R).R" title="Text sectioning and disaggregation (R)" >}}
 
 Our first pipeline sections and disaggregates the science fiction texts. Breaking long texts into sections (here, chapters and n-word chunks) helps researchers working with large texts and corpora. Many books in the collection run to 50,000 words or more. Splitting them into chapters and chunks of 1,000 words or fewer speeds up analyses like topic modeling and Word2Vec. It also lets researchers ask more granular questions: for example, which topics or themes emerge across a book's chapters, and what they suggest about its narrative arc.

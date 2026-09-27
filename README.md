@@ -18,6 +18,8 @@ hugo --gc --minify   # production build into public/
 
 ## How the site is organized
 
+See `PHASES.md` for the staged improvement plan and `TODO.md` for open items.
+
 The site is structured as a **data lifecycle**: one corpus followed through four stages.
 
 | Stage | Page | Folder |
@@ -51,6 +53,7 @@ About and People frame the lifecycle. A page joins a stage with `stage: source|c
   * `{{< notice title="…" type="note|warning" >}}Markdown{{< /notice >}}` adds a callout box
   * `{{< datasets >}}` adds the dataset cards
   * `{{< timeline >}}` adds the project timeline
+  * Put each shortcode on its own line with a blank line before and after, including between two `notebook` lines in a row. Otherwise Markdown wraps them in a paragraph and the HTML is invalid.
 * Use `##` for section headings. The page title is the only `#` heading. `##` and `###` headings feed the "On this page" contents box.
 
 ## Theme

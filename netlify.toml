@@ -40,6 +40,11 @@
 
 # The LDAvis model used to be published as a content page.
 [[redirects]]
+  from = "/models/lda_clifi_1"
+  to = "/ldaviz/"
+  status = 301
+
+[[redirects]]
   from = "/models/lda_clifi_1/*"
   to = "/ldaviz/"
   status = 301

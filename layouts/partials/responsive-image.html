@@ -6,7 +6,8 @@
   resources.Get can process them in place and every /images/... link keeps working.
 
   Params (dict):
-    src     (string, required) e.g. "/images/foo.jpg"
+    src     (string, required) e.g. "/images/foo.jpg", or "foo.jpg" for an image in the page bundle
+    page    (page)    the page, so page-relative images resolve from its bundle
     alt     (string)
     class   (string)
     sizes   (string)  <img sizes>; default "100vw"
@@ -26,7 +27,11 @@
 {{- $processable := and (not $u.IsAbs) (in (slice ".jpg" ".jpeg" ".png") $ext) -}}
 
 {{- $res := false -}}
-{{- if $processable -}}{{- $res = resources.Get $path -}}{{- end -}}
+{{- $rooted := strings.HasPrefix $src "/" -}}
+{{- if $processable -}}
+  {{- with .page -}}{{- if not $rooted -}}{{- $res = .Resources.Get $u.Path -}}{{- end -}}{{- end -}}
+  {{- if not $res -}}{{- $res = resources.Get $path -}}{{- end -}}
+{{- end -}}
 
 {{- if $res -}}
   {{- $w := $res.Width -}}
@@ -42,5 +47,5 @@
   {{- $srcset = $srcset | append (printf "%s %dw" $full.RelPermalink $capW) -}}
   <img src="{{ $full.RelPermalink }}" srcset="{{ delimit $srcset ", " }}" sizes="{{ $sizes }}" width="{{ $full.Width }}" height="{{ $full.Height }}" alt="{{ $alt }}" loading="{{ $loading }}" decoding="async"{{ if eq $loading "eager" }} fetchpriority="high"{{ end }}{{ with $class }} class="{{ . }}"{{ end }}>
 {{- else -}}
-  <img src="{{ $src | relURL }}" alt="{{ $alt }}" loading="{{ $loading }}" decoding="async"{{ with $class }} class="{{ . }}"{{ end }}>
+  <img src="{{ cond $rooted ($src | relURL) $src }}" alt="{{ $alt }}" loading="{{ $loading }}" decoding="async"{{ with $class }} class="{{ . }}"{{ end }}>
 {{- end -}}
