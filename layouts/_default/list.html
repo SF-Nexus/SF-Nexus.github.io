@@ -8,7 +8,8 @@
       {{ if $toc }}
       <details class="toc" open>
         <summary class="toc__summary">On this page</summary>
-        {{ .TableOfContents }}
+        {{/* Name the contents landmark so it is distinguishable from the site navigation. */}}
+        {{ replace .TableOfContents `<nav id="TableOfContents">` `<nav id="TableOfContents" aria-label="On this page">` | safeHTML }}
       </details>
       {{ end }}
       {{- .Content -}}

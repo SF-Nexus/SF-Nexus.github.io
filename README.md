@@ -18,3 +18,25 @@ hugo          # build into public/
 Netlify deploys `main`. Production deploys set `HUGO_ENV=production`, which the ananke theme requires before it lets search engines index the site.
 
 See `PHASES.md` for the staged improvement plan and `TODO.md` for open items.
+
+# Editing the site
+
+| To change… | Edit |
+|---|---|
+| Page text | `content/<Section>/_index.md` |
+| Navigation menu | `config.toml` (`[[menu.main]]`) |
+| Lifecycle stages and their page order (stage rail, previous/next links) | `data/lifecycle.yaml`; a page joins a stage with `stage: source`, `curate`, `analyze`, or `publish` in its front matter |
+| Dataset cards and their Google Dataset Search markup | `data/datasets.yaml` |
+| Project timeline on About | `data/timeline.yaml` |
+| Extra styles | `assets/ananke/css/sfnexus.css` |
+
+Writing tips:
+
+* `![Alt text](/images/file.png "Optional caption")`: images are served as responsive WebP and link to the full-size original, and a title becomes a caption.
+* External links get a ↗ and open in a new tab automatically.
+* Shortcodes:
+  * `{{< notebook path="notebooks/…" title="…" >}}` adds GitHub and "Open in Colab" links
+  * `{{< notice title="…" type="note|warning" >}}…{{< /notice >}}` adds a callout box
+  * `{{< datasets >}}` adds the dataset cards
+  * `{{< timeline >}}` adds the project timeline
+* Use `##` for section headings. `##` and `###` headings feed the "On this page" box.

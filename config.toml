@@ -60,6 +60,10 @@ disableKinds = ['taxonomy', 'term']
       # Lets the image render hook emit a <figure> for images that stand alone
       # on a line, instead of a <figure> nested illegally inside a <p>.
       wrapStandAloneImageWithinParagraph = false
+  [markup.highlight]
+    # Hugo's default (monokai) fails WCAG contrast for comments and keywords;
+    # modus-operandi is a light theme designed for accessible contrast.
+    style = 'modus-operandi'
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 3
