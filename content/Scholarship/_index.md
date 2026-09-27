@@ -3,9 +3,6 @@ title: "Scholarship"
 description: "Related projects, datasets, and digital archives for studying science fiction as data."
 cascade:
   featured_image: '/images/about_1.jpeg'
-menu:
-  main:
-    weight: 1
 ---
 The resources foregrounded by the SF Nexus explore the genre at scale using data. These include data visualizations of SF literary history, archival holdings of bulk digital assets, and databases of records.  
 

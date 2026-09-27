@@ -3,6 +3,12 @@ languageCode = 'en-us'
 title = 'The SF Nexus'
 theme = "gohugo-theme-ananke"
 canonifyURLS=true
+# No content uses tags or categories; the taxonomy scaffolding only produced empty
+# /tags/ and /categories/ pages.
+disableKinds = ['taxonomy', 'term']
+
+# The main menu is defined only here. (Pages used to repeat it in their front matter,
+# which produced "duplicate menu entry" build warnings.)
 [menu]
 [[menu.main]]
   name = 'About'
@@ -16,7 +22,7 @@ canonifyURLS=true
   name = 'Data'
   pageRef = '/Data'
   weight = 3
- [[menu.main]]
+[[menu.main]]
   name = 'OCR'
   pageRef = '/OCR'
   weight = 4
@@ -25,6 +31,10 @@ canonifyURLS=true
   pageRef = '/Models'
   weight = 5
 [[menu.main]]
+  name = 'Analysis'
+  pageRef = '/Analysis'
+  weight = 6
+[[menu.main]]
   name = 'Scholarship'
   pageRef = '/Scholarship'
-  weight = 6
+  weight = 7

@@ -3,9 +3,6 @@ title: "Analysis"
 description: Word2Vec Modeling
 cascade:
   featured_image: '/images/word_similarities.png'
-menu:
-  main:
-    weight: 6
 ---
 ## Word2Vec Modeling
 
@@ -27,7 +24,7 @@ A common operator with Word2Vec is getting cosine similarity results between two
 Our project, conceived for ADHO 2023, involved myself, Alex Wermer-Colan, Megan Kane, and SaraGrace Stefan working on studying how the Temple Sci-Fi corpus conceptualized various ecological concepts, in particular water, and how those associations compared to other corpora housed within the HathiTrust Digital Library. As a dataset in which proto climate-fiction (or cli-fi) dominated, we wanted to know whether water and water-related words would be more associated with pollution and toxicity than in a broader sci-fi corpus or in a broad literary fiction corpus.
 
 Four Word2Vec models were produced, depicting word similarity for the following corpora: 
-A) the Temple SF Corpus, housed within Hathi Trust
+A) the Temple SF Corpus, housed within HathiTrust
 B) A subset of the Temple SF Corpus identified as being particularly water-focused through LDA Topic Modeling
 C) Kimutis, Underwood, and Witte’s 1,501-Volume NovelTM Gender-Balanced Workset housed within the HathiTrust Digital Library
 D) Thompson and Mimno’s 5,164-Volume SF Workset housed within the HathiTrust Digital Library
@@ -36,15 +33,15 @@ To visualize how water concepts related to toxicity concepts in a general way in
 
 Following are two-dimensional graphs of the three-dimensional vector space for the seed words and their five most related words for Corpora A, C, and D. In these graphs, water and water-related words are blue, pollution and pollution-related words are red, toxic and toxicity-related words are yellow, and river and river-related words are gray.
 
-![image](/images/NovelGB_chart.png)
+![Word2Vec plot for the NovelTM gender-balanced corpus showing the seed words and their nearest neighbors, color-coded by seed word](/images/NovelGB_chart.png)
 
-![image](/images/Temple_word2vec_chart.png)
+![Word2Vec plot for the Temple SF corpus showing the seed words and their nearest neighbors, color-coded by seed word](/images/Temple_word2vec_chart.png)
 
-![image](/images/SF_word2vec_chart.png)
+![Word2Vec plot for the Thompson and Mimno SF workset showing the seed words and their nearest neighbors, color-coded by seed word](/images/SF_word2vec_chart.png)
 
 We wanted to know whether the TempleU SF Corpus, given the predominance of proto-cli-fi in it, would represent certain bodies of water as dirtier, more toxic, or more polluted than the comparison corpora. Following is a matrix with cosine similarity values between words representing bodies of water and those toxicity related words. This method is heuristic, given that within each corpus, words might be generally more or less related to one another. Therefore, the most useful comparisons are within each corpus rather than across corpora. 
 
-![image](/images/word_similarities.png)
+![A matrix of cosine similarity values between body-of-water words and toxicity-related words for each of the four corpora](/images/word_similarities.png)
 
 In combining this approach with close reading, we came to realize that competing narrative dynamics might be influencing these cosine similarity results. For example, we can see in the following quotes from Ursula K. Le Guin’s *The Dispossessed* (1974), which is in the TempleU SF Corpus and in the Mimno and Thompson comparison SF corpus, that water is discussed more positively (i.e. more in association with cleanliness or purity) in the context of a metaphor, and less positively (i.e. more in association with dirtiness, toxicity, and sewage) in the context of a world-building description. 
 

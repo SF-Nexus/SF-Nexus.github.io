@@ -3,9 +3,6 @@ title: "People"
 description: "The librarians, students, scholars, and institutional partners behind the SF Nexus."
 cascade:
   featured_image: '/images/about_1.jpeg'
-menu:
-  main:
-    weight: 1
 ---
 
 This page contains information about all the team members who are working or have worked on this project across many institutions.

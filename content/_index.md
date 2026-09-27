@@ -23,4 +23,4 @@ The current phase of this website showcases a demonstration project of how libra
 
 Ultimately, the SF Nexus seeks to build and share a comprehensive dataset of science fiction literature. Due to limitations imposed on copyright, this project explores speculative approaches to data curation that can make elements of each book (extracted features) available to scholars seeking to engage in large scale analysis of text as data. 
 
-For an overview of our approach, see Alex Wermer-Colan's and James Kopaczewski's article, ["The New Wave of Digital Collections: Speculating on the Future of Library Curation"](https://www.jstor.org/stable/45420508#metadata_info_tab_contents) (2022). 
+For an overview of our approach, see Alex Wermer-Colan's and James Kopaczewski's article, ["The New Wave of Digital Collections: Speculating on the Future of Library Curation"](https://www.jstor.org/stable/45420508) (2022). 
