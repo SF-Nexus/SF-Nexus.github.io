@@ -1,7 +1,7 @@
 {{- /* Mission-progress strip across the top of lifecycle pages: 01 Source → 04 Publish. */ -}}
 {{ $stage := partial "stage.html" . }}
 {{ with $stage }}
-<nav class="stage-rail" aria-label="Data lifecycle">
+<nav class="stage-rail" aria-label="Lifecycle progress">
   <ol class="stage-rail__list wrap">
     {{ range site.Data.lifecycle }}
     {{ $first := site.GetPage (index .pages 0) }}

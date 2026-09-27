@@ -1,14 +1,13 @@
 {{ define "main" }}
-<header class="page-hero">
-  <div class="page-hero__inner wrap">
-    <p class="kicker">Error 404</p>
-    <h1 class="page-hero__title">Page not found</h1>
-    <p class="page-hero__lede">The page you followed doesn't exist. It may have moved when the site was reorganized around the data lifecycle.</p>
+<section class="lost">
+  <div class="lost__inner wrap">
+    <p class="kicker">Error 404 · Signal lost</p>
+    <h1 class="lost__title">This page drifted out of orbit.</h1>
+    <p class="lost__lede">The coordinates you followed don't match anything in the SF Nexus. The page may have moved when the site was reorganized around the data lifecycle.</p>
+    <ul class="lost__links">
+      <li><a class="btn btn--primary" href="{{ site.Home.RelPermalink }}">Return to base</a></li>
+      <li><a class="btn btn--ghost" href="{{ "data/" | relURL }}">Get the data</a></li>
+    </ul>
   </div>
-</header>
-<div class="page-body wrap">
-  <div class="prose">
-    <p><a href="{{ site.Home.RelPermalink }}">Return to the homepage</a> or <a href="{{ "data/" | relURL }}">get the data</a>.</p>
-  </div>
-</div>
+</section>
 {{ end }}

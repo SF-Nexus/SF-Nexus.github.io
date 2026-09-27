@@ -89,9 +89,14 @@ The site's own templates replace Ananke's (the theme stays as a fallback), and p
 
 ## Phase 5: Polish (`phase-5-polish`)
 
-- Dark mode.
+- Dark mode that follows the visitor's system setting, checked for WCAG AA contrast.
 - A retro "signal lost" 404 page.
-- Print and reduced-motion styles.
-- A full favicon set and theme color.
-- An automated accessibility audit, with fixes.
-- Final docs.
+- Print styles (no nav or footer, and printed external URLs) and reduced-motion styles.
+- A full favicon set (SVG, 32px PNG, Apple touch icon), plus theme-color and color-scheme tags.
+- An accessibility audit with axe-core on every page, in light and dark modes, at desktop and phone widths.
+  - One issue was found and fixed: two navigation landmarks shared the name "Data lifecycle."
+  - The site now has zero axe violations.
+  - A keyboard pass confirmed that every focusable element shows a focus ring and that the skip link works. The skip link's focus ring was lightened for contrast.
+- Final TODO.md handoff: items only a person can do, and links that need checking from a normal network.
+
+After phase 5, the site matches the `full-redesign` branch plus these accessibility fixes.

@@ -9,9 +9,9 @@
 
    1. Fonts            6. Home               11. Components
    2. Tokens           7. Stage cards        12. Pager + footer
-   3. Base             8. Datasets           13. Code highlighting
-   4. Header + nav     9. Page hero + rail
-   5. Buttons, kickers 10. Page body + prose
+   3. Base             8. Datasets           13. 404
+   4. Header + nav     9. Page hero + rail   14. Code highlighting
+   5. Buttons, kickers 10. Page body + prose 15. Motion + print
    ========================================================================== */
 
 /* 1. Fonts: self-hosted, SIL Open Font License (see static/fonts) */
@@ -88,6 +88,7 @@
     radial-gradient(1px 1px at 64px 188px, rgba(190, 210, 255, .55) 50%, transparent 51%);
   --halftone: radial-gradient(rgba(18, 22, 43, .55) 0.9px, transparent 1.3px);
 
+  color-scheme: light dark;
 }
 
 /* Stage and accent tones. Each sets --tone (fills, rules, shadows) and --tone-ink
@@ -97,6 +98,21 @@
 .tone-ray { --tone: var(--ray); --tone-ink: var(--cream); }
 .tone-nebula { --tone: var(--nebula); --tone-ink: var(--cream); }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #0e1124;
+    --paper-deep: #0a0c1b;
+    --card: #171b36;
+    --ink: #efe7d4;
+    --ink-soft: #bdb5cc;
+    --rule: #2f3560;
+    --line: #5b618f;
+    --link: #ffb454;
+    --link-hover: #c9a4ff;
+    --focus: var(--atomic);
+    --halftone: radial-gradient(rgba(0, 0, 0, .55) 0.9px, transparent 1.3px);
+  }
+}
 
 /* 3. Base ----------------------------------------------------------------- */
 *, *::before, *::after { box-sizing: border-box; }
@@ -146,6 +162,7 @@ main:focus { outline: none; }
 }
 
 .skip-link {
+  --focus: var(--cream);
   position: absolute;
   left: 1rem;
   top: -4rem;
@@ -164,6 +181,7 @@ main:focus { outline: none; }
 .site-header,
 .site-footer,
 .stats,
+.lost,
 .page-hero {
   --focus: var(--atomic);
   --link: var(--atomic);
@@ -1136,7 +1154,23 @@ main:focus { outline: none; }
 .site-footer__base p { margin: 0; }
 .site-footer__stars { color: var(--atomic) !important; letter-spacing: .4em; }
 
-/* 13. Code highlighting (Chroma classes), tuned to the palette ------------- */
+/* 13. 404 ------------------------------------------------------------------- */
+.lost { display: grid; align-items: center; min-height: 70vh; }
+.lost__inner { padding-block: 5rem; }
+.lost__title {
+  max-width: 16ch;
+  margin: 0 0 1rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 5vw, 3.2rem);
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 0 var(--rocket-deep);
+}
+.lost__lede { max-width: 38rem; margin: 0 0 2rem; color: var(--cream-soft); font-size: 1.15rem; line-height: 1.55; }
+.lost__links { display: flex; flex-wrap: wrap; gap: 1rem; margin: 0; padding: 0; list-style: none; }
+
+/* 14. Code highlighting (Chroma classes), tuned to the palette ------------- */
 .chroma .c, .chroma .c1, .chroma .cm, .chroma .ch, .chroma .cs { color: #a69fc4; font-style: italic; }
 .chroma .k, .chroma .kn, .chroma .kd, .chroma .kr, .chroma .kc, .chroma .kp, .chroma .ow { color: #ff8f6b; }
 .chroma .s, .chroma .s1, .chroma .s2, .chroma .sd, .chroma .sa, .chroma .se, .chroma .si { color: #7ee0cf; }
@@ -1144,3 +1178,20 @@ main:focus { outline: none; }
 .chroma .nf, .chroma .fm, .chroma .nc, .chroma .nn { color: #d2b3ff; }
 .chroma .nb, .chroma .bp { color: #ffd479; }
 .chroma .o { color: #ffb8a3; }
+
+/* 15. Motion + print -------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+  .btn:hover, .pager__link:hover { transform: none; }
+}
+
+@media print {
+  .site-header, .site-footer, .stage-rail, .pager, .toc, .skip-link, .hero__actions { display: none !important; }
+  body { background: #fff; color: #000; }
+  .page-hero { background: none; color: #000; padding: 0 0 1rem; }
+  .page-hero::before, .page-hero__media { display: none; }
+  .page-hero__title { text-shadow: none; }
+  .page-body.has-toc { display: block; }
+  .prose a.ext::after { content: " (" attr(href) ")"; font-size: .8em; }
+}

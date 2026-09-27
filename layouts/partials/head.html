@@ -11,6 +11,8 @@
 <meta name="robots" content="noindex, nofollow">
 {{ end }}
 <link rel="canonical" href="{{ .Permalink }}">
+<meta name="theme-color" content="#12162b">
+<meta name="color-scheme" content="light dark">
 <script>document.documentElement.classList.add('js')</script>
 
 {{/* Fonts are self-hosted (static/fonts, SIL OFL) so readers are not tracked by a font CDN. */}}
@@ -20,6 +22,8 @@
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 
 <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+<link rel="icon" href="{{ "favicon-32.png" | relURL }}" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
 
 {{/* Social cards */}}
 {{ $image := .Params.featured_image | default site.Params.og_image }}
