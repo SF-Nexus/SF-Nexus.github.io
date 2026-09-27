@@ -4,6 +4,9 @@ description: "Related projects, datasets, and digital archives for studying scie
 cascade:
   featured_image: '/images/about_1.jpeg'
 ---
+
+> **Data lifecycle · Stage 4 of 4 — Publish.** Making the corpus citable, searchable, and reusable. [← Analyze](/models/)
+
 The resources foregrounded by the SF Nexus explore the genre at scale using data. These include data visualizations of SF literary history, archival holdings of bulk digital assets, and databases of records.  
 
 If you’re looking to see what is possible with data visualizations of literary history, access facsimile editions of pulp magazines, or to find information about the history of science fiction, these resources are the primary places to go.

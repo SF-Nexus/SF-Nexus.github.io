@@ -5,6 +5,8 @@ cascade:
   featured_image: '/images/extracted_header.png'
 ---
 
+> **Data lifecycle · Stage 2 of 4 — Curate.** Building the shareable dataset. [← Source](/ocr/) · Next: [Analyze the corpus →](/models/)
+
 Our core SF corpus is comprised of 403 texts from the [Temple University SCRC Paskow Science Fiction Collection](https://library.temple.edu/collections/paskow-science-fiction-collection-science-fiction-and-fantasy). The corpus primarily contains New Wave SF novels published between 1945 and 1990, along with short story anthologies and magazines. The texts have been scanned, digitized and saved as ```.txt``` files using ABBYY FineReader for Optical Character Recognition (OCR). After making the texts machine readable and post-processing and cleaning the OCR'ed text, we have curated several datasets of varying granularity available at this time.
 
 Because the majority of texts in our corpus are under copyright, sharing the original, full-text works is a violation of copyright law. However, it is permissible to share "extracted features" from these works, such as disaggregated texts, word frequency counts, and syntactical and semantic descriptors. Extracted features can be used for a variety of analyses, including topic modeling. The following extracted features datasets are currently available for public use:

@@ -4,6 +4,9 @@ description: "Modeling Science Fiction"
 cascade:
   featured_image: '/images/lda_1.png'
 ---
+
+> **Data lifecycle · Stage 3 of 4 — Analyze.** Reading the corpus at scale through topic modeling. [← Curate](/data/) · See also [Analysis: Word2Vec](/analysis/) · Next: [Publish →](/scholarship/)
+
 ## LDA Topic Modeling
 By Megan Kane
 
