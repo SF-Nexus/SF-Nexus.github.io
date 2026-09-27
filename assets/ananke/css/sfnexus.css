@@ -1,0 +1,16 @@
+/* SF Nexus additions to the ananke theme (loaded via params.custom_css in config.toml). */
+
+/* Keep images, code, and long links inside the text column on phones. */
+article img { max-width: 100%; height: auto; }
+article pre { max-width: 100%; overflow-x: auto; }
+article a { overflow-wrap: break-word; }
+
+/* Data-lifecycle stage banners (the blockquote at the top of each lifecycle page). */
+article blockquote {
+  margin: 0 0 2rem;
+  padding: .75rem 1rem;
+  border-left: 4px solid #357edd;
+  background: #fff;
+  font-size: .9em;
+}
+article blockquote p { margin: 0; }

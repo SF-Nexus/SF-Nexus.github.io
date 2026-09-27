@@ -24,11 +24,11 @@ disableKinds = ['taxonomy', 'term']
   pageRef = '/Data'
   weight = 20
 [[menu.main]]
-  name = 'Models'
+  name = 'Topic Models'
   pageRef = '/Models'
   weight = 30
 [[menu.main]]
-  name = 'Analysis'
+  name = 'Word Embeddings'
   pageRef = '/Analysis'
   weight = 40
 [[menu.main]]
@@ -39,3 +39,7 @@ disableKinds = ['taxonomy', 'term']
   name = 'People'
   pageRef = '/People'
   weight = 60
+
+[params]
+  # Extra stylesheet in assets/ananke/css/, bundled into the theme's main CSS.
+  custom_css = ['sfnexus.css']

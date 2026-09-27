@@ -40,3 +40,9 @@
   to = "https://sfnexus.org/:splat"
   status = 301
   force = true
+
+# The LDAvis model used to be published as a content page; it now lives at /ldaviz/.
+[[redirects]]
+  from = "/models/lda_clifi_1/*"
+  to = "/ldaviz/"
+  status = 301

@@ -1,61 +1,58 @@
 ---
 title: "OCR"
-description: "Optical Character Recognition with ABBYY"
-cascade:
-  featured_image: '/images/ocr.png'
+description: "Turning page scans of science fiction paperbacks into clean, machine-readable text with ABBYY FineReader."
+featured_image: '/images/ocr.png'
 ---
-
 > **Data lifecycle · Stage 1 of 4 — Source.** Digitizing the collection. Next: [Curate the dataset →](/data/)
 
-We used Optical Character Recognition (OCR) software to convert scans of our print sci-fi books into computer-readable text files. OCR expands the potential uses of our corpus, allowing researchers to not only review scanned image files, but also to search, clean, and analyze digital texts using computational tools.
+We used Optical Character Recognition (OCR) software to turn scans of our print science fiction books into machine-readable text files. OCR makes the corpus far more useful: researchers can search, clean, and analyze the texts with computational tools instead of only paging through scanned images.
 
-### Input: TIFF Files (Digital scans of science fiction book pages)
+## Input: TIFF page scans
 
-This project made use of ABBYY FineReader, a commercial software which uses AI-based technology to recognize text in image files including TIFFs, PNGs, and PDFs. We uploaded collections of page scans to ABBYY, one book at a time, and performed OCR. We also used ABBYY to assist in the following tasks: 
+The project used ABBYY FineReader, commercial software that uses AI-based recognition to read text in image files such as TIFFs, PNGs, and PDFs. We loaded each book's page scans into ABBYY one book at a time and ran OCR. We also used ABBYY for five cleanup tasks:
 
-- **Removing blank pages**
+1. **Removing blank pages.**
 
- ![ABBYY FineReader's page list with a blank page selected and the Delete command highlighted in the right-click menu](/images/ocr_blank.png)
+   ![ABBYY FineReader's page list with a blank page selected and the Delete command highlighted in the right-click menu](/images/ocr_blank.png)
 
-* **Reviewing pages with "unrecognized" elements (illustrations, charts, icons and other content that OCR cannot automatically convert)**
+2. **Reviewing pages with "unrecognized" elements** such as illustrations, charts, and icons that OCR cannot convert to text.
 
- ![ABBYY FineReader showing the cover of Philip José Farmer's The Maker of Universes, recognized as a picture rather than text](/images/ocr_unrecognized.png)
+   ![ABBYY FineReader showing the cover of Philip José Farmer's The Maker of Universes, recognized as a picture rather than text](/images/ocr_unrecognized.png)
 
+3. **Flagging pages that were ripped, blurred, or cut off**, or otherwise needed manual cleaning.
 
-* **Identifying pages that were ripped, blurred, cut off, or otherwise require manual cleaning**
+   ![A scanned page in ABBYY FineReader whose right edge is cut off mid-word](/images/ocr_cut.png)
 
- ![A scanned page in ABBYY FineReader whose right edge is cut off mid-word](/images/ocr_cut.png)
+4. **Removing headers, footers, and page numbers.**
 
-* **Removing headers, footers and page numbers**
+   ![ABBYY FineReader with the running head and page number of a scanned page recognized as "Header or footer" and kept out of the body text](/images/ocr_header.png)
 
- ![ABBYY FineReader with the running head and page number of a scanned page recognized as "Header or footer" and kept out of the body text](/images/ocr_header.png)
+5. **Adding tags for START OF BOOK, END OF BOOK, and CHAPTER** each time a new section or chapter begins.
 
-* **Adding tags denoting START OF BOOK, END OF BOOK, and CHAPTER (each time new section or chapter starts)**
+   ![A scanned page reading "Part II, Deadways, I" beside the recognized text, now tagged PART 2 and CHAPTER 1](/images/ocr_chapter.png)
 
- ![A scanned page reading "Part II, Deadways, I" beside the recognized text, now tagged PART 2 and CHAPTER 1](/images/ocr_chapter.png)
+The result is a set of lightly cleaned and enriched text files that can be searched and analyzed digitally. The chapter tags let us split books by chapter later, in the [curation stage](/data/#pipeline-1-text-sectioning-and-disaggregation).
 
-Completing the above-mentioned tasks has yielded a collection of minimally cleaned and enriched text files that can be searched and analyzed digitally. 
+## Output: TXT files
 
-### Output: TXT Files (Machine-readable versions of science fiction books)
+Because most of the collection is in copyright, the exported text files can only be used on site at Temple's Loretta C. Duckworth Scholars Studio. Researchers there sign an agreement to use the materials only for non-consumptive research within the Scholars Studio. Anyone can freely download the [extracted-features datasets](/data/) derived from these texts.
 
-Because the science fiction collection is under copyright, the exported text files can only be accessed through a visit to the Temple University Loretta C. Duckworth Scholars Studio, where researchers must sign an agreement to only use these materials at the Scholars Studio for non-consumptive research. A dataset of **[extracted features](/data/)** from these texts is freely available on this website. 
+The full OCR workflow and a programmatic alternative are in our notebooks repository:
 
-See our full workflow for performing OCR on the science fiction corpus on our [ABBYY guidelines](https://github.com/SF-Nexus/extracted-features-notebooks/blob/main/notebooks/OCR/ABBYY_OCR_Guidelines.md).
+* [ABBYY FineReader OCR guidelines](https://github.com/SF-Nexus/extracted-features-notebooks/blob/main/notebooks/OCR/ABBYY_OCR_Guidelines.md)
+* [OCR with Pytesseract (Python)](https://github.com/SF-Nexus/extracted-features-notebooks/blob/main/notebooks/OCR/OCR%20with%20Pytesseract%20(Jupyter%20Notebook).ipynb) · [Open in Colab](https://colab.research.google.com/github/SF-Nexus/extracted-features-notebooks/blob/main/notebooks/OCR/OCR%20with%20Pytesseract%20(Jupyter%20Notebook).ipynb)
 
-For performing OCR programmatically using Python, see our [Pytesseract OCR notebook](https://github.com/SF-Nexus/extracted-features-notebooks/blob/main/notebooks/OCR/OCR%20with%20Pytesseract%20(Jupyter%20Notebook).ipynb).
+## Depositing the corpus in HathiTrust
 
-# Related Resources
+Temple has deposited 348 of these volumes in the HathiTrust Digital Library, where they are preserved and [searchable in full text](https://babel.hathitrust.org/cgi/ls?field1=ocr;q1=%2A;a=srchls;facet=htsource%3A%22Temple%20University%22). HathiTrust has [specific submission package requirements](https://www.hathitrust.org/member-libraries/resources-for-librarians/contributor-toolkit/submission-package-requirements/), so we wrote Python code to package every volume. Run from the command line, the ingestion code generates:
 
-## Ingesting Our SF Archive into HathiTrust Digital Library
-Temple has ingested over 300 of these texts into the HathiTrust Digital Library. Because [HathiTrust requires specific file formats](https://www.hathitrust.org/member-libraries/resources-for-librarians/contributor-toolkit/submission-package-requirements/) for upload, Python code was used to package all necessary files for the sf collection. Running the Python ingestion code in the command line generated the following files for upload to HathiTrust:
+* Image files (TIFF) for each page of each title, duplicated from the server
+* OCR files for each page of each title, generated by Google Tesseract
+* A metadata file (YAML) with administrative and technical metadata
+* A checksum file listing every file in the package with its MD5 hash
 
-* Image files (TIFF) for each page of each title (duplicated from server)
-* OCR files for each page of each title (generated by Google Tesseract)
-* Metadata file (YML) containing administrative and technical metadata
-* Checksum file listing every file in package and its corresponding md5 hash value
+The ingestion code and a tutorial are in our [hathitrust-ingestion repository](https://github.com/SF-Nexus/hathitrust-ingestion).
 
-The ingestion code and associated tutorial are available on our [HathiTrust-Ingestion-Scripts Github Repository](https://github.com/SF-Nexus/hathitrust-ingestion).
+## Beyond the scanner: web sources
 
-# Webscraping
-
-For more information about the webscraping methods we used during this project, visit our [Github repository on webscraping](https://github.com/SF-Nexus/webscraping-SF).
+Not every source text has to come off a scanner. Our [webscraping-SF repository](https://github.com/SF-Nexus/webscraping-SF) collects public-domain science fiction and metadata from the web. It downloads texts from Project Gutenberg bookshelves, pulls the Internet Archive's SF and Pulp Magazine Archive holdings through its Python API, queries Wikidata and the Star Trek API, and retrieves bestseller data from the New York Times Books API.
