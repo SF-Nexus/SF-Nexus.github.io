@@ -7,7 +7,7 @@ Operator-facing checklist of outstanding work for sfnexus.org (Hugo, this repo).
 - [ ] **Update the link in future videos** to the new owned domain, https://sfnexus.org/. You own sfnexus.org now.
 - [ ] **Finalize the HathiTrust tracking metadata sheet**, which records what is in HathiTrust and what is not.
 - [ ] **After this deploy, request indexing** of https://sfnexus.org/ in Google Search Console. The site shipped `noindex` until phase 1. Confirm that the live page source now shows `<meta name="robots" content="index, follow">` and that https://sfnexus.org/robots.txt says `Allow: /`.
-- [ ] **Check that Netlify is reading netlify.toml.** Settings in the file take precedence over the Netlify UI, but only if Netlify finds it (base directory = repo root). The first deploy log should show the build command `hugo --gc --minify` and Hugo 0.131.0.
+- [ ] **Check that Netlify is reading netlify.toml.** Settings in the file take precedence over the Netlify UI, but only if Netlify finds it (base directory = repo root). The first deploy log should show the build command `hugo --gc --minify` and Hugo 0.168.0.
 - [ ] **HTRC Data Capsules shut down on 2026-09-30.** The Data page now says so. Decide whether Temple's local data capsule appliance should become the recommended route for remote full-text work.
 - [ ] **Verify external links from a normal network.** The build sandbox could not reach most external hosts; GitHub links were verified. Newly added links to click-test:
   - Scholarship: the collections-as-data DOIs (Zenodo 3152935, 10161976, 8342171), the copyright.gov case summaries, the HathiTrust non-consumptive use policy URL, the Building LLTDM DOI, copyright.gov/1201/2024/, the Underwood DOIs, the *Distant Horizons* page, the Milner & Burgmann and *Convergence* DOIs, the Eaton, Merril, Liverpool SF Hub, and KU Gunn Center pages, and the DHQ article on The Stuff of Science Fiction
@@ -15,7 +15,7 @@ Operator-facing checklist of outstanding work for sfnexus.org (Hugo, this repo).
   - Timeline: the Stanford CESTA seminar page
 - [ ] **Confirm the article title.** Sources disagree between "Speculating on the Future of Library Curation" and "Speculation on the Future of Library Curation" (*Trans. APS* 110.3, 2022, pp. 211–241). Check JSTOR.
 - [ ] **Confirm the "5,164-volume" Thompson & Mimno workset count** on the Word Embeddings page. Their HTRC report gives 5,135 volumes, their ACH 2021 slides "5,160 volumes," and the GitHub TSV 5,811.
-- [ ] **Add a dataset license.** The Hugging Face datasets and the site don't state one. Once chosen, add `license` to `data/datasets.yaml` and to the schema.org markup in `layouts/partials/schema.html`.
+- [ ] **Add a dataset license.** The Hugging Face datasets and the site don't state one. Once chosen, add `license` to `data/datasets.yaml` and to the schema.org markup in `layouts/partials/sfnexus-schema.html`.
 - [ ] **Profile links to recheck:** Jeremy Brett's VIVO link (it points at a "View All" page) and Nicole Lemire-Garlic's student page.
 
 ## Done

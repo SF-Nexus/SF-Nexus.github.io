@@ -1,5 +1,5 @@
 baseURL = 'https://sfnexus.org/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'The SF Nexus'
 theme = "gohugo-theme-ananke"
 canonifyURLS=true
@@ -43,13 +43,14 @@ disableKinds = ['taxonomy', 'term']
 
 [params]
   description = "SF Nexus is a Temple University Libraries project that digitizes mid-century science fiction and shares it as open, research-ready data."
-  # Extra stylesheet in assets/ananke/css/, bundled into the theme's main CSS.
-  custom_css = ['sfnexus.css']
   email = "digitalscholarship@temple.edu"
   huggingface = "https://huggingface.co/SF-Corpus"
   hathitrust = "https://babel.hathitrust.org/cgi/ls?field1=ocr;q1=%2A;a=srchls;facet=htsource%3A%22Temple%20University%22"
   # Used by the {{< notebook >}} shortcode to build GitHub and Colab links.
   notebooks_repo = "SF-Nexus/extracted-features-notebooks"
+  [params.ananke]
+    # Extra stylesheet in assets/ananke/css/, bundled into the theme's main CSS.
+    custom_css = ['sfnexus.css']
 
 [markup]
   [markup.goldmark]
@@ -68,8 +69,11 @@ disableKinds = ['taxonomy', 'term']
     endLevel = 3
 
 [imaging]
-  quality = 82
   resampleFilter = 'Lanczos'
+  [imaging.jpeg]
+    quality = 82
+  [imaging.webp]
+    quality = 82
 
 # Mount static/images into assets/ as well, so the image render hook can resize the
 # originals into responsive webp in place. Nothing moves and every /images/... link keeps

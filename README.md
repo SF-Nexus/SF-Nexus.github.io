@@ -8,7 +8,7 @@ A secondary site where Temple University's science fiction project has been show
 
 # Building locally
 
-The site is built with [Hugo](https://gohugo.io), pinned to 0.131.0 (extended) in `netlify.toml`.
+The site is built with [Hugo](https://gohugo.io), pinned to 0.168.0 (extended) in `netlify.toml`.
 
 ```bash
 hugo server   # preview at http://localhost:1313
