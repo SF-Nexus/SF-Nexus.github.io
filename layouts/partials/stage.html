@@ -2,7 +2,7 @@
 {{- $found := false -}}
 {{- with .Params.stage -}}
   {{- $key := . -}}
-  {{- range site.Data.lifecycle -}}
+  {{- range hugo.Data.lifecycle -}}
     {{- if eq .key $key -}}{{- $found = . -}}{{- end -}}
   {{- end -}}
 {{- end -}}

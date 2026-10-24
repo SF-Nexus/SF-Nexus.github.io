@@ -2,7 +2,7 @@
 {{ $stage := partial "stage.html" . }}
 {{ with $stage }}
 {{ $seq := slice }}
-{{ range site.Data.lifecycle }}
+{{ range hugo.Data.lifecycle }}
   {{ $s := . }}
   {{ range .pages }}{{ with site.GetPage . }}{{ $seq = $seq | append (dict "page" . "stage" $s) }}{{ end }}{{ end }}
 {{ end }}

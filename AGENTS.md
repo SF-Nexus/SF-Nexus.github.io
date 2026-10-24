@@ -10,9 +10,9 @@ Hugo source for [sfnexus.org](https://sfnexus.org), the SF Nexus project at Temp
 
 ## Build
 
-- Hugo **0.131.0 extended**, pinned in `netlify.toml`. The vendored `themes/gohugo-theme-ananke` breaks on newer Hugo; see the comment there before bumping.
+- Hugo **0.168.0 extended**, pinned in `netlify.toml`. `themes/gohugo-theme-ananke` is ananke v2.19.1, vendored unmodified; put changes in `layouts/` or `sfnexus.css`, never in the theme, so it can be replaced wholesale on the next bump.
 - `hugo --gc --minify` for a production build. The build should report 0 warnings.
-- Pages are `index, follow` only when `HUGO_ENV=production`, which netlify.toml sets for production deploys only. Previews and local builds are `noindex` on purpose.
+- Pages are `index, follow` only when `hugo.IsProduction` is true, which is any plain `hugo` build, local ones included. netlify.toml builds deploy previews and branch deploys with `--environment preview`, so they are `noindex` on purpose, as is `hugo server`.
 
 ## Where things live (on `main`)
 
@@ -21,8 +21,9 @@ Hugo source for [sfnexus.org](https://sfnexus.org), the SF Nexus project at Temp
 - `layouts/`: overrides on top of Ananke.
   - render hooks in `_default/_markup/`: images become responsive WebP figures, external links get ↗ and a new tab, headings get anchors
   - shortcodes: `notebook`, `notice`, `datasets`, `timeline`
-  - partials: `stage-rail`, `stage-pager`, `schema`, `responsive-image`
-- `assets/ananke/css/sfnexus.css`: extra styles. Ananke compiles it with libsass, so avoid modern CSS such as `:is()` or nesting.
+  - partials: `stage-rail`, `stage-pager`, `sfnexus-schema`, `responsive-image`
+  - `home.html`: ananke's home layout without its centering and narrow measure
+- `assets/ananke/css/sfnexus.css`: extra styles. Ananke concatenates it after its own CSS (`params.ananke.custom_css`), uncompiled.
 - `static/images/` is also mounted as `assets/images`, so the image hook can resize originals. Reference images as `/images/...`.
 - `static/ldaviz/`: standalone pyLDAvis page. `/models/lda_clifi_1` redirects to it (see netlify.toml).
 

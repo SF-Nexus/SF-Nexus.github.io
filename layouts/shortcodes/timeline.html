@@ -5,7 +5,7 @@
   Each entry: date (ISO), display_date (optional override), headline, text (markdown),
   group: collection | digitization | research | outreach (colors the marker).
 */ -}}
-{{ $entries := site.Data.timeline }}
+{{ $entries := hugo.Data.timeline }}
 <ol class="timeline">
   {{ $prevYear := "" }}
   {{ range $entries }}

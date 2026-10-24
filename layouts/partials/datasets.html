@@ -1,6 +1,6 @@
 {{- /* Dataset cards from data/datasets.yaml. Pass (dict "compact" true) for the homepage strip. */ -}}
 <ul class="datasets{{ if .compact }} datasets--compact{{ end }}">
-  {{ range site.Data.datasets }}
+  {{ range hugo.Data.datasets }}
   {{ $url := printf "https://huggingface.co/datasets/SF-Corpus/%s" .id }}
   <li class="dataset">
     <p class="dataset__meta"><span>{{ .unit }}</span><span>{{ .tool }}</span></p>

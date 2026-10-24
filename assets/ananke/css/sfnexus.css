@@ -1,4 +1,4 @@
-/* SF Nexus additions to the ananke theme (loaded via params.custom_css in config.toml).
+/* SF Nexus additions to the ananke theme (loaded via params.ananke.custom_css in config.toml).
    Phase 3: styles for the new building blocks, kept quiet so they sit inside the
    existing Ananke look. The full visual redesign comes in phase 4. */
 
@@ -16,6 +16,7 @@
 /* Keep images, code, and long links inside the text column on phones. */
 article img { max-width: 100%; height: auto; }
 article pre { max-width: 100%; overflow-x: auto; padding: 1rem; font-size: .8em; line-height: 1.5; }
+article pre code { font-size: .875em; }
 article a { overflow-wrap: break-word; }
 
 /* A readable line length for long pages */
@@ -103,3 +104,6 @@ article a { overflow-wrap: break-word; }
 /* Annotated reference lists (markdown definition lists) on Scholarship */
 .sfn-prose dt { margin-top: 1.1rem; }
 .sfn-prose dd { margin: .25rem 0 0; padding-left: .9rem; border-left: 3px solid #e5e5e5; color: #595959; font-size: .9em; line-height: 1.55; }
+
+/* Ananke's <main> carries pb7 (16rem of bottom padding); keep it short. */
+main[role="main"] { padding-bottom: 1rem; }
