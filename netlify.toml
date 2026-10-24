@@ -8,17 +8,17 @@
 [build.environment]
   HUGO_VERSION = "0.168.0"
 
-# The ananke theme only lets search engines index the site (robots meta + robots.txt) when
-# HUGO_ENV is "production". It was never set, so every page shipped as "noindex, nofollow".
-# Set it for the production deploy only; deploy previews and branch deploys stay noindex.
+# Ananke only lets search engines index the site (robots meta + robots.txt) when
+# hugo.IsProduction is true, which is every plain `hugo` build. Deploy previews and branch
+# deploys build with --environment preview so they stay noindex.
 [context.production.environment]
   HUGO_ENV = "production"
 
 [context.deploy-preview]
-  command = "hugo --gc --minify --baseURL $DEPLOY_PRIME_URL"
+  command = "hugo --gc --minify --environment preview --baseURL $DEPLOY_PRIME_URL"
 
 [context.branch-deploy]
-  command = "hugo --gc --minify --baseURL $DEPLOY_PRIME_URL"
+  command = "hugo --gc --minify --environment preview --baseURL $DEPLOY_PRIME_URL"
 
 [[headers]]
   for = "/*"

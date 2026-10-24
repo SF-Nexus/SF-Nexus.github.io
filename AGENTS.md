@@ -12,7 +12,7 @@ Hugo source for [sfnexus.org](https://sfnexus.org), the SF Nexus project at Temp
 
 - Hugo **0.168.0 extended**, pinned in `netlify.toml`. `themes/gohugo-theme-ananke` is ananke v2.19.1, vendored unmodified; put changes in `layouts/` or `sfnexus.css`, never in the theme, so it can be replaced wholesale on the next bump.
 - `hugo --gc --minify` for a production build. The build should report 0 warnings.
-- Pages are `index, follow` only when `HUGO_ENV=production`, which netlify.toml sets for production deploys only. Previews and local builds are `noindex` on purpose.
+- Pages are `index, follow` only when `hugo.IsProduction` is true, which is any plain `hugo` build, local ones included. netlify.toml builds deploy previews and branch deploys with `--environment preview`, so they are `noindex` on purpose, as is `hugo server`.
 
 ## Where things live (on `main`)
 

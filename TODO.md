@@ -57,8 +57,8 @@ Fresh pass over the `hugo-0.168` branch and live sfnexus.org: a clean 0.168 buil
 - The "check that Netlify is reading netlify.toml" item: it is. Live reports Hugo 0.131.0, which is `main`'s pin, and the `/models/lda_clifi_1` and `sfnexus.io` redirects, which exist only in netlify.toml, work. Re-check for 0.168 after the merge.
 - The "verify external links" item: covered by section 1 above. Only the bot-walled list is left.
 - The idea "Fix the Data Speculations Events page": dataspeculations.org/events still dates "Toxic Water" to 2024.
-- PHASES.md "Branches no longer needed once PR #28 is merged": PR #28 merged 09-26, but all seven branches are still on GitHub. PHASES.md also predates the Hugo 0.168 and ananke 2.19 bump, so resuming `phase-4-redesign` now means merging the new `main` into it first.
-- Forgejo's default branch is `modernize-theme` (07-03, superseded by `hugo-0.168`). The local branches `modernize-theme` and `wip-lifecycle-homepage-stash` are also left over.
+- PHASES.md predates the Hugo 0.168 and ananke 2.19 bump, so resuming `phase-4-redesign` now means merging the new `main` into it first. Its list of branches to delete is done (10-23); GitHub keeps only `main` and the two parked phase branches.
+- Forgejo's default branch is still `modernize-theme` (07-03, superseded by `hugo-0.168`; also saved as the tag `archive/modernize-theme-2026-07`). Switch the default to `main` in Forgejo's settings, then delete the branch.
 
 ## Things only you can do
 
