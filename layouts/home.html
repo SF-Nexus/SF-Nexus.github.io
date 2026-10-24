@@ -1,6 +1,6 @@
 {{/* The ananke home layout, left-aligned and full width (no tc-l / measure-wide). */}}
 {{ define "main" }}
-  <article class="cf ph3 ph5-l pv3 pv4-l f4 center lh-copy nested-links {{ $.Param "text_color" | compare.Default "mid-gray" }}">
+  <article class="cf ph3 ph5-l pv3 pv4-l f4 center lh-copy {{ $.Param "text_color" | compare.Default "mid-gray" }}">
     {{ .Content }}
   </article>
 
