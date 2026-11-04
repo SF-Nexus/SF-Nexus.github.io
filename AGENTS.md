@@ -4,7 +4,6 @@ Hugo source for [sfnexus.org](https://sfnexus.org), the SF Nexus project at Temp
 
 ## Start here
 
-- `TODO.md`: open items. Most need a human with account access, such as Google Search Console, Netlify, or confirming facts.
 - `PHASES.md`: the 2026 staged rollout. Phases 1–3 are merged (PR #28). The retro redesign is parked on `phase-4-redesign` and `phase-5-polish`, with steps to resume it.
 - `README.md`: build commands and how to edit content, data files, and shortcodes.
 

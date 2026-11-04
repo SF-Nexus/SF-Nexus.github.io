@@ -17,7 +17,7 @@ hugo          # build into public/
 
 Netlify deploys `main`. Production deploys set `HUGO_ENV=production`, which the ananke theme requires before it lets search engines index the site.
 
-See `PHASES.md` for the staged improvement plan and `TODO.md` for open items.
+See `PHASES.md` for the staged improvement plan.
 
 # Editing the site
 
