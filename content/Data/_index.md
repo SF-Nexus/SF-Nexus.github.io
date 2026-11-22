@@ -4,7 +4,7 @@ description: "Extracted-features datasets built from 403 copyrighted science fic
 featured_image: '/images/extracted_header.png'
 stage: curate
 ---
-Our core corpus is 403 texts from the [Temple University SCRC Paskow Science Fiction Collection](https://library.temple.edu/collections/paskow-science-fiction-collection-science-fiction-and-fantasy). It is mostly New Wave SF novels published between 1945 and 1990, along with short story anthologies and magazines. The texts were scanned and [converted to `.txt` files with ABBYY FineReader](/ocr/). After post-processing and cleaning the OCR output, we curated several datasets at different levels of granularity.
+Our core corpus is 403 texts from the [Temple University SCRC Paskow Science Fiction Collection](https://web.archive.org/web/20250107151106/https://library.temple.edu/collections/paskow-science-fiction-collection-science-fiction-and-fantasy). It is mostly New Wave SF novels published between 1945 and 1990, along with short story anthologies and magazines. The texts were scanned and [converted to `.txt` files with ABBYY FineReader](/ocr/). After post-processing and cleaning the OCR output, we curated several datasets at different levels of granularity.
 
 ## Extracted features
 
@@ -132,12 +132,12 @@ We ran the full (aggregated) texts through BookNLP in Python. It takes only a fe
 
 ```python
 # Define folder where files are stored to run BookNLP on
-files = [f for f in os.listdir(path) if os.path.isfile(f)]
+files = [f for f in os.listdir(path) if os.path.isfile(os.path.join(path, f))]
 
 # Loop to run BookNLP on each file
 for f in files:
     # Define filename as each file in folder
-    inputFile = f
+    inputFile = os.path.join(path, f)
     # Set folder for BookNLP results
     outputDir = "BookNLP_Results/"
     # Set ID as name of each file
@@ -163,7 +163,7 @@ For a fuller overview of BookNLP's output, see [Chapter 3, "The Output Files"](h
 Researchers can analyze the full texts, without reading them, in two ways. On site at Temple, the Scholars Studio provides supervised access for non-consumptive research (see [OCR](/ocr/#output-txt-files)). Remotely, researchers have been able to analyze HathiTrust volumes, including in-copyright works, in the HathiTrust Research Center (HTRC) Data Capsule, a secure computing environment. Temple's [data capsule appliance](https://github.com/TempleDSS/data-capsule-appliance) is a way to set up and run that kind of environment locally.
 
 {{< notice title="HathiTrust Research Center transition" type="warning" >}}
-HathiTrust is ending its funding of the HathiTrust Research Center at the end of 2026. **HTRC Data Capsules, and the data in them, will no longer be accessible after September 30, 2026.** Derived datasets such as HTRC Extracted Features will remain available from HathiTrust and the University of Illinois. See the [HTRC transition FAQ](https://www.hathitrust.org/about/research-center/htrc-transition-faq/) for details.
+HathiTrust is ending its funding of the HathiTrust Research Center at the end of 2026. **HTRC Data Capsules, and the data in them, have not been accessible since September 30, 2026.** HathiTrust says derived datasets such as HTRC Extracted Features will move to HathiTrust or another host. See the [HTRC transition FAQ](https://www.hathitrust.org/about/research-center/htrc-transition-faq/) for details.
 {{< /notice >}}
 
 ## Take-down notice
