@@ -107,3 +107,15 @@ article a { overflow-wrap: break-word; }
 
 /* Ananke's <main> carries pb7 (16rem of bottom padding); keep it short. */
 main[role="main"] { padding-bottom: 1rem; }
+
+/* Page headers: keep the title and description readable over busy screenshot images. */
+header.cover > .bg-black-60 { background-color: rgba(0, 0, 0, .72); }
+header.cover h1, header.cover h2 { text-shadow: 0 1px 4px rgba(0, 0, 0, .9); }
+header.cover h2 { color: #fff; font-weight: 400; }
+
+/* Stage rail: keep each stage on one line on phones. */
+.stage-rail__item a { white-space: nowrap; }
+@media (max-width: 30em) {
+  .stage-rail__item a { padding-left: 0; padding-right: 0; font-size: .78rem; }
+  .stage-rail__num { margin-right: .2rem; }
+}
