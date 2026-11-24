@@ -6,7 +6,8 @@
     <p class="dataset__meta"><span>{{ .unit }}</span><span>{{ .tool }}</span></p>
     <h3 class="dataset__title"><a href="{{ $url }}">{{ .title }}</a></h3>
     <p class="dataset__id"><code title="SF-Corpus/{{ .id }}">{{ replace .id "_" "_<wbr>" | safeHTML }}</code></p>
-    {{ if not $.compact }}<p class="dataset__desc">{{ .description }}</p>{{ end }}
+    {{ if not $.compact }}<p class="dataset__desc">{{ .description }}</p>
+    <p class="dataset__license"><a href="{{ site.Params.dataset_license }}">{{ site.Params.dataset_license_name }}</a></p>{{ end }}
   </li>
   {{ end }}
 </ul>

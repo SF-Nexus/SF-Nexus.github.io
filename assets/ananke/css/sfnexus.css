@@ -87,6 +87,7 @@ article a { overflow-wrap: break-word; }
 .dataset__id { margin: .2rem 0 .5rem; }
 .dataset__id code { font-size: .75em; color: #595959; }
 .dataset__desc { margin: 0; font-size: .85em; line-height: 1.5; }
+.dataset__license { margin: .6rem 0 0; font-size: .7em; letter-spacing: .05em; }
 
 /* {{< timeline >}} */
 .timeline { margin: 1.5rem 0 1.5rem .5rem; padding: 0; border-left: 2px solid #ddd; list-style: none; }
