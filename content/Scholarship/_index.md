@@ -86,7 +86,7 @@ Natalia Sánchez Querubín and Sabine Niederer, [**"Climate futures: Machine lea
 [**100 Years of Science Fiction**](https://www.wired.com/story/infoporn-100-years-of-sci-fi-explored/)
 : A network visualization of keywords from SF novels written since 1900, based on Goodreads data.
 
-[**Digitizing the New Wave**](https://lcdssgeo.com/omeka-s/s/scifi/page/digitizing-science-fiction)
+[**Digitizing the New Wave**](https://web.archive.org/web/20260215162756/https://lcdssgeo.com/omeka-s/s/scifi/page/digitizing-science-fiction)
 : Our Omeka exhibit of book covers and metadata from the digitized novels in Temple's Paskow Science Fiction Collection.
 
 ## Reference works and databases
@@ -136,7 +136,7 @@ Natalia Sánchez Querubín and Sabine Niederer, [**"Climate futures: Machine lea
 
 The SF Nexus was designed as a prototype for collaboration among the libraries that collect the genre, including members of the [Science Fiction Collecting Libraries Consortium](http://sfspecialcollections.pbworks.com/w/page/75814541/About%20the%20SciFi%20Collection%20Libraries%20Consortium%20(SFCLC)).
 
-* [Paskow Science Fiction Collection](https://library.temple.edu/collections/paskow-science-fiction-collection-science-fiction-and-fantasy), Temple University Libraries
+* [Paskow Science Fiction Collection](https://web.archive.org/web/20250107151106/https://library.temple.edu/collections/paskow-science-fiction-collection-science-fiction-and-fantasy), Temple University Libraries
 * [Eaton Collection of Science Fiction & Fantasy](https://library.ucr.edu/collections/eaton-collection-of-science-fiction-fantasy), University of California, Riverside
 * [Merril Collection of Science Fiction, Speculation & Fantasy](https://www.torontopubliclibrary.ca/merril/), Toronto Public Library
 * [Science Fiction Hub](https://libguides.liverpool.ac.uk/library/sca/sfhub), University of Liverpool, home of the Science Fiction Foundation Collection
