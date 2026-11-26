@@ -1,4 +1,6 @@
 {{/* The ananke home layout, left-aligned and full width (no tc-l / measure-wide). */}}
+{{/* The page title is the site title, so print it once instead of "X | X". */}}
+{{ define "title" }}{{ .Site.Title }}{{ end }}
 {{ define "main" }}
   <article class="cf ph3 ph5-l pv3 pv4-l f4 center lh-copy {{ $.Param "text_color" | compare.Default "mid-gray" }}">
     {{ .Content }}

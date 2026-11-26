@@ -32,8 +32,11 @@ article a { overflow-wrap: break-word; }
 
 /* Headings, anchors, external links */
 .sfn-prose h2 { margin-top: 2.5rem; }
-.anchor { margin-left: .35em; color: #767676; font-weight: normal; text-decoration: none; opacity: 0; }
-.sfn-prose h2:hover .anchor, .sfn-prose h3:hover .anchor { opacity: 1; }
+.anchor { margin-left: .35em; color: #595959; font-weight: normal; text-decoration: none; opacity: 0; }
+.sfn-prose h2:hover .anchor, .sfn-prose h3:hover .anchor, .anchor:focus { opacity: 1; }
+/* Ananke styles the copy button for dark code blocks; the highlight style here is light. */
+.code-block .code-copy { color: #333; background-color: #fff; border-color: #bbb; }
+.code-block .code-copy:hover { background-color: #f4f4f4; }
 .ext-mark { font-size: .75em; margin-left: .1em; }
 
 /* Figures from the image render hook */
