@@ -6,7 +6,7 @@ stage: analyze
 ---
 *By Dez Miller*
 
-Code for this study is on [Dez Miller's GitHub](https://github.com/dezmediah/wordembeddings). It was presented at DH2023, the conference of the Alliance of Digital Humanities Organizations, in Graz ([abstract](https://doi.org/10.5281/zenodo.10065276); [slides](https://zenodo.org/records/8107505)). Notebooks for running Word2Vec on the SF Nexus data are in our repository:
+Code for this study is on [Dez Miller's GitHub](https://github.com/dezmediah/wordembeddings). It was presented at DH2023, the conference of the Alliance of Digital Humanities Organizations, in Graz ([abstract](https://doi.org/10.5281/zenodo.8107505); [slides](https://doi.org/10.5281/zenodo.10065276)). Notebooks for running Word2Vec on the SF Nexus data are in our repository:
 
 {{< notebook path="notebooks/Analyzing_Extracted_Features/Gensim Word2Vec (Jupyter Notebook).ipynb" title="Word2Vec with Gensim" >}}
 
@@ -31,7 +31,7 @@ We built four Word2Vec models, one for each of these corpora:
 * **A.** The Temple SF corpus, in HathiTrust
 * **B.** A subset of the Temple SF corpus identified as especially water-focused through [LDA topic modeling](/models/#lda-topic-modeling)
 * **C.** Underwood, Kimutis, and Witte's 1,501-volume gender-balanced workset from the [NovelTM Datasets for English-Language Fiction](https://doi.org/10.22148/001c.13147), in HathiTrust
-* **D.** Thompson and Mimno's 5,164-volume science fiction workset, from their work on [finding speculative fiction in HathiTrust](https://github.com/laurejt/sf-in-hathitrust)
+* **D.** Thompson and Mimno's 5,161-volume science fiction workset, from their work on [finding speculative fiction in HathiTrust](https://github.com/laurejt/sf-in-hathitrust)
 
 To see how water concepts related to toxicity concepts across the four corpora, we chose four seed words through a subjective process: *river*, *water*, *pollution*, and *toxic*.
 

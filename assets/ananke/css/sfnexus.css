@@ -32,8 +32,11 @@ article a { overflow-wrap: break-word; }
 
 /* Headings, anchors, external links */
 .sfn-prose h2 { margin-top: 2.5rem; }
-.anchor { margin-left: .35em; color: #767676; font-weight: normal; text-decoration: none; opacity: 0; }
-.sfn-prose h2:hover .anchor, .sfn-prose h3:hover .anchor { opacity: 1; }
+.anchor { margin-left: .35em; color: #595959; font-weight: normal; text-decoration: none; opacity: 0; }
+.sfn-prose h2:hover .anchor, .sfn-prose h3:hover .anchor, .anchor:focus { opacity: 1; }
+/* Ananke styles the copy button for dark code blocks; the highlight style here is light. */
+.code-block .code-copy { color: #333; background-color: #fff; border-color: #bbb; }
+.code-block .code-copy:hover { background-color: #f4f4f4; }
 .ext-mark { font-size: .75em; margin-left: .1em; }
 
 /* Figures from the image render hook */
@@ -87,6 +90,7 @@ article a { overflow-wrap: break-word; }
 .dataset__id { margin: .2rem 0 .5rem; }
 .dataset__id code { font-size: .75em; color: #595959; }
 .dataset__desc { margin: 0; font-size: .85em; line-height: 1.5; }
+.dataset__license { margin: .6rem 0 0; font-size: .7em; letter-spacing: .05em; }
 
 /* {{< timeline >}} */
 .timeline { margin: 1.5rem 0 1.5rem .5rem; padding: 0; border-left: 2px solid #ddd; list-style: none; }

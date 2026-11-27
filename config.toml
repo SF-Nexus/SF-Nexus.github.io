@@ -44,7 +44,12 @@ disableKinds = ['taxonomy', 'term']
 [params]
   description = "SF Nexus is a Temple University Libraries project that digitizes mid-century science fiction and shares it as open, research-ready data."
   email = "digitalscholarship@temple.edu"
+  # Share image for link previews (og:image, twitter:image): the homepage hero photo.
+  images = ['images/about_1.jpeg']
   huggingface = "https://huggingface.co/SF-Corpus"
+  # License for the Hugging Face datasets: shown on the dataset cards and in the schema.org markup.
+  dataset_license = "https://creativecommons.org/licenses/by/4.0/"
+  dataset_license_name = "CC BY 4.0"
   hathitrust = "https://babel.hathitrust.org/cgi/ls?field1=ocr;q1=%2A;a=srchls;facet=htsource%3A%22Temple%20University%22"
   # Used by the {{< notebook >}} shortcode to build GitHub and Colab links.
   notebooks_repo = "SF-Nexus/extracted-features-notebooks"

@@ -138,6 +138,6 @@ The SF Nexus was designed as a prototype for collaboration among the libraries t
 
 * [Paskow Science Fiction Collection](https://web.archive.org/web/20250107151106/https://library.temple.edu/collections/paskow-science-fiction-collection-science-fiction-and-fantasy), Temple University Libraries
 * [Eaton Collection of Science Fiction & Fantasy](https://library.ucr.edu/collections/eaton-collection-of-science-fiction-fantasy), University of California, Riverside
-* [Merril Collection of Science Fiction, Speculation & Fantasy](https://www.torontopubliclibrary.ca/merril/), Toronto Public Library
+* [Merril Collection of Science Fiction, Speculation & Fantasy](https://tpl.ca/downloads-ebooks/specialized-collections/merril/), Toronto Public Library
 * [Science Fiction Hub](https://libguides.liverpool.ac.uk/library/sca/sfhub), University of Liverpool, home of the Science Fiction Foundation Collection
 * [J. Wayne and Elsie M. Gunn Center for the Study of Science Fiction](https://sfcenter.ku.edu/), University of Kansas
