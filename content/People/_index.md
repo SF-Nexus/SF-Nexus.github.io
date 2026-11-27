@@ -48,7 +48,7 @@ The SF Nexus is the work of many people across many institutions. This page list
 ## Advisors
 * [Sarah Potvin](https://artsci.tamu.edu/english/contact/profiles/sarah-potvin.html), Associate Professor of English, Texas A&M University
 * [Jeremy Brett](https://scholars.library.tamu.edu/vivo/display/n11640f2d/Persons/View%20All), Special Collections, Texas A&M University Libraries
-* [Elspeth Healey](https://spencer.lib.ku.edu/elspeth-healey), Special Collections Curator, Kenneth Spencer Research Library, University of Kansas
+* [Elspeth Healey](https://spencer.lib.ku.edu/people/elspeth-healey), Special Collections Curator, Kenneth Spencer Research Library, University of Kansas
 
 ## Institutional partners
 * **HathiTrust Digital Library:** [Natalie Fulkerson](https://www.lib.umich.edu/users/nfulkers), Collections Specialist
